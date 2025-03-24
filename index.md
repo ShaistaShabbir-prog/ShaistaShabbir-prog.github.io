@@ -86,14 +86,7 @@ Currently seeking opportunities to drive impactful AI/ML initiatives in a collab
         </ul>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Federated Learning & Privacy</strong> - Developed ML models ensuring privacy using differential privacy and membership inference attacks.</li>
-            <li><strong>Trustworthy AI</strong> - Research on explainable AI models improving model transparency.</li>
-            <li><strong>Software Development</strong> - Created full-stack applications using Python, Flask, and React.</li>
-        </ul>
-    </section>
+
 
 
     <section id="education">
@@ -131,14 +124,7 @@ Currently seeking opportunities to drive impactful AI/ML initiatives in a collab
 
 
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Face Recognition Based Automated Attendance System</strong></li>
-            <li><strong>Drowsiness Detection using DLIB</strong></li>
-            <li><strong>Automated Letzte-Generation Event Detection and Prediction</strong></li>
-        </ul>
-    </section>
+
 
     <section id="skills">
         <h2>Skills</h2>
