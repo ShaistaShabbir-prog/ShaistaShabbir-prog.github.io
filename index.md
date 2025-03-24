@@ -159,13 +159,53 @@ Currently seeking opportunities to drive impactful AI/ML initiatives in a collab
 
     <section id="languages">
         <h2>Languages</h2>
-        <ul>
-            <li><strong>Panjabi / Punjabi:</strong> Native</li>
-            <li><strong>Urdu:</strong> C2 (Proficient)</li>
-            <li><strong>English:</strong> C2 (Bilingual)</li>
-            <li><strong>Hindi:</strong> C1</li>
-            <li><strong>German:</strong> B1</li>
-        </ul>
+        <table border="1">
+            <tr>
+                <th>Language</th>
+                <th>Listening</th>
+                <th>Reading</th>
+                <th>Spoken Production</th>
+                <th>Spoken Interaction</th>
+                <th>Writing</th>
+            </tr>
+            <tr>
+                <td><strong>Panjabi/Punjabi</strong> (Mother Tongue)</td>
+                <td colspan="5">Native</td>
+            </tr>
+            <tr>
+                <td><strong>English</strong></td>
+                <td>C2</td>
+                <td>C2</td>
+                <td>C2</td>
+                <td>C2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td><strong>German</strong></td>
+                <td>B1</td>
+                <td>B1</td>
+                <td>B1</td>
+                <td>B1</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <td><strong>Urdu</strong></td>
+                <td>C2</td>
+                <td>C2</td>
+                <td>C2</td>
+                <td>C2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td><strong>Hindi</strong></td>
+                <td>C1</td>
+                <td>C1</td>
+                <td>C1</td>
+                <td>C1</td>
+                <td>C1</td>
+            </tr>
+        </table>
+        <p><strong>Language Levels:</strong> A1 and A2: Basic User | B1 and B2: Independent User | C1 and C2: Proficient User</p>
     </section>
 
     <section id="publications">
