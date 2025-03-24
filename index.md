@@ -251,5 +251,17 @@ Currently seeking opportunities to drive impactful AI/ML initiatives in a collab
             </li>
         </ul>
     </section>
+    <section id="honours-awards">
+        <h2>Honours & Awards</h2>
+        <ul>
+            <li>Fully Funded Scholarship for Ph.D. – DAAD-Higher Education Commission Pakistan</li>
+            <li>Gold Medalist in BSCS amongst all the 5 Campuses – University of AJK</li>
+            <li>Active Citizen Social Action Project – British Council</li>
+            <li>Certificate of Appreciation for Outstanding Services as Volunteer at ICIRM – UMSIT Kotli AJK, Pakistan</li>
+            <li>Award of Excellence in recognition of 9th Position in HSSC 2012 – Al-Fajr Educational Society Kotli AJK</li>
+            <li>Certificate of Contribution for organizing Environment Week "Think Globally, Act Locally" – UMSIT Kotli AJK, Pakistan</li>
+            <li>Badminton Championship Winner (Singles and Doubles) for 3 years – UMSIT Kotli AJK, Pakistan</li>
+        </ul>
+    </section>
 </body>
 </html>
