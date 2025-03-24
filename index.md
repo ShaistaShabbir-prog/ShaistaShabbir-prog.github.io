@@ -254,7 +254,7 @@ Currently seeking opportunities to drive impactful AI/ML initiatives in a collab
     <section id="honours-awards">
         <h2>Honours & Awards</h2>
         <ul>
-            <li>Fully Funded Scholarship for Ph.D. – DAAD-Higher Education Commission Pakistan</li>
+            <li>Fully Funded Scholarship  – DAAD- Germany -Higher Education Commission Pakistan</li>
             <li>Gold Medalist in BSCS amongst all the 5 Campuses – University of AJK</li>
             <li>Active Citizen Social Action Project – British Council</li>
             <li>Certificate of Appreciation for Outstanding Services as Volunteer at ICIRM – UMSIT Kotli AJK, Pakistan</li>
