@@ -24,15 +24,22 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am an AI researcher and data scientist with a strong background in federated learning, differential privacy, and explainable AI. My expertise spans academia and industry, with a focus on ethical AI and trustworthy machine learning models.</p>
+        <p>Results-driven AI/ML Engineer with extensive experience in developing and deploying cutting-edge machine learning
+models and NLP solutions. Adept at solving complex data challenges using tools such as PyTorch, TensorFlow, and Hugging Face
+Transformers, with a focus on deep learning, event detection, and predictive modeling. As a proficient Python developer, I
+specialize in writing clean, efficient, and scalable code for data science applications, API development, and full-stack integration.
+Skilled in end-to-end project execution from data processing to model deployment using Flask, FastAPI, and Streamlit, and
+leveraging GitLab CI/CD and GitHub Actions for seamless code deployment and version control. Passionate about advancing AI
+technologies, I continuously explore innovative methods to improve model performance and ensure top-level code quality.
+Currently seeking opportunities to drive impactful AI/ML initiatives in a collaborative and fast-paced environment.</p>
     </section>
 
     <section id="experience">
         <h2>Experience</h2>
         <ul>
-            <li><strong>Research Associate</strong> - University of XYZ (2023 - Present)</li>
-            <li><strong>AI Engineer</strong> - ABC Tech (2020 - 2023)</li>
-            <li><strong>Lecturer</strong> - DEF University (2017 - 2020)</li>
+            <li><strong>RESEARCH ASSISTANT</strong> --HITEC HAMBURG HITEC - HAMBURGER INFORMATIK TECHNOLOGIE-CENTER (01/11/2022 - 31/12/2024)</li>
+            <li><strong>COMPUTER SCIENCE LECTURER </strong> -UNIVERSITY OF KOTLI AZAD JAMMU AND KASHMIR (UOK AJK)  (03/05/2019 – 31/10/2022)</li>
+            <li><strong>RESEARCH ASSISTANT</strong> - COMSENS LAB, COMSATS ISLAMABAD  (14/07/2019 – 11/09/2019)</li>
         </ul>
     </section>
 
