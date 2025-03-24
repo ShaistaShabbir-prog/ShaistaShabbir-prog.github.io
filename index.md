@@ -195,10 +195,10 @@ Currently seeking opportunities to drive impactful AI/ML initiatives in a collab
             <tr>
                 <td><strong>Hindi</strong></td>
                 <td>C1</td>
+                <td>A1</td>
                 <td>C1</td>
                 <td>C1</td>
-                <td>C1</td>
-                <td>C1</td>
+                <td>A1</td>
             </tr>
         </table>
         <p><strong>Language Levels:</strong> A1 and A2: Basic User | B1 and B2: Independent User | C1 and C2: Proficient User</p>
