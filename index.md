@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,6 +16,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#publications">Publications</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -57,6 +57,38 @@ Currently seeking opportunities to drive impactful AI/ML initiatives in a collab
         <ul>
             <li>Shabbir, S. (2024). "Privacy-Preserving Federated Learning Models". Journal of AI Ethics.</li>
             <li>Shabbir, S., & XYZ. (2023). "Explainability in Large Language Models". AI & Society.</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>MS COMPUTER SCIENCE</strong> - VU Pakistan (10/2017 – 10/2019)<br>
+                <em>Master Degree Project:</em> Short-Term Electricity Load and Price Forecasting using CNN, Smart Grid<br>
+                <em>Field of study:</em> Software Engineering<br>
+                <em>Final Grade:</em> 75%<br>
+                <a href="https://www.vu.edu.pk">University Website</a><br>
+                <em>Level in EQF:</em> EQF level 7
+            </li>
+            <li><strong>BS COMPUTER SCIENCE</strong> - University of Azad Jammu & Kashmir (11/2012 – 12/2016)<br>
+                <em>Bachelor's Degree Project:</em> Arms Licensing System (ALSK)<br>
+                <em>Other Projects:</em> Library Management System, UMSIT website<br>
+                <em>Final Grade:</em> 89.89% (Gold Medalist)<br>
+                <a href="https://ajku.edu.pk/">University Website</a><br>
+                <em>Level in EQF:</em> EQF level 6
+            </li>
+            <li><strong>HIGHER SECONDARY SCHOOL CERTIFICATE</strong> - BISE Mirpur AJK (08/2010 – 09/2012)<br>
+                <em>Field of study:</em> ICS (Intermediate in Computer Science)<br>
+                <em>Final Grade:</em> 81%<br>
+                <a href="https://ajkbise.net/">Board Website</a><br>
+                <em>Level in EQF:</em> EQF level 4
+            </li>
+            <li><strong>SECONDARY SCHOOL CERTIFICATE</strong> - BISE Mirpur AJK (03/2008 – 04/2010)<br>
+                <em>Field of study:</em> Natural sciences, mathematics, and statistics<br>
+                <em>Final Grade:</em> 79%<br>
+                <a href="https://ajkbise.net/">Board Website</a><br>
+                <em>Level in EQF:</em> EQF level 3
+            </li>
         </ul>
     </section>
 
