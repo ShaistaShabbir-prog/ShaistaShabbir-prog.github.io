@@ -156,6 +156,16 @@ Currently seeking opportunities to drive impactful AI/ML initiatives in a collab
             <li>Research & Continuous Learning</li>
         </ul>
     </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Face Recognition Based Automated Attendance System:</strong> Developed a real-time facial recognition-based attendance system using OpenCV and deep learning models, improving accuracy and efficiency in attendance tracking.</li>
+            <li><strong>Drowsiness Detection using DLIB:</strong> Implemented a drowsiness detection system using DLIB and OpenCV, leveraging facial landmark detection to identify signs of fatigue in real-time.</li>
+            <li><strong>Arms Licensing System (ALSK):</strong> Designed and developed a secure digital licensing system for arms registration, incorporating authentication mechanisms for legal verification.</li>
+            <li><strong>Face Detection using Different Models and Their Comparison:</strong> Conducted a comparative analysis of face detection models, including Haar Cascades, HOG+SVM, and deep learning-based CNN architectures.</li>
+            <li><strong>Automated Letzte-Generation Event Detection and Prediction:</strong> Developed an NLP-based event detection system leveraging machine learning models for real-time analysis and prediction of Letzte-Generation protests.</li>
+        </ul>
+    </section>
 
     <section id="languages">
         <h2>Languages</h2>
