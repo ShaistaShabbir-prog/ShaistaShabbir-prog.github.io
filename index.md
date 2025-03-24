@@ -15,7 +15,7 @@
 
     <h1>Shaista Shabbir</h1>
     <p><strong>Email:</strong> <a href="mailto:shaistashabbir87@gmail.com">shaistashabbir87@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank"></a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank">https://www.linkedin.com/in/shaista-shabbir-a32a6b210/</a></p>
     <p><strong>ResearchGate:</strong> <a href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank">Explore my research work here.</a></p>
 
     <h2>About Me</h2>
