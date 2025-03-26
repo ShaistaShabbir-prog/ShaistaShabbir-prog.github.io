@@ -49,7 +49,7 @@
 </head>
 <body>
     <header>
-        <img src="https://via.placeholder.com/150" alt="Shaista Shabbir" class="profile-img">
+        <img src="shaista_profile" alt="Shaista Shabbir" class="profile-img">
         <h1>Shaista Shabbir</h1>
         <p>AI Researcher | Data Scientist | Software Engineer</p>
     </header>
