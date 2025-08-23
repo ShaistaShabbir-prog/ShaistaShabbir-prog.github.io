@@ -30,10 +30,11 @@
         </div>
       </div>
       <div class="hero__right">
-        <img src="assets/profile.jpeg" alt="Portrait of Shaista Shabbir" class="avatar"/>
+        <img src="assets/profile.jpg" alt="Portrait of Shaista Shabbir" class="avatar"/>
       </div>
     </div>
     <div class="hero__bg"></div>
+    <canvas id="nn-canvas"></canvas>
     <a class="scroll" href="#cv" aria-label="Scroll to CV"><span></span></a>
   </header>
 
@@ -113,6 +114,23 @@
       </ul>
       <p><a class="btn" href="assets/publications.bib" download>Download BibTeX</a></p>
     </section>
+  
+    <section class="card" id="contact">
+      <h3>Contact</h3>
+      <form id="contact-form">
+        <div class="grid two">
+          <div><label>Name<br><input type="text" name="name" required></label></div>
+          <div><label>Email<br><input type="email" name="email" required></label></div>
+        </div>
+        <label>Message<br><textarea name="message" rows="5" required></textarea></label>
+        <div class="cta" style="margin-top:10px">
+          <button class="btn primary" type="submit">Send</button>
+          <span id="contact-status" class="muted"></span>
+        </div>
+      </form>
+      <p class="muted">Tip: Set your Formspree endpoint in <code>script.js</code> to enable email via GitHub Pages.</p>
+    </section>
+
   </main>
 
   <footer class="footer">

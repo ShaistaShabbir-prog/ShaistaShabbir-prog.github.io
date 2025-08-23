@@ -1,0 +1,8 @@
+Custom domain (GitHub Pages)
+1) Buy a domain (e.g., shaistashabbir.com).
+2) DNS:
+   - Apex (@) A records -> 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+   - For 'www' subdomain: CNAME -> ShaistaShabbir-prog.github.io
+3) In this repo, add a file named CNAME (no extension) with your domain inside:
+   shaistashabbir.com
+4) In Settings → Pages, set Custom domain and enable HTTPS.

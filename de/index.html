@@ -30,6 +30,7 @@
       </div>
     </div>
     <div class="hero__bg"></div>
+    <canvas id="nn-canvas"></canvas>
   </header>
 
   <main id="cv" class="container">
@@ -63,6 +64,23 @@
       </ul>
       <p><a class="btn" href="../assets/publications.bib" download>BibTeX herunterladen</a></p>
     </section>
+  
+    <section class="card" id="kontakt">
+      <h3>Kontakt</h3>
+      <form id="contact-form">
+        <div class="grid two">
+          <div><label>Name<br><input type="text" name="name" required></label></div>
+          <div><label>E‑Mail<br><input type="email" name="email" required></label></div>
+        </div>
+        <label>Nachricht<br><textarea name="message" rows="5" required></textarea></label>
+        <div class="cta" style="margin-top:10px">
+          <button class="btn primary" type="submit">Senden</button>
+          <span id="contact-status" class="muted"></span>
+        </div>
+      </form>
+      <p class="muted">Hinweis: Formspree‑Endpunkt in <code>script.js</code> eintragen, um E‑Mails über GitHub Pages zu aktivieren.</p>
+    </section>
+
   </main>
 
   <footer class="footer">
