@@ -96,3 +96,8 @@ html[data-theme='light'] body{ background: var(--theme-bg); }
 input, textarea{width:100%; padding:10px 12px; border:1px solid var(--border); background:transparent; color:var(--text); border-radius:10px}
 input:focus, textarea:focus{outline:none; border-color:var(--accent)}
 label{display:block; margin:8px 0}
+/* Hero spacing overrides */
+.hero{ padding:28px 0 12px !important; }
+.hero__bg{ height:160px !important; }
+.scroll{ display:none !important; }
+main{ padding-top:0 !important; }
