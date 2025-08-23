@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shaista Shabbir · AI/ML Engineer & NLP Researcher</title>
-  <meta name="description" content="Curriculum Vitae and portfolio of Shaista Shabbir — AI/ML Engineer, NLP Researcher, Python Developer." />
+  <meta name="description" content="Portfolio CV of Shaista Shabbir — AI/ML Engineer, NLP Researcher, Python Developer." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <script defer src="https://kit.fontawesome.com/a2d9d5d2ee.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="hero" id="top">
@@ -22,13 +21,16 @@
         </p>
         <div class="cta">
           <a class="btn primary" href="#cv">View CV</a>
-          <a class="btn" href="mailto:shaista.s.shabbir@gmail.com">Contact</a>
+          <a class="btn" href="assets/Shaista_Shabbir_CV.pdf" download>Download PDF CV</a>
           <a class="btn ghost" href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210/" target="_blank" rel="noreferrer">LinkedIn</a>
           <a class="btn ghost" href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn ghost" id="kaggle" href="#" style="display:none" target="_blank" rel="noreferrer">Kaggle</a>
+          <a class="btn ghost" href="de/index.html">Deutsch</a>
+          <button class="btn" id="theme-toggle" type="button">🌙 Dark</button>
         </div>
       </div>
       <div class="hero__right">
-        <img src="profile_pc.jpeg" alt="Portrait of Shaista Shabbir" class="avatar"/>
+        <img src="assets/profile.jpg" alt="Portrait of Shaista Shabbir" class="avatar"/>
       </div>
     </div>
     <div class="hero__bg"></div>
@@ -41,36 +43,31 @@
       <div class="grid two">
         <div>
           <ul class="meta">
-            <li><i class="fa-solid fa-location-dot"></i> Hamburg, Germany</li>
-            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:shaista.s.shabbir@gmail.com">shaista.s.shabbir@gmail.com</a></li>
-            <li><i class="fa-solid fa-phone"></i> +49 15906171828</li>
-            <li><i class="fa-brands fa-linkedin"></i> <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210/">LinkedIn</a></li>
-            <li><i class="fa-brands fa-github"></i> <a target="_blank" rel="noreferrer" href="https://github.com/ShaistaShabbir-prog">GitHub</a></li>
+            <li>📍 Hamburg, Germany</li>
+            <li>✉️ <a href="mailto:shaista.s.shabbir@gmail.com">shaista.s.shabbir@gmail.com</a></li>
+            <li>📞 +49 15906171828</li>
+            <li>🔗 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210/">LinkedIn</a></li>
+            <li>💻 <a target="_blank" rel="noreferrer" href="https://github.com/ShaistaShabbir-prog">GitHub</a></li>
           </ul>
         </div>
         <div>
-          <p class="lead">Lecturer and Researcher in Computer Science with 9+ years in academia, software engineering, and AI research. Expertise in AI explainability (AIX framework), federated learning, FAIR data principles, generative AI, and software architectures. Strong teaching record (Algorithms, Compiler Construction, Automata Theory, OOP, Data Structures). Published in cloud computing, forecasting, smart grid optimization, and distributed AI systems. Awarded federal merit scholarship, Logixier Advanced AI Systems certification, and Gold Medal in CS. Available immediately and motivated to pursue a PhD in responsible AI, human–AI collaboration, and digital transformation.</p>
+          <p class="lead">Lecturer and Researcher in Computer Science with 9+ years of experience in academia, software engineering, and AI research. Expertise in AI explainability (AIX framework), federated learning, FAIR data principles, generative AI, and software architectures. Strong record of teaching Algorithms, Compiler Construction, Automata Theory, OOP, and Data Structures at BSCS and MSc levels. Published in cloud computing, forecasting, smart grid optimization, and distributed AI systems. Holder of federal merit scholarship, Logixier Advanced AI Systems certification, and Gold Medalist in Computer Science.</p>
         </div>
       </div>
     </section>
 
     <section class="card">
+      <h3>Projects</h3>
+      <p>Highlighted open‑source work (auto‑fetched from GitHub). Prioritized: <strong>AIX</strong>.</p>
+      <div id="projects-grid"></div>
+    </section>
+
+    <section class="card">
       <h3>Education</h3>
       <ul class="timeline">
-        <li>
-          <div class="t-title">MSc Computer Science</div>
-          <div class="t-sub">Virtual University of Pakistan — 2020</div>
-          <div class="t-note">Federal Govt Merit Scholarship</div>
-        </li>
-        <li>
-          <div class="t-title">BSc Computer Science</div>
-          <div class="t-sub">University of Azad Jammu & Kashmir — 2016</div>
-          <div class="t-note">Gold Medalist</div>
-        </li>
-        <li>
-          <div class="t-title">MA Education (Distance & Non‑Formal Education)</div>
-          <div class="t-sub">Allama Iqbal Open University — 2020</div>
-        </li>
+        <li><div class="t-title">MSc Computer Science</div><div class="t-sub">Virtual University of Pakistan — 2020</div><div class="t-note">Federal Govt Merit Scholarship</div></li>
+        <li><div class="t-title">BSc Computer Science</div><div class="t-sub">University of Azad Jammu & Kashmir — 2016</div><div class="t-note">Gold Medalist</div></li>
+        <li><div class="t-title">MA Education (Distance & Non‑Formal Education)</div><div class="t-sub">Allama Iqbal Open University — 2020</div></li>
       </ul>
     </section>
 
@@ -88,59 +85,20 @@
     <section class="card">
       <h3>Research & Academic Experience</h3>
       <div class="exp">
-        <article>
-          <header>
-            <h4>Lecturer — University of Kotli AJK</h4>
-            <span>2019 – Present</span>
-          </header>
-          <ul>
-            <li>Taught Algorithms, Data Structures, Compiler Construction, OOP, Automata to BSCS & MSc students.</li>
-            <li>Supervised 15+ theses in AI, SE, and digital systems; integrated project‑based learning.</li>
-            <li>Mentoring frameworks for student success and research readiness.</li>
-          </ul>
+        <article><header><h4>Lecturer — University of Kotli AJK</h4><span>2019 – Present</span></header>
+          <ul><li>Taught Algorithms, Data Structures, Compiler Construction, OOP, Automata to BSCS & MSc students.</li><li>Supervised 15+ theses in AI, SE, and digital systems; integrated project‑based learning.</li><li>Mentoring frameworks for student success and research readiness.</li></ul>
         </article>
-
-        <article>
-          <header>
-            <h4>Research Assistant — HITeC, University of Hamburg</h4>
-            <span>Nov 2022 – Dec 2024</span>
-          </header>
-          <ul>
-            <li>AI explainability experiments (AIX framework). <a href="https://github.com/ShaistaShabbir-prog/AIX" target="_blank" rel="noreferrer">GitHub: AIX</a></li>
-            <li>Federated learning for privacy‑preserving AI; FAIR data principles for reproducibility.</li>
-            <li>Microservices architectures & MLOps pipelines for Generative AI.</li>
-          </ul>
+        <article><header><h4>Research Assistant — HITeC, University of Hamburg</h4><span>Nov 2022 – Dec 2024</span></header>
+          <ul><li>AI explainability experiments (AIX framework). <a href="https://github.com/ShaistaShabbir-prog/AIX" target="_blank" rel="noreferrer">GitHub: AIX</a></li><li>Federated learning for privacy‑preserving AI; FAIR data principles for reproducibility.</li><li>Microservices architectures & MLOps pipelines for Generative AI.</li></ul>
         </article>
-
-        <article>
-          <header>
-            <h4>Lecturer & CMS Coordinator — Punjab College</h4>
-            <span>2017 – 2019</span>
-          </header>
-          <ul>
-            <li>Taught CS fundamentals; coordinated CMS implementation and training.</li>
-          </ul>
+        <article><header><h4>Lecturer & CMS Coordinator — Punjab College</h4><span>2017 – 2019</span></header>
+          <ul><li>Taught CS fundamentals; coordinated CMS implementation and training.</li></ul>
         </article>
-
-        <article>
-          <header>
-            <h4>Research Assistant — COMSENS Lab, COMSATS Islamabad</h4>
-            <span>2019</span>
-          </header>
-          <ul>
-            <li>Data analysis & research in AI‑driven optimization and forecasting.</li>
-          </ul>
+        <article><header><h4>Research Assistant — COMSENS Lab, COMSATS Islamabad</h4><span>2019</span></header>
+          <ul><li>Data analysis & research in AI‑driven optimization and forecasting.</li></ul>
         </article>
-
-        <article>
-          <header>
-            <h4>Software Engineer — UMSIT, Kotli AJK</h4>
-            <span>2015 – 2016</span>
-          </header>
-          <ul>
-            <li>Full‑stack developer for government licensing management system.</li>
-            <li>Managed requirements, documentation, development, testing, and deployment.</li>
-          </ul>
+        <article><header><h4>Software Engineer — UMSIT, Kotli AJK</h4><span>2015 – 2016</span></header>
+          <ul><li>Full‑stack developer for government licensing management system; requirements, documentation, testing, deployment.</li></ul>
         </article>
       </div>
     </section>
@@ -148,36 +106,12 @@
     <section class="card">
       <h3>Publications</h3>
       <ul class="bullets">
-        <li>Virtual Machine Placement via Bin Packing in Cloud Data Centers. <em>Electronics</em>, 7(12), 2018.</li>
-        <li>Data Analytics for Load and Price Forecasting via Enhanced SVR. <em>EIDWT‑2019 Conference</em>.</li>
-        <li>Efficient Resource Allocation Model using Fog & Cloud Computing. <em>IMIS‑2018 Conference</em>.</li>
-        <li>Wind Power Forecasting using Deep CNNs. <em>3PGCIC‑2019 Conference</em>.</li>
+        <li>Virtual Machine Placement via Bin Packing in Cloud Data Centers. <em>Electronics</em>, 2018 — <a target="_blank" rel="noreferrer" href="https://scholar.google.com/scholar?q=Virtual+Machine+Placement+via+Bin+Packing+in+Cloud+Data+Centers+Electronics+2018">Find DOI</a></li>
+        <li>Data Analytics for Load and Price Forecasting via Enhanced SVR. <em>EIDWT 2019</em> — <a target="_blank" rel="noreferrer" href="https://scholar.google.com/scholar?q=Data+Analytics+for+Load+and+Price+Forecasting+via+Enhanced+Support+Vector+Regression+EIDWT+2019">Find DOI</a></li>
+        <li>Efficient Resource Allocation Model for Residential Buildings in Smart Grid using Fog & Cloud Computing. <em>IMIS 2018</em> — <a target="_blank" rel="noreferrer" href="https://scholar.google.com/scholar?q=Efficient+Resource+Allocation+Model+for+Residential+Buildings+in+Smart+Grid+Using+Fog+and+Cloud+Computing+IMIS+2018">Find DOI</a></li>
+        <li>Wind Power Forecasting using Deep CNNs. <em>3PGCIC 2019</em> — <a target="_blank" rel="noreferrer" href="https://scholar.google.com/scholar?q=Wind+Power+Forecasting+Based+on+Efficient+Deep+Convolution+Neural+Networks+3PGCIC+2019">Find DOI</a></li>
       </ul>
-    </section>
-
-    <section class="card">
-      <h3>Technical Skills</h3>
-      <div class="grid two">
-        <ul class="bullets">
-          <li><strong>AI & ML:</strong> Federated Learning, Generative AI, Explainable AI (AIX, SHAP, LIME, attention visualization)</li>
-          <li><strong>Programming:</strong> Python, Java, C++, C#, PHP, SQL</li>
-          <li><strong>Frameworks:</strong> PyTorch, TensorFlow, Hugging Face, Flask, FastAPI</li>
-        </ul>
-        <ul class="bullets">
-          <li><strong>Data & FAIR:</strong> Ontology‑driven systems, reproducibility workflows, FAIR data management</li>
-          <li><strong>Tools:</strong> Git, Docker, CI/CD, Jira, Tableau, Plotly, Unity (basic)</li>
-          <li><strong>Research:</strong> R, SPSS, Structural Equation Models, Design Science, Usability Testing</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="card">
-      <h3>References</h3>
-      <ul class="bullets">
-        <li>Prof. Dr. Lothar Hotz — Head of HITeC e.V., University of Hamburg — <a href="mailto:hotz@informatik.uni-hamburg.de">hotz@informatik.uni-hamburg.de</a></li>
-        <li>Prof. Dr. Ricardo Usbeck — Professor, Chair of Business Informatics (AI & Explainability), Leuphana University Lüneburg — <a href="mailto:ricardo.usbeck@leuphana.de">ricardo.usbeck@leuphana.de</a></li>
-        <li>Dr. Waqar Hussain — Head of AI & Data Science, University of Kotli AJK — <a href="mailto:hod.ai@uokajk.edu.pk">hod.ai@uokajk.edu.pk</a></li>
-      </ul>
+      <p><a class="btn" href="assets/publications.bib" download>Download BibTeX</a></p>
     </section>
   </main>
 
@@ -187,8 +121,7 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

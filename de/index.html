@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shaista Shabbir · KI/ML-Ingenieurin & NLP-Forscherin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero__content container">
+      <div class="hero__left">
+        <h1>Shaista Shabbir</h1>
+        <p class="subtitle">KI-/ML‑Ingenieurin · NLP‑Forscherin · Python‑Entwicklerin</p>
+        <p class="tagline">Komplexität in Klarheit verwandeln – KI, NLP & erklärbare ML‑Systeme</p>
+        <div class="cta">
+          <a class="btn primary" href="#cv">Lebenslauf</a>
+          <a class="btn" href="../assets/Shaista_Shabbir_CV.pdf" download>PDF‑CV</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn ghost" href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn ghost" href="../index.html">English</a>
+          <button class="btn" id="theme-toggle" type="button">🌙 Dark</button>
+        </div>
+      </div>
+      <div class="hero__right">
+        <img src="../assets/profile.jpg" alt="Portrait von Shaista Shabbir" class="avatar"/>
+      </div>
+    </div>
+    <div class="hero__bg"></div>
+  </header>
+
+  <main id="cv" class="container">
+    <section class="card">
+      <h2>Lebenslauf</h2>
+      <p class="lead">Dozentin und Forscherin in der Informatik mit 9+ Jahren Erfahrung in Lehre, Softwareentwicklung und KI‑Forschung. Schwerpunkte: erklärbare KI (AIX), Föderiertes Lernen, FAIR‑Daten, Generative KI und Softwarearchitekturen. Veröffentlichungen in Cloud Computing, Prognosen, Smart‑Grid‑Optimierung und verteilter KI.</p>
+    </section>
+
+    <section class="card">
+      <h3>Projekte</h3>
+      <p>Ausgewählte Open‑Source‑Arbeiten (automatisch von GitHub geladen). Priorisiert: <strong>AIX</strong>.</p>
+      <div id="projects-grid"></div>
+    </section>
+
+    <section class="card">
+      <h3>Ausbildung</h3>
+      <ul class="timeline">
+        <li><div class="t-title">MSc Informatik</div><div class="t-sub">Virtual University of Pakistan — 2020</div><div class="t-note">Stipendium der Bundesregierung</div></li>
+        <li><div class="t-title">BSc Informatik</div><div class="t-sub">University of Azad Jammu & Kashmir — 2016</div><div class="t-note">Goldmedaille</div></li>
+        <li><div class="t-title">MA Education (Distance & Non‑Formal Education)</div><div class="t-sub">Allama Iqbal Open University — 2020</div></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>Publikationen</h3>
+      <ul class="bullets">
+        <li>Virtual Machine Placement via Bin Packing in Cloud Data Centers. <em>Electronics</em>, 2018 — <a target="_blank" rel="noreferrer" href="https://scholar.google.de/scholar?q=Virtual+Machine+Placement+via+Bin+Packing+in+Cloud+Data+Centers+Electronics+2018">DOI finden</a></li>
+        <li>Data Analytics for Load and Price Forecasting via Enhanced SVR. <em>EIDWT 2019</em> — <a target="_blank" rel="noreferrer" href="https://scholar.google.de/scholar?q=Data+Analytics+for+Load+and+Price+Forecasting+via+Enhanced+Support+Vector+Regression+EIDWT+2019">DOI finden</a></li>
+        <li>Efficient Resource Allocation Model ... <em>IMIS 2018</em> — <a target="_blank" rel="noreferrer" href="https://scholar.google.de/scholar?q=Efficient+Resource+Allocation+Model+for+Residential+Buildings+in+Smart+Grid+Using+Fog+and+Cloud+Computing+IMIS+2018">DOI finden</a></li>
+        <li>Wind Power Forecasting using Deep CNNs. <em>3PGCIC 2019</em> — <a target="_blank" rel="noreferrer" href="https://scholar.google.de/scholar?q=Wind+Power+Forecasting+Based+on+Efficient+Deep+Convolution+Neural+Networks+3PGCIC+2019">DOI finden</a></li>
+      </ul>
+      <p><a class="btn" href="../assets/publications.bib" download>BibTeX herunterladen</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Shaista Shabbir · Hamburg, Deutschland · <a href="mailto:shaista.s.shabbir@gmail.com">shaista.s.shabbir@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
