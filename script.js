@@ -71,3 +71,72 @@ if (KAGGLE_USERNAME){
     k.style.display = 'inline-flex';
   }
 }
+
+// ===== Animated neural network background =====
+(function(){
+  const canvas = document.getElementById('nn-canvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let dpr = Math.max(1, window.devicePixelRatio || 1);
+  function size(){ canvas.width = canvas.clientWidth * dpr; canvas.height = canvas.clientHeight * dpr; }
+  size(); window.addEventListener('resize', size);
+
+  const N = 70;
+  const nodes = Array.from({length:N}, () => ({
+    x: Math.random(), y: Math.random(),
+    vx: (Math.random()-0.5)*0.0006, vy:(Math.random()-0.5)*0.0006
+  }));
+  function step(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    const W = canvas.width, H = canvas.height;
+    for(const p of nodes){
+      p.x += p.vx; p.y += p.vy;
+      if(p.x<0||p.x>1) p.vx*=-1;
+      if(p.y<0||p.y>1) p.vy*=-1;
+    }
+    for(let i=0;i<N;i++){
+      for(let j=i+1;j<N;j++){
+        const a=nodes[i], b=nodes[j];
+        const dx=(a.x-b.x)*W, dy=(a.y-b.y)*H, dist=Math.hypot(dx,dy);
+        if(dist<160*dpr){
+          const alpha = 1 - dist/(160*dpr);
+          ctx.strokeStyle = `rgba(122,92,255,${0.25*alpha})`;
+          ctx.lineWidth = 1*dpr*alpha;
+          ctx.beginPath(); ctx.moveTo(a.x*W, a.y*H); ctx.lineTo(b.x*W, b.y*H); ctx.stroke();
+        }
+      }
+    }
+    for(const p of nodes){
+      ctx.fillStyle = 'rgba(74,214,255,0.8)';
+      ctx.beginPath(); ctx.arc(p.x*W, p.y*H, 2.2*dpr, 0, Math.PI*2); ctx.fill();
+    }
+    requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+})();
+
+// ===== Contact form (Formspree) =====
+const FORM_ENDPOINT = 'https://formspree.io/f/mnnzerev'; // e.g., 'https://formspree.io/f/abcdwxyz'
+const contactForm = document.querySelector('#contact-form');
+if (contactForm){
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const status = document.getElementById('contact-status');
+    const data = new FormData(contactForm);
+    if (!FORM_ENDPOINT){
+      status.textContent = 'Form endpoint not set. Set FORM_ENDPOINT in script.js.';
+      return;
+    }
+    try{
+      const res = await fetch(FORM_ENDPOINT, { method:'POST', body: data, headers: { 'Accept': 'application/json' }});
+      if (res.ok){
+        status.textContent = 'Message sent! Thanks — I will reply soon.';
+        contactForm.reset();
+      } else {
+        status.textContent = 'Error sending. Please email me directly.';
+      }
+    }catch(err){
+      status.textContent = 'Network error. Please email me directly.';
+    }
+  });
+}
