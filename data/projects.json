@@ -1,0 +1,48 @@
+[
+  {
+    "name": "CoyPu \u2014 Event Extraction & Mapping",
+    "anchor": "coypu",
+    "when": "2023\u20132025",
+    "role": "AI/ML Engineer @ HITeC",
+    "problem": "Detect & extract critical events from text and visualize them geospatially for decision support.",
+    "approach": "Transformer-based event detection and extraction (BERT/RoBERTa), entity normalization, and a web app to map events by location and criticality.",
+    "impact": "Improved situational awareness and information access for stakeholders.",
+    "stack": [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "FastAPI/Flask",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "PEM \u2014 Energy Forecasting",
+    "anchor": "pem",
+    "when": "2023\u20132024",
+    "role": "AI/ML Engineer @ HITeC",
+    "problem": "Forecast per-machine and overall energy consumption for industrial optimization.",
+    "approach": "Time-series models (GRU/FFN), feature engineering, and REST APIs for integration.",
+    "impact": "Reduced energy cost variance; enabled proactive maintenance decisions.",
+    "stack": [
+      "Python",
+      "TensorFlow",
+      "Pandas",
+      "SQLAlchemy",
+      "REST"
+    ]
+  },
+  {
+    "name": "DigitalCurri \u2014 Curriculum Digitization",
+    "when": "2021\u20132022",
+    "role": "Lead Developer",
+    "problem": "Digitize legacy curriculum content and make it searchable for faculty and students.",
+    "approach": "ETL pipeline, OCR, metadata tagging, and search UI.",
+    "impact": "Faster curriculum planning and content discovery.",
+    "stack": [
+      "Python",
+      "OpenCV",
+      "Elasticsearch",
+      "React"
+    ]
+  }
+]

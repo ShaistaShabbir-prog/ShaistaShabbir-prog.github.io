@@ -1,0 +1,24 @@
+[
+  {
+    "title": "AI/ML Engineer",
+    "org": "HITeC \u2013 Research and Technology Transfer Center",
+    "when": "2023\u2013Present",
+    "summary": "Research & build NLP and forecasting systems.",
+    "bullets": [
+      "Event extraction (CoyPu)",
+      "Energy forecasting (PEM)",
+      "Model deployment and APIs"
+    ]
+  },
+  {
+    "title": "Lecturer (Computer Science)",
+    "org": "University of Azad Jammu & Kashmir; Punjab Group of Colleges",
+    "when": "2017\u20132023",
+    "summary": "Taught undergraduate CS courses and supervised projects.",
+    "bullets": [
+      "NLP, ML, and Programming",
+      "Project supervision",
+      "Curriculum design"
+    ]
+  }
+]

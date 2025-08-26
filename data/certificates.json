@@ -1,0 +1,43 @@
+[
+  {
+    "title": "AI Excellence Program (Advanced GenAI & Agentic Systems, Privacy-Preserving ML, MLOps & Production-Ready ML)",
+    "issuer": "LogicExer Pvt Ltd",
+    "date": "Jan\u2013Aug 2025",
+    "category": "Professional",
+    "image": "/assets/img/logicexer_certificate_1.png",
+    "proofLink": "https://logicexer.com/certificate-verification/",
+    "pdf": "/assets/pdfs/certificates_bundle.pdf"
+  },
+  {
+    "title": "Advanced Generative AI & Agentic Systems Bootcamp",
+    "issuer": "LogicExer Pvt Ltd",
+    "date": "Jan\u2013Mar 2025",
+    "category": "Professional",
+    "image": "/assets/img/logicexer_certificate_2.png",
+    "proofLink": "https://logicexer.com/certificate-verification/"
+  },
+  {
+    "title": "Privacy-Preserving Machine Learning Bootcamp",
+    "issuer": "LogicExer Pvt Ltd",
+    "date": "Apr\u2013Jun 2025",
+    "category": "Professional",
+    "image": "/assets/img/logicexer_certificate_3.png",
+    "proofLink": "https://logicexer.com/certificate-verification/"
+  },
+  {
+    "title": "MLOps & Production-Ready ML Bootcamp",
+    "issuer": "LogicExer Pvt Ltd",
+    "date": "Jun\u2013Aug 2025",
+    "category": "Professional",
+    "image": "/assets/img/logicexer_certificate_4.png",
+    "proofLink": "https://logicexer.com/certificate-verification/"
+  },
+  {
+    "title": "Curriculum Vitae (Full)",
+    "issuer": "Shaista Shabbir",
+    "date": "2025",
+    "category": "Award",
+    "image": "/assets/img/avatar.svg",
+    "pdf": "/assets/pdfs/shaista_shabbir_cv.pdf"
+  }
+]
