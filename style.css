@@ -37,7 +37,7 @@ html,body{margin:0;padding:0;background:linear-gradient(135deg,var(--bg),var(--b
   box-shadow:0 10px 30px rgba(0,0,0,.3);
   margin-top:4px;
 }
-.hero__bg{position:absolute;inset:-20% -10% auto -10%;height:360px;background:radial-gradient(1000px 300px at 10% 10%,rgba(74,214,255,.18),transparent),radial-gradient(800px 280px at 85% -10%,rgba(122,92,255,.22),transparent)}
+.hero__bg{position:absolute;inset:-20% -10% auto -10%;height:300px;background:radial-gradient(1000px 300px at 10% 10%,rgba(74,214,255,.18),transparent),radial-gradient(800px 280px at 85% -10%,rgba(122,92,255,.22),transparent)}
 .scroll{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);opacity:.6}
 .scroll span{display:block;width:26px;height:42px;border:2px solid var(--border);border-radius:16px;position:relative}
 .scroll span::after{content:'';position:absolute;left:50%;top:8px;width:6px;height:6px;background:var(--muted);border-radius:50%;transform:translateX(-50%);animation:wheel 1.6s infinite}
