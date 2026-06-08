@@ -1,145 +1,190 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shaista Shabbir · AI/ML Engineer & NLP Researcher</title>
-  <meta name="description" content="Portfolio CV of Shaista Shabbir — AI/ML Engineer, NLP Researcher, Python Developer." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shaista Shabbir — Industrial AI Researcher, TU Dortmund</title>
+<meta name="description" content="Research Associate at TU Dortmund University and Lamarr Institute working on Industrial AI, machining stability, acoustic monitoring, chatter detection, tool wear prediction, and explainable machine learning.">
+<link rel="icon" href="/assets/img/avatar.svg">
+<link rel="stylesheet" href="/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta property="og:title" content="Shaista Shabbir — Industrial AI Researcher">
+<meta property="og:description" content="Research Associate at TU Dortmund University and Lamarr Institute. Industrial AI · Machining Stability · Chatter Detection · Acoustic Monitoring · Explainable ML.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shaistashabbir-prog.github.io">
+<meta property="og:image" content="https://shaistashabbir-prog.github.io/assets/img/avatar.svg">
+<script type="application/ld+json">{
+  "@context":"https://schema.org","@type":"Person",
+  "name":"Shaista Shabbir","jobTitle":"Research Associate",
+  "affiliation":[
+    {"@type":"Organization","name":"TU Dortmund University","department":"Chair of Virtual Machining"},
+    {"@type":"Organization","name":"Lamarr Institute for Machine Learning and Artificial Intelligence"}
+  ],
+  "url":"https://shaistashabbir-prog.github.io",
+  "email":"shaista.s.shabbir@gmail.com",
+  "sameAs":["https://github.com/ShaistaShabbir-prog","https://www.linkedin.com/in/shaista-shabbir-a32a6b210","https://www.researchgate.net/profile/Shaista-Shabbir"],
+  "knowsAbout":["Industrial AI","Machining Stability","Chatter Detection","Acoustic Monitoring","Tool Wear Prediction","Signal Processing","Machining Dynamics","Explainable AI","Trustworthy AI","Human-in-the-loop Annotation","Smart Manufacturing","Machine Learning","NLP","MLOps"]
+}</script>
 </head>
 <body>
-  <header class="hero" id="top">
-    <div class="hero__content container">
-      <div class="hero__left">
-        <h1>Shaista Shabbir</h1>
-        <p class="subtitle">AI/ML Engineer · NLP Researcher · Python Developer</p>
-        <p class="tagline">Turning Complexity into Clarity with AI, NLP & Explainable ML<br>
-          <span class="de">Komplexität in Klarheit verwandeln – KI, NLP & erklärbare ML‑Systeme</span>
-        </p>
-        <div class="cta">
-          <a class="btn primary" href="#cv">View CV</a>
-          <a class="btn" href="assets/CV_Shabbir.pdf" download>Download PDF CV</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="btn ghost" href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="btn ghost" id="kaggle" href="#" style="display:none" target="_blank" rel="noreferrer">Kaggle</a>
-          <a class="btn ghost" href="de/index.html">Deutsch</a>
-          <button class="btn" id="theme-toggle" type="button">🌙 Dark</button>
-        </div>
+<header class="wrap">
+  <nav class="nav">
+    <a class="nav-brand" href="/">Shaista Shabbir</a>
+    <a class="active" href="/">Home</a>
+    <a href="/projects.html">Projects</a>
+    <a href="/publications.html">Publications</a>
+    <a href="/experience.html">Experience</a>
+    <a href="/certificates/">Certificates</a>
+    <a href="/cv/">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <img class="avatar" src="/assets/img/avatar.svg" alt="Shaista Shabbir" width="100" height="100">
+    <div class="hero-text">
+      <h1>Shaista Shabbir</h1>
+      <p class="role">Research Associate · TU Dortmund University &amp; Lamarr Institute</p>
+      <p class="affil">Chair of Virtual Machining · Industrial AI · Dortmund, Germany</p>
+      <div class="badge-row">
+        <span class="badge b-blue">Industrial AI</span>
+        <span class="badge b-blue">Chatter Detection</span>
+        <span class="badge b-blue">Acoustic Monitoring</span>
+        <span class="badge b-green">AudioIno</span>
+        <span class="badge b-gray">Explainable ML</span>
+        <span class="badge b-gray">Signal Processing</span>
       </div>
-      <div class="hero__right">
-        <img src="assets/profile.jpeg" alt="Portrait of Shaista Shabbir" class="avatar"/>
+      <div class="btn-row">
+        <a class="btn btn-p" href="/projects.html">Research Projects</a>
+        <a class="btn btn-g" href="/publications.html">Publications</a>
+        <a class="btn btn-g" href="/cv/">CV</a>
       </div>
     </div>
-    <div class="hero__bg"></div>
-    <canvas id="nn-canvas"></canvas>
-    <a class="scroll" href="#cv" aria-label="Scroll to CV"><span></span></a>
-  </header>
+  </section>
 
-  <main id="cv" class="container">
-    <section class="card">
-      <h2>Curriculum Vitae – Shaista Shabbir</h2>
-      <div class="grid two">
-        <div>
-          <ul class="meta">
-            <li>📍 Hamburg, Germany</li>
-            <li>✉️ <a href="mailto:shaista.s.shabbir@gmail.com">shaista.s.shabbir@gmail.com</a></li>
-            <li>📞 +49 15906171828</li>
-            <li>🔗 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210/">LinkedIn</a></li>
-            <li>💻 <a target="_blank" rel="noreferrer" href="https://github.com/ShaistaShabbir-prog">GitHub</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="lead">Lecturer and Researcher in Computer Science with 9+ years of experience in academia, software engineering, and AI research. Expertise in AI explainability (AIX framework), federated learning, FAIR data principles, generative AI, and software architectures. Strong record of teaching Algorithms, Compiler Construction, Automata Theory, OOP, and Data Structures at BSCS and MSc levels. Published in cloud computing, forecasting, smart grid optimization, and distributed AI systems. Holder of federal merit scholarship, Logixier Advanced AI Systems certification, and Gold Medalist in Computer Science.</p>
-        </div>
-      </div>
-    </section>
+  <!-- ── ABOUT ── -->
+  <section class="sec">
+    <h2 class="sec-title">About me</h2>
+    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.75;margin-bottom:.8rem">
+      I am a <strong>Research Associate at TU Dortmund University</strong> and the
+      <strong>Lamarr Institute for Machine Learning and Artificial Intelligence</strong>,
+      affiliated with the Chair of Virtual Machining.
+    </p>
+    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.75;margin-bottom:.8rem">
+      My research focuses on <strong>Industrial AI for manufacturing</strong>, machining stability analysis,
+      chatter detection, acoustic monitoring, explainable machine learning, and trustworthy AI systems.
+    </p>
+    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.75;margin-bottom:.8rem">
+      Currently, I work on <strong>AudioIno</strong> — an expert-guided platform and analysis workflow for
+      machining stability annotation, acoustic process monitoring, and data-driven manufacturing intelligence.
+    </p>
+    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.75">
+      My long-term goal is to develop <strong>trustworthy and interpretable AI systems</strong> for
+      intelligent manufacturing environments.
+    </p>
+  </section>
 
-    <section class="card">
-      <h3>Projects</h3>
-      <p>Highlighted open‑source work (auto‑fetched from GitHub). Prioritized: <strong>AIX</strong>.</p>
-      <div id="projects-grid"></div>
-    </section>
-
-    <section class="card">
-      <h3>Education</h3>
-      <ul class="timeline">
-        <li><div class="t-title">MSc Computer Science</div><div class="t-sub">Virtual University of Pakistan — 2020</div><div class="t-note">Federal Govt Merit Scholarship</div></li>
-        <li><div class="t-title">BSc Computer Science</div><div class="t-sub">University of Azad Jammu & Kashmir — 2016</div><div class="t-note">Gold Medalist</div></li>
-        <li><div class="t-title">MA Education (Distance & Non‑Formal Education)</div><div class="t-sub">Allama Iqbal Open University — 2020</div></li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h3>Awards & Certifications</h3>
-      <ul class="bullets">
-        <li>Gold Medalist – BSc Computer Science, University of AJK</li>
-        <li>Federal Government Merit Scholarship – MSc Computer Science</li>
-        <li>DAAD/HEC Fully‑Funded PhD Scholarship (awarded, deferred)</li>
-        <li>Logixier Certification in Advanced AI Systems (2025)</li>
-        <li>Advanced certifications in NLP, ML, and Data Science (2023–2025)</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h3>Research & Academic Experience</h3>
-      <div class="exp">
-        <article><header><h4>Lecturer — University of Kotli AJK</h4><span>2019 – Present</span></header>
-          <ul><li>Taught Algorithms, Data Structures, Compiler Construction, OOP, Automata to BSCS & MSc students.</li><li>Supervised 15+ theses in AI, SE, and digital systems; integrated project‑based learning.</li><li>Mentoring frameworks for student success and research readiness.</li></ul>
-        </article>
-        <article><header><h4>Research Assistant — HITeC, University of Hamburg</h4><span>Nov 2022 – Dec 2024</span></header>
-          <ul><li>AI explainability experiments (AIX framework). <a href="https://github.com/ShaistaShabbir-prog/AIX" target="_blank" rel="noreferrer">GitHub: AIX</a></li><li>Federated learning for privacy‑preserving AI; FAIR data principles for reproducibility.</li><li>Microservices architectures & MLOps pipelines for Generative AI.</li></ul>
-        </article>
-        <article><header><h4>Lecturer & CMS Coordinator — Punjab College</h4><span>2017 – 2019</span></header>
-          <ul><li>Taught CS fundamentals; coordinated CMS implementation and training.</li></ul>
-        </article>
-        <article><header><h4>Research Assistant — COMSENS Lab, COMSATS Islamabad</h4><span>2019</span></header>
-          <ul><li>Data analysis & research in AI‑driven optimization and forecasting.</li></ul>
-        </article>
-        <article><header><h4>Software Engineer — UMSIT, Kotli AJK</h4><span>2015 – 2016</span></header>
-          <ul><li>Full‑stack developer for government licensing management system; requirements, documentation, testing, deployment.</li></ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="card">
-      <h3>Publications</h3>
-      <ul class="bullets">
-        <li>Virtual Machine Placement via Bin Packing in Cloud Data Centers. <em>Electronics</em>, 2018 — <a target="_blank" rel="noreferrer" href="https://scholar.google.com/scholar?q=Virtual+Machine+Placement+via+Bin+Packing+in+Cloud+Data+Centers+Electronics+2018">Find DOI</a></li>
-        <li>Data Analytics for Load and Price Forecasting via Enhanced SVR. <em>EIDWT 2019</em> — <a target="_blank" rel="noreferrer" href="https://scholar.google.com/scholar?q=Data+Analytics+for+Load+and+Price+Forecasting+via+Enhanced+Support+Vector+Regression+EIDWT+2019">Find DOI</a></li>
-        <li>Efficient Resource Allocation Model for Residential Buildings in Smart Grid using Fog & Cloud Computing. <em>IMIS 2018</em> — <a target="_blank" rel="noreferrer" href="https://scholar.google.com/scholar?q=Efficient+Resource+Allocation+Model+for+Residential+Buildings+in+Smart+Grid+Using+Fog+and+Cloud+Computing+IMIS+2018">Find DOI</a></li>
-        <li>Wind Power Forecasting using Deep CNNs. <em>3PGCIC 2019</em> — <a target="_blank" rel="noreferrer" href="https://scholar.google.com/scholar?q=Wind+Power+Forecasting+Based+on+Efficient+Deep+Convolution+Neural+Networks+3PGCIC+2019">Find DOI</a></li>
-      </ul>
-      <p><a class="btn" href="assets/publications.bib" download>Download BibTeX</a></p>
-    </section>
-  
-    <section class="card" id="contact">
-      <h3>Contact</h3>
-      <form id="contact-form">
-        <div class="grid two">
-          <div><label>Name<br><input type="text" name="name" required></label></div>
-          <div><label>Email<br><input type="email" name="email" required></label></div>
-        </div>
-        <label>Message<br><textarea name="message" rows="5" required></textarea></label>
-        <div class="cta" style="margin-top:10px">
-          <button class="btn primary" type="submit">Send</button>
-          <span id="contact-status" class="muted"></span>
-        </div>
-      </form>
-      <p class="muted">Tip: Set your Formspree endpoint in <code>script.js</code> to enable email via GitHub Pages.</p>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Shaista Shabbir · Hamburg, Germany · <a href="mailto:shaista.s.shabbir@gmail.com">shaista.s.shabbir@gmail.com</a></p>
+  <!-- ── RESEARCH FOCUS ── -->
+  <section class="sec">
+    <h2 class="sec-title">Current research focus</h2>
+    <div class="focus-grid">
+      <div class="focus-item">AudioIno Labeling Platform</div>
+      <div class="focus-item">Acoustic Monitoring for CNC Milling</div>
+      <div class="focus-item">Chatter Detection</div>
+      <div class="focus-item">Tool Wear Prediction</div>
+      <div class="focus-item">Signal Processing for Machining Dynamics</div>
+      <div class="focus-item">Explainable ML for Manufacturing</div>
+      <div class="focus-item">Sensor Comparison &amp; Benchmarking</div>
+      <div class="focus-item">Human-in-the-loop Annotation</div>
+      <div class="focus-item">FRF &amp; Impact Hammer Analysis</div>
+      <div class="focus-item">Trustworthy AI Systems</div>
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <!-- ── FEATURED PROJECTS ── -->
+  <section class="sec">
+    <h2 class="sec-title">Featured research</h2>
+    <div class="cards">
+
+      <article class="card featured">
+        <h3>AudioIno — Expert Labeling &amp; Analysis Platform for Machining Stability</h3>
+        <div class="cmeta">
+          <span class="badge b-green">Active · TU Dortmund</span>
+          <span class="muted">2025–Present</span>
+        </div>
+        <p>Expert annotation and analysis workflow for machining stability datasets — covering stable, metastable, and chatter regions in acoustic and force-assisted experiments. Supports spectrogram-based annotation, multi-sensor visualization, and NPZ cutout generation for downstream ML workflows.</p>
+        <div class="badge-row">
+          <span class="badge b-gray">Python</span><span class="badge b-gray">Dash</span><span class="badge b-gray">Signal Processing</span><span class="badge b-gray">STFT</span>
+        </div>
+        <p style="margin-top:.5rem"><a href="/projects.html#audioino-labeling">See full project details →</a></p>
+      </article>
+
+      <article class="card featured">
+        <h3>Low-Cost Acoustic Monitoring for CNC Milling</h3>
+        <div class="cmeta">
+          <span class="badge b-green">Active · TU Dortmund</span>
+          <span class="muted">2025–Present</span>
+        </div>
+        <p>Evaluating whether low-cost microphones (B5, HI10, TASCAM) can capture chatter-relevant acoustic information compared with a PCB reference microphone. Involves spectrogram similarity, dominant-frequency behavior, tooth-pass harmonics, and resonance interpretation.</p>
+        <div class="badge-row">
+          <span class="badge b-gray">Acoustic Monitoring</span><span class="badge b-gray">Machining Dynamics</span><span class="badge b-gray">Spectrogram Analysis</span>
+        </div>
+        <p style="margin-top:.5rem"><a href="/projects.html#acoustic-monitoring">See full project details →</a></p>
+      </article>
+
+    </div>
+    <p style="margin-top:.9rem;font-size:.875rem">
+      <a href="/projects.html">See all research projects →</a>
+    </p>
+  </section>
+
+  <!-- ── AFFILIATION ── -->
+  <section class="sec">
+    <h2 class="sec-title">Affiliation &amp; links</h2>
+    <div class="profile-grid">
+      <a class="plink" href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank" rel="noopener">
+        <span class="picon">🔬</span>
+        <span>ResearchGate</span>
+      </a>
+      <a class="plink" href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank" rel="noopener">
+        <span class="picon">💼</span>
+        <span>LinkedIn</span>
+      </a>
+      <a class="plink" href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noopener">
+        <span class="picon">💻</span>
+        <span>GitHub</span>
+      </a>
+      <a class="plink" href="https://www.tu-dortmund.de" target="_blank" rel="noopener">
+        <span class="picon">🏛️</span>
+        <span>TU Dortmund University</span>
+      </a>
+      <a class="plink" href="https://lamarr-institute.org" target="_blank" rel="noopener">
+        <span class="picon">🤖</span>
+        <span>Lamarr Institute</span>
+      </a>
+      <a class="plink" href="mailto:shaista.s.shabbir@gmail.com">
+        <span class="picon">✉️</span>
+        <span>shaista.s.shabbir@gmail.com</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p id="contact">
+    <strong>Contact:</strong>
+    <a href="mailto:shaista.s.shabbir@gmail.com">shaista.s.shabbir@gmail.com</a> ·
+    <a href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank" rel="noopener">ResearchGate</a> ·
+    <a href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank" rel="noopener">LinkedIn</a> ·
+    <a href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noopener">GitHub</a>
+  </p>
+  <p style="margin-top:.4rem"><small>© 2026 Shaista Shabbir · Research Associate, TU Dortmund University &amp; Lamarr Institute</small></p>
+</footer>
 </body>
 </html>
