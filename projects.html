@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Shaista Shabbir</title>
+<meta name="description" content="Research projects by Shaista Shabbir — AudioIno, acoustic monitoring, chatter detection, tool wear prediction, and prior NLP/AI work at TU Dortmund and University of Hamburg.">
+<link rel="icon" href="/assets/img/avatar.svg">
+<link rel="stylesheet" href="/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta property="og:title" content="Projects — Shaista Shabbir">
+<meta property="og:description" content="Industrial AI research: AudioIno, acoustic monitoring, chatter detection, tool wear prediction.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Shaista Shabbir","jobTitle":"Research Associate","affiliation":[{"@type":"Organization","name":"TU Dortmund University"},{"@type":"Organization","name":"Lamarr Institute"}],"url":"https://shaistashabbir-prog.github.io","knowsAbout":["Industrial AI","Machining Stability","Chatter Detection","Acoustic Monitoring","Tool Wear Prediction","Signal Processing","Explainable AI","NLP","MLOps"]}</script>
+</head>
+<body>
+<header class="wrap">
+  <nav class="nav">
+    <a class="nav-brand" href="/">Shaista Shabbir</a>
+    <a href="/">Home</a>
+    <a class="active" href="/projects.html">Projects</a>
+    <a href="/publications.html">Publications</a>
+    <a href="/experience.html">Experience</a>
+    <a href="/certificates/">Certificates</a>
+    <a href="/cv/">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <div class="ph">
+    <h1>Research Projects</h1>
+    <p>Industrial AI and machining intelligence research at TU Dortmund University &amp; Lamarr Institute, plus prior NLP and applied AI work.</p>
+  </div>
+
+  <!-- ── GROUP 1: Current Industrial AI ── -->
+  <div class="group-label">Current Research · TU Dortmund / Lamarr Institute</div>
+  <div class="cards" id="projects-current">
+
+    <article class="card featured" id="audioino-labeling">
+      <h3>AudioIno — Expert Labeling Tool for Machining Stability</h3>
+      <div class="cmeta">
+        <span class="badge b-green">Active research</span>
+        <span class="badge b-blue">TU Dortmund · Lamarr</span>
+        <span class="muted">2025–Present</span>
+      </div>
+      <p>Developing a reliable expert annotation workflow for machining stability data — covering stable, metastable, and chatter regions in acoustic and force-assisted experiments.</p>
+      <details>
+        <summary>Approach &amp; details</summary>
+        <div class="dbody">
+          <p><strong>Approach:</strong> Modular labeling platform with spectrogram-based annotation, process-window selection, multi-sensor visualization, CSV label export, and NPZ cutout generation for downstream ML workflows.</p>
+          <p><strong>Impact:</strong> Supports reproducible dataset creation for chatter detection, machining stability prediction, and industrial AI research.</p>
+          <div class="stack-row">
+            <span class="badge b-gray">Python</span><span class="badge b-gray">Dash</span><span class="badge b-gray">Streamlit</span><span class="badge b-gray">Signal Processing</span><span class="badge b-gray">STFT</span><span class="badge b-gray">Pandas</span><span class="badge b-gray">NumPy</span><span class="badge b-gray">Docker</span>
+          </div>
+        </div>
+      </details>
+    </article>
+
+    <article class="card featured" id="acoustic-monitoring">
+      <h3>Low-Cost Acoustic Monitoring for CNC Milling</h3>
+      <div class="cmeta">
+        <span class="badge b-green">Active research</span>
+        <span class="badge b-blue">TU Dortmund · Lamarr</span>
+        <span class="muted">2025–Present</span>
+      </div>
+      <p>Evaluating whether low-cost microphones (B5, HI10, TASCAM) can capture chatter-relevant acoustic information compared with a PCB reference microphone — toward physics-informed, cost-effective industrial sensing.</p>
+      <details>
+        <summary>Approach &amp; details</summary>
+        <div class="dbody">
+          <p><strong>Approach:</strong> Comparing PCB, B5, HI10, and TASCAM recordings using spectrogram similarity, dominant-frequency behavior, tooth-pass harmonics, and impact-hammer-based resonance interpretation.</p>
+          <p><strong>Impact:</strong> Contributes toward physics-informed, cost-effective acoustic sensing for industrial machining monitoring.</p>
+          <div class="stack-row">
+            <span class="badge b-gray">Acoustic Monitoring</span><span class="badge b-gray">Machining Dynamics</span><span class="badge b-gray">Impact Hammer Testing</span><span class="badge b-gray">Spectrogram Analysis</span><span class="badge b-gray">Python</span>
+          </div>
+        </div>
+      </details>
+    </article>
+
+    <article class="card featured" id="audioino-analysis">
+      <h3>AudioIno Analysis Workflow — Acoustic Data Interpretation</h3>
+      <div class="cmeta">
+        <span class="badge b-green">Active research</span>
+        <span class="badge b-blue">TU Dortmund · Lamarr</span>
+        <span class="muted">2025–Present</span>
+      </div>
+      <p>Building reproducible analysis workflows for spectrogram comparison, dominant-frequency tracking, microphone benchmarking, process-window analysis, and resonance-informed interpretation of machining signals.</p>
+      <details>
+        <summary>Approach &amp; details</summary>
+        <div class="dbody">
+          <p><strong>Approach:</strong> Streamlit-based analysis dashboards, SciPy signal processing, STFT and Welch PSD estimation, matplotlib figure generation for publication-ready outputs.</p>
+          <p><strong>Impact:</strong> Provides scientific evidence for low-cost acoustic monitoring and supports publication-ready figures and metrics.</p>
+          <div class="stack-row">
+            <span class="badge b-gray">Python</span><span class="badge b-gray">Streamlit</span><span class="badge b-gray">SciPy</span><span class="badge b-gray">STFT</span><span class="badge b-gray">Welch</span><span class="badge b-gray">Matplotlib</span><span class="badge b-gray">Pandas</span>
+          </div>
+        </div>
+      </details>
+    </article>
+
+    <article class="card" id="tool-wear-prediction">
+      <h3>Tool Wear Prediction from Machining Signals</h3>
+      <div class="cmeta">
+        <span class="badge b-blue">Student supervision · TU Dortmund</span>
+        <span class="muted">2026–Present</span>
+      </div>
+      <p>Supporting thesis research on predicting tool wear from machining signals — focusing on avoiding shortcut learning and improving generalization across cutting conditions.</p>
+      <details>
+        <summary>Approach &amp; details</summary>
+        <div class="dbody">
+          <p><strong>Approach:</strong> Feature engineering and model evaluation with force, temperature, and cutting-path features. CNN, Random Forest, Ridge Regression, ablation studies, interpolation strategies, stride sensitivity analysis.</p>
+          <p><strong>Impact:</strong> Strengthens ML-based tool-condition monitoring and provides thesis-level research guidance.</p>
+          <div class="stack-row">
+            <span class="badge b-gray">Python</span><span class="badge b-gray">CNN</span><span class="badge b-gray">Random Forest</span><span class="badge b-gray">Regression</span><span class="badge b-gray">Feature Engineering</span><span class="badge b-gray">Ablation Studies</span>
+          </div>
+        </div>
+      </details>
+    </article>
+
+    <article class="card" id="frf-microphone-comparison">
+      <h3>Impact Hammer / FRF Analysis for Microphone Comparison</h3>
+      <div class="cmeta">
+        <span class="badge b-blue">Student supervision · TU Dortmund</span>
+        <span class="muted">2026–Present</span>
+      </div>
+      <p>Understanding how machine-tool dynamics and microphone quality affect stability identification in milling — connecting physical resonance behavior with data-driven chatter monitoring.</p>
+      <details>
+        <summary>Approach &amp; details</summary>
+        <div class="dbody">
+          <p><strong>Approach:</strong> Supporting impact hammer analysis, FRF estimation, coherence interpretation, resonance extraction, and connection between structural dynamics and acoustic monitoring.</p>
+          <p><strong>Impact:</strong> Links physical resonance behavior with data-driven chatter monitoring and low-cost sensor evaluation.</p>
+          <div class="stack-row">
+            <span class="badge b-gray">FRF</span><span class="badge b-gray">Welch</span><span class="badge b-gray">CSD</span><span class="badge b-gray">Coherence</span><span class="badge b-gray">Signal Processing</span><span class="badge b-gray">Machining Dynamics</span>
+          </div>
+        </div>
+      </details>
+    </article>
+
+  </div>
+
+  <!-- ── GROUP 2: Prior Applied AI ── -->
+  <div class="group-label" style="margin-top:1rem">Earlier Work · HITeC / University of Hamburg</div>
+  <div class="cards" id="projects-prior">
+
+    <article class="card" id="coypu">
+      <h3>CoyPu — Event Extraction &amp; Mapping</h3>
+      <div class="cmeta">
+        <span class="badge b-gray">HITeC / University of Hamburg</span>
+        <span class="muted">2023–2025</span>
+      </div>
+      <p>Transformer-based event detection and extraction from text, with geospatial mapping for situational awareness and decision support.</p>
+      <details>
+        <summary>Approach &amp; details</summary>
+        <div class="dbody">
+          <p><strong>Approach:</strong> Transformer-based event detection, entity normalization, and web application for mapping events by location and criticality.</p>
+          <p><strong>Impact:</strong> Improved situational awareness and information access for stakeholders.</p>
+          <div class="stack-row">
+            <span class="badge b-gray">Python</span><span class="badge b-gray">PyTorch</span><span class="badge b-gray">Transformers</span><span class="badge b-gray">NLP</span><span class="badge b-gray">FastAPI</span><span class="badge b-gray">PostgreSQL</span>
+          </div>
+        </div>
+      </details>
+    </article>
+
+    <article class="card" id="pem">
+      <h3>PEM — Energy Forecasting</h3>
+      <div class="cmeta">
+        <span class="badge b-gray">HITeC / University of Hamburg</span>
+        <span class="muted">2023–2024</span>
+      </div>
+      <p>Time-series forecasting of per-machine and overall energy consumption using GRU/FFN models for industrial optimization and proactive monitoring.</p>
+      <details>
+        <summary>Approach &amp; details</summary>
+        <div class="dbody">
+          <p><strong>Approach:</strong> GRU/FFN models, feature engineering, REST APIs for integration.</p>
+          <p><strong>Impact:</strong> Supported proactive monitoring and energy-consumption analysis.</p>
+          <div class="stack-row">
+            <span class="badge b-gray">Python</span><span class="badge b-gray">TensorFlow</span><span class="badge b-gray">Time Series</span><span class="badge b-gray">GRU</span><span class="badge b-gray">REST</span>
+          </div>
+        </div>
+      </details>
+    </article>
+
+    <article class="card" id="digitalcurri">
+      <h3>DigitalCurri — Curriculum Digitization</h3>
+      <div class="cmeta">
+        <span class="badge b-gray">Lead Developer</span>
+        <span class="muted">2021–2022</span>
+      </div>
+      <p>ETL pipeline, OCR, and search UI to digitize legacy curriculum content and make it searchable for faculty and students.</p>
+      <details>
+        <summary>Approach &amp; details</summary>
+        <div class="dbody">
+          <p><strong>Approach:</strong> ETL pipeline, OCR, metadata tagging, and search UI.</p>
+          <p><strong>Impact:</strong> Faster curriculum planning and content discovery.</p>
+          <div class="stack-row">
+            <span class="badge b-gray">Python</span><span class="badge b-gray">OpenCV</span><span class="badge b-gray">Elasticsearch</span><span class="badge b-gray">React</span>
+          </div>
+        </div>
+      </details>
+    </article>
+
+  </div>
+</main>
+
+<footer class="wrap">
+  <p id="contact">
+    <strong>Contact:</strong>
+    <a href="mailto:shaista.s.shabbir@gmail.com">shaista.s.shabbir@gmail.com</a> ·
+    <a href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank" rel="noopener">ResearchGate</a> ·
+    <a href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank" rel="noopener">LinkedIn</a> ·
+    <a href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noopener">GitHub</a>
+  </p>
+  <p style="margin-top:.4rem"><small>© 2026 Shaista Shabbir · Research Associate, TU Dortmund University &amp; Lamarr Institute</small></p>
+</footer>
+</body>
+</html>
