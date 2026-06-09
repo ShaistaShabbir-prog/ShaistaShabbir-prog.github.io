@@ -6,34 +6,188 @@
 <title>Shaista Shabbir — Industrial AI Researcher, TU Dortmund</title>
 <meta name="description" content="Research Associate at TU Dortmund University and Lamarr Institute. Industrial AI · Machining Stability · Chatter Detection · Acoustic Monitoring · Explainable ML.">
 <link rel="icon" href="assets/img/avatar.svg">
-<link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<meta property="og:title" content="Shaista Shabbir — Industrial AI Researcher">
-<meta property="og:description" content="Research Associate at TU Dortmund University and Lamarr Institute. Industrial AI · Machining Stability · Chatter Detection · Acoustic Monitoring.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://shaistashabbir-prog.github.io">
-<meta property="og:image" content="https://shaistashabbir-prog.github.io/assets/profile.jpeg">
-<script type="application/ld+json">{
-  "@context":"https://schema.org","@type":"Person",
-  "name":"Shaista Shabbir","jobTitle":"Research Associate",
-  "image":"https://shaistashabbir-prog.github.io/assets/profile.jpeg",
-  "affiliation":[
-    {"@type":"Organization","name":"TU Dortmund University","department":"Chair of Virtual Machining"},
-    {"@type":"Organization","name":"Lamarr Institute for Machine Learning and Artificial Intelligence"}
-  ],
-  "url":"https://shaistashabbir-prog.github.io",
-  "email":"shaista.s.shabbir@gmail.com",
-  "sameAs":["https://github.com/ShaistaShabbir-prog","https://www.linkedin.com/in/shaista-shabbir-a32a6b210","https://www.researchgate.net/profile/Shaista-Shabbir"],
-  "alumniOf":[
-    {"@type":"Organization","name":"Virtual University of Pakistan","description":"MSCS"},
-    {"@type":"Organization","name":"University of Management Sciences and IT, Kotli AJK","description":"BSCS"}
-  ],
-  "knowsAbout":["Industrial AI","Machining Stability","Chatter Detection","Acoustic Monitoring","Tool Wear Prediction","Signal Processing","Machining Dynamics","Explainable AI","Trustworthy AI","Human-in-the-loop Annotation","Smart Manufacturing","Machine Learning","NLP","MLOps"]
-}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* ── Page-specific overrides ── */
+.hero-dark {
+  background: linear-gradient(135deg, #0f0c29 0%, #1a0533 40%, #24243e 100%);
+  padding: 3rem 0 2.5rem;
+  margin: 0 -1.25rem 0;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero-dark::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124,58,237,.3) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-dark::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: 20%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(236,72,153,.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-inner {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  max-width: var(--max);
+  margin: 0 auto;
+}
+@media(max-width:520px){
+  .hero-inner { grid-template-columns: 1fr; text-align: center; }
+  .hero-inner .btn-row { justify-content: center; }
+  .hero-inner .badge-row { justify-content: center; }
+}
+.hero-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,.1);
+  box-shadow:
+    0 0 0 4px rgba(124,58,237,.5),
+    0 0 30px rgba(124,58,237,.4),
+    0 0 60px rgba(124,58,237,.2);
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+@keyframes glow-pulse {
+  0%,100% { box-shadow: 0 0 0 4px rgba(124,58,237,.5), 0 0 30px rgba(124,58,237,.4), 0 0 60px rgba(124,58,237,.2); }
+  50% { box-shadow: 0 0 0 4px rgba(236,72,153,.5), 0 0 30px rgba(236,72,153,.4), 0 0 60px rgba(236,72,153,.2); }
+}
+.hero-name {
+  font-size: 2.25rem;
+  font-weight: 900;
+  letter-spacing: -.03em;
+  background: linear-gradient(135deg, #e0c3fc 0%, #f9a8d4 50%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: .25rem;
+  line-height: 1.1;
+}
+.hero-role {
+  font-size: 1rem;
+  color: #a78bfa;
+  font-weight: 700;
+  margin-bottom: .2rem;
+}
+.hero-affil {
+  font-size: .875rem;
+  color: rgba(255,255,255,.5);
+  margin-bottom: 1rem;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: .72rem;
+  font-weight: 700;
+  padding: .2rem .65rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  border: 1px solid;
+}
+.hb-purple { background: rgba(124,58,237,.2); color: #c4b5fd; border-color: rgba(124,58,237,.4); }
+.hb-pink   { background: rgba(236,72,153,.2); color: #fbcfe8; border-color: rgba(236,72,153,.4); }
+.hb-amber  { background: rgba(251,191,36,.15); color: #fde68a; border-color: rgba(251,191,36,.4); }
+.hb-green  { background: rgba(52,211,153,.15); color: #6ee7b7; border-color: rgba(52,211,153,.4); }
+.hb-white  { background: rgba(255,255,255,.08); color: rgba(255,255,255,.8); border-color: rgba(255,255,255,.15); }
+.hero-btn-row { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1rem; }
+.hbtn {
+  display: inline-flex; align-items: center; gap: .35rem;
+  padding: .55rem 1.1rem;
+  border-radius: 10px;
+  font-size: .875rem; font-weight: 700;
+  text-decoration: none !important;
+  transition: all .2s; cursor: pointer; border: none; line-height: 1;
+}
+.hbtn-primary {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: #fff !important;
+  box-shadow: 0 4px 15px rgba(124,58,237,.4);
+}
+.hbtn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(124,58,237,.5); }
+.hbtn-ghost {
+  background: rgba(255,255,255,.08);
+  color: rgba(255,255,255,.9) !important;
+  border: 1px solid rgba(255,255,255,.15);
+  backdrop-filter: blur(8px);
+}
+.hbtn-ghost:hover { background: rgba(255,255,255,.15); border-color: rgba(255,255,255,.3); }
+
+/* Stat bar */
+.stat-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin: 0 -1.25rem;
+}
+.stat-item {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+.stat-item:last-child { border-right: none; }
+.stat-num { font-size: 1.625rem; font-weight: 900; background: linear-gradient(135deg, #7c3aed, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.stat-label { font-size: .75rem; color: var(--gray); font-weight: 600; margin-top: .1rem; }
+
+/* Colorful section titles */
+.sec-title-grad {
+  font-size: 1.125rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+.sec-title-grad span {
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.sec-title-grad::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, #7c3aed33, transparent);
+  border-radius: 2px;
+}
+
+/* Colorful cards */
+.card-featured-dark {
+  border: 1.5px solid rgba(124,58,237,.3);
+  border-left: 4px solid;
+  border-image: linear-gradient(180deg, #7c3aed, #ec4899) 1;
+  background: linear-gradient(135deg, rgba(124,58,237,.05) 0%, rgba(236,72,153,.03) 100%);
+  border-radius: 0 var(--r) var(--r) 0;
+  border-left-color: #7c3aed;
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Shaista Shabbir","jobTitle":"Research Associate","affiliation":[{"@type":"Organization","name":"TU Dortmund University"},{"@type":"Organization","name":"Lamarr Institute"}],"url":"https://shaistashabbir-prog.github.io","knowsAbout":["Industrial AI","Machining Stability","Chatter Detection","Acoustic Monitoring","Tool Wear Prediction","Signal Processing","Explainable AI","NLP"]}</script>
 </head>
 <body>
+
 <header class="wrap">
   <nav class="nav">
     <a class="nav-brand" href="index.html">Shaista Shabbir</a>
@@ -46,68 +200,73 @@
     <a href="awards.html">Awards</a>
     <a href="certificates/">Certificates</a>
     <a href="cv/">CV</a>
-    <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<main class="wrap">
-
-  <!-- ── HERO ── -->
-  <section class="hero">
-    <img class="avatar" src="assets/profile.jpeg" style="box-shadow:0 0 0 3px #fff,0 0 0 5px #7c3aed" alt="Shaista Shabbir — Research Associate TU Dortmund" width="100" height="100">
-    <div class="hero-text">
-      <h1>Shaista Shabbir</h1>
-      <p class="role">Research Associate · TU Dortmund University &amp; Lamarr Institute</p>
-      <p class="affil">Chair of Virtual Machining · Industrial AI · Dortmund, Germany</p>
+<!-- ── DARK HERO ── -->
+<div class="hero-dark">
+  <div class="hero-inner">
+    <img class="hero-avatar" src="assets/profile.jpeg" alt="Shaista Shabbir" width="120" height="120">
+    <div>
+      <h1 class="hero-name">Shaista Shabbir</h1>
+      <p class="hero-role">Research Associate · TU Dortmund University &amp; Lamarr Institute</p>
+      <p class="hero-affil">Chair of Virtual Machining · Industrial AI · Dortmund, Germany 🇩🇪</p>
       <div class="badge-row">
-        <span class="badge b-blue">Industrial AI</span>
-        <span class="badge b-blue">Chatter Detection</span>
-        <span class="badge b-blue">Acoustic Monitoring</span>
-        <span class="badge b-green">AudioIno</span>
-        <span class="badge b-gray">Explainable ML</span>
-        <span class="badge b-gray">Signal Processing</span>
-        <span class="badge b-gray">Tool Wear Prediction</span>
-        <span class="badge b-pink">🥇 Gold Medal BSCS</span>
-        <span class="badge b-sky">DAAD Scholar</span>
+        <span class="hero-badge hb-purple">Industrial AI</span>
+        <span class="hero-badge hb-pink">Chatter Detection</span>
+        <span class="hero-badge hb-purple">Acoustic Monitoring</span>
+        <span class="hero-badge hb-green">AudioIno</span>
+        <span class="hero-badge hb-white">Explainable ML</span>
+        <span class="hero-badge hb-white">Signal Processing</span>
+        <span class="hero-badge hb-amber">🥇 Gold Medal BSCS</span>
+        <span class="hero-badge hb-green">DAAD Scholar</span>
       </div>
-      <div class="btn-row">
-        <a class="btn btn-p" href="projects.html">Research Projects</a>
-        <a class="btn btn-g" href="publications.html">Publications</a>
-        <a class="btn btn-g" href="cv/">CV</a>
+      <div class="hero-btn-row">
+        <a class="hbtn hbtn-primary" href="projects.html">Research Projects →</a>
+        <a class="hbtn hbtn-ghost" href="publications.html">Publications</a>
+        <a class="hbtn hbtn-ghost" href="cv/">CV</a>
       </div>
     </div>
-  </section>
+  </div>
+</div>
+
+<!-- ── STAT BAR ── -->
+<div class="stat-bar">
+  <div class="stat-item"><div class="stat-num">TU</div><div class="stat-label">Dortmund Univ.</div></div>
+  <div class="stat-item"><div class="stat-num">Lamarr</div><div class="stat-label">ML Institute</div></div>
+  <div class="stat-item"><div class="stat-num">6+</div><div class="stat-label">Research areas</div></div>
+  <div class="stat-item"><div class="stat-num">3×</div><div class="stat-label">Badminton Champion</div></div>
+</div>
+
+<main class="wrap">
 
   <!-- ── ABOUT ── -->
   <section class="sec">
-    <h2 class="sec-title">About me</h2>
-    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.75;margin-bottom:.8rem">
+    <h2 class="sec-title-grad"><span>About me</span></h2>
+    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.8;margin-bottom:.8rem">
       I am a <strong>Research Associate at TU Dortmund University</strong> and the
       <strong>Lamarr Institute for Machine Learning and Artificial Intelligence</strong>,
       affiliated with the Chair of Virtual Machining.
     </p>
-    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.75;margin-bottom:.8rem">
+    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.8;margin-bottom:.8rem">
       My research focuses on <strong>Industrial AI for manufacturing</strong> — machining stability analysis,
       chatter detection, acoustic monitoring, explainable machine learning, and trustworthy AI systems.
     </p>
-    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.75;margin-bottom:.8rem">
+    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.8;margin-bottom:.8rem">
       Currently, I work on <strong>AudioIno</strong> — an expert-guided platform and analysis workflow for
       machining stability annotation, acoustic process monitoring, and data-driven manufacturing intelligence.
     </p>
-    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.75;margin-bottom:1rem">
-      My long-term goal is to develop <strong>trustworthy and interpretable AI systems</strong> for
-      intelligent manufacturing environments.
+    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.8;margin-bottom:1rem">
+      My long-term goal is to develop <strong>trustworthy and interpretable AI systems</strong> for intelligent manufacturing.
     </p>
-    <div style="background:var(--bg-s);border:1px solid var(--border);border-radius:10px;padding:.75rem 1rem;font-size:.875rem;color:var(--text-s);line-height:1.7">
-      <strong>Background:</strong> MSCS from Virtual University of Pakistan · BSCS (2012–2016) from University of Management Sciences &amp; IT, Kotli AJK ·
-      Previously Research Assistant &amp; AI/ML Engineer at HITeC e.V. / University of Hamburg (2023–2025) ·
-      6 years academic teaching in Pakistan (2017–2023)
+    <div style="background:linear-gradient(135deg,rgba(124,58,237,.06),rgba(236,72,153,.04));border:1.5px solid rgba(124,58,237,.2);border-radius:12px;padding:.875rem 1.125rem;font-size:.875rem;color:var(--text-s);line-height:1.7">
+      <strong style="color:var(--accent)">Background:</strong> MSCS — Virtual University of Pakistan · BSCS (🥇 Gold Medal, 2012–2016) — UMSIT Kotli AJK · MA Education — AIOU · Research Assistant &amp; AI/ML Engineer — HITeC e.V. / University of Hamburg (2022–2024) · 6 years academic teaching in Pakistan
     </div>
   </section>
 
   <!-- ── RESEARCH FOCUS ── -->
   <section class="sec">
-    <h2 class="sec-title">Current research focus</h2>
+    <h2 class="sec-title-grad"><span>Current research focus</span></h2>
     <div class="focus-grid">
       <div class="focus-item">AudioIno Labeling Platform</div>
       <div class="focus-item">Acoustic Monitoring for CNC Milling</div>
@@ -122,122 +281,65 @@
     </div>
   </section>
 
-  <!-- ── FEATURED PROJECTS ── -->
+  <!-- ── FEATURED ── -->
   <section class="sec">
-    <h2 class="sec-title">Featured research</h2>
+    <h2 class="sec-title-grad"><span>Featured research</span></h2>
     <div class="cards">
-
       <article class="card featured">
         <h3>AudioIno — Expert Labeling &amp; Analysis Platform for Machining Stability</h3>
         <div class="cmeta">
           <span class="badge b-green">Active · TU Dortmund</span>
           <span class="muted">2025–Present</span>
         </div>
-        <p>Expert annotation and analysis workflow for machining stability datasets — covering stable, metastable, and chatter regions in acoustic and force-assisted experiments. Supports spectrogram-based annotation, multi-sensor visualization, and NPZ cutout generation for downstream ML workflows.</p>
+        <p>Expert annotation and analysis workflow for machining stability datasets — covering stable, metastable, and chatter regions in acoustic and force-assisted experiments.</p>
         <p style="margin-top:.5rem"><a href="projects.html#audioino-labeling">See full project details →</a></p>
       </article>
-
       <article class="card featured">
         <h3>Low-Cost Acoustic Monitoring for CNC Milling</h3>
         <div class="cmeta">
           <span class="badge b-green">Active · TU Dortmund</span>
           <span class="muted">2025–Present</span>
         </div>
-        <p>Evaluating whether low-cost microphones (B5, HI10, TASCAM) can capture chatter-relevant acoustic information compared with a PCB reference microphone. Involves spectrogram similarity, dominant-frequency behavior, tooth-pass harmonics, and resonance-guided interpretation.</p>
+        <p>Evaluating whether low-cost microphones (B5, HI10, TASCAM) can capture chatter-relevant acoustic information compared with a PCB reference microphone.</p>
         <p style="margin-top:.5rem"><a href="projects.html#acoustic-monitoring">See full project details →</a></p>
       </article>
-
-      <article class="card" id="alsk-featured">
+      <article class="card">
         <h3>ALSK — Arms Licensing System Kotli &nbsp;<span class="badge b-gray">BSCS Final Year Project</span></h3>
-        <div class="cmeta">
-          <span class="badge b-gray">UMSIT Kotli AJK</span>
-          <span class="muted">2015–2016</span>
-        </div>
-        <p>Web-based arms licensing management system for District Kotli, AJK. Digitised the manual licensing workflow — CNIC-based records, QR-coded license cards, online verification for check posts, expiry alerts, and secure admin/user/investigator roles. Awarded at internal defence (2016).</p>
-        <div class="badge-row">
-          <span class="badge b-gray">PHP</span>
-          <span class="badge b-gray">MySQL</span>
-          <span class="badge b-gray">JavaScript</span>
-          <span class="badge b-gray">HTML/CSS</span>
-          <span class="badge b-gray">Adobe Dreamweaver</span>
-        </div>
-        <p style="margin-top:.5rem"><a href="projects.html#alsk">See ALSK project details →</a></p>
+        <div class="cmeta"><span class="badge b-gray">UMSIT Kotli AJK</span><span class="muted">2015–2016</span></div>
+        <p>Web-based arms licensing management system for District Kotli, AJK. Digitised manual workflow with QR-coded license cards, online verification, and CNIC-based records. Awarded at internal defence (2016).</p>
+        <p style="margin-top:.5rem"><a href="projects.html#alsk">See ALSK details →</a></p>
       </article>
-
     </div>
-    <p style="margin-top:.9rem;font-size:.875rem">
-      <a href="projects.html">See all research &amp; development projects →</a>
-    </p>
-  </section>
-
-  <!-- ── EDUCATION ── -->
-  <section class="sec">
-    <h2 class="sec-title">Education</h2>
-    <div class="timeline">
-
-      <div class="role-card">
-        <div class="role-hd">
-          <div>
-            <div class="role-title">MSCS — Master of Computer Science</div>
-            <div class="role-org">Virtual University of Pakistan, Lahore</div>
-          </div>
-          <div class="role-when">2017–2019</div>
-        </div>
-        <p class="role-sum">Research focus: Software Quality Assurance and Requirements Engineering. Published two research papers during the programme (unpublished manuscripts — see Publications).</p>
-      </div>
-
-      <div class="role-card">
-        <div class="role-hd">
-          <div>
-            <div class="role-title">MA Education (Distance &amp; Non-Formal Education)</div>
-            <div class="role-org">Allama Iqbal Open University, Islamabad</div>
-          </div>
-          <div class="role-when">2018–2020</div>
-        </div>
-        <p class="role-sum">Master of Arts in Education — focus on distance and non-formal education, educational research, curriculum development, and teaching methodologies. CGPA: 69% · Grade B.</p>
-      </div>
-
-      <div class="role-card">
-        <div class="role-hd">
-          <div>
-            <div class="role-title">BSCS — Bachelor of Computer Science</div>
-            <div class="role-org">University of Management Sciences &amp; IT, Kotli AJK</div>
-          </div>
-          <div class="role-when">2012–2016</div>
-        </div>
-        <p class="role-sum">Final year project: ALSK (Arms Licensing System Kotli) — web-based arms licensing digitisation system for District Kotli government. Also organised the university's first women's technology workshop "We are Women and We are Valuable" (SocTech, Dept. CS&amp;IT, February 2017), designed all event graphics and promotional materials.</p>
-      </div>
-
-    </div>
+    <p style="margin-top:1rem;font-size:.875rem"><a href="projects.html">See all research &amp; development projects →</a></p>
   </section>
 
   <!-- ── PROFILE LINKS ── -->
   <section class="sec">
-    <h2 class="sec-title">Affiliation &amp; profiles</h2>
+    <h2 class="sec-title-grad"><span>Affiliation &amp; profiles</span></h2>
     <div class="profile-grid">
       <a class="plink" href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank" rel="noopener">
         <span class="picon">🔬</span>
-        <div><div>ResearchGate</div><div style="font-size:.75rem;font-weight:400;color:var(--gray)">Research profile</div></div>
+        <div><div>ResearchGate</div><div style="font-size:.72rem;font-weight:400;color:var(--gray)">Research profile</div></div>
       </a>
       <a class="plink" href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank" rel="noopener">
         <span class="picon">💼</span>
-        <div><div>LinkedIn</div><div style="font-size:.75rem;font-weight:400;color:var(--gray)">Professional network</div></div>
+        <div><div>LinkedIn</div><div style="font-size:.72rem;font-weight:400;color:var(--gray)">Professional network</div></div>
       </a>
       <a class="plink" href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noopener">
         <span class="picon">💻</span>
-        <div><div>GitHub</div><div style="font-size:.75rem;font-weight:400;color:var(--gray)">Public code repositories</div></div>
+        <div><div>GitHub</div><div style="font-size:.72rem;font-weight:400;color:var(--gray)">Code repositories</div></div>
       </a>
       <a class="plink" href="https://conf.informatik.uni-hamburg.de/shaista.shabbir" target="_blank" rel="noopener">
         <span class="picon">🦊</span>
-        <div><div>GitLab (Hamburg)</div><div style="font-size:.75rem;font-weight:400;color:var(--gray)">HITeC project contributions</div></div>
+        <div><div>GitLab (Hamburg)</div><div style="font-size:.72rem;font-weight:400;color:var(--gray)">HITeC contributions</div></div>
       </a>
       <a class="plink" href="https://www.tu-dortmund.de" target="_blank" rel="noopener">
         <span class="picon">🏛️</span>
-        <div><div>TU Dortmund</div><div style="font-size:.75rem;font-weight:400;color:var(--gray)">Current institution</div></div>
+        <div><div>TU Dortmund</div><div style="font-size:.72rem;font-weight:400;color:var(--gray)">Current institution</div></div>
       </a>
       <a class="plink" href="mailto:shaista.s.shabbir@gmail.com">
         <span class="picon">✉️</span>
-        <div><div>Email</div><div style="font-size:.75rem;font-weight:400;color:var(--gray)">shaista.s.shabbir@gmail.com</div></div>
+        <div><div>Email</div><div style="font-size:.72rem;font-weight:400;color:var(--gray)">shaista.s.shabbir@gmail.com</div></div>
       </a>
     </div>
   </section>
@@ -248,9 +350,9 @@
   <p id="contact">
     <strong>Contact:</strong>
     <a href="mailto:shaista.s.shabbir@gmail.com">shaista.s.shabbir@gmail.com</a> ·
-    <a href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank" rel="noopener">ResearchGate</a> ·
-    <a href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank" rel="noopener">LinkedIn</a> ·
-    <a href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank">ResearchGate</a> ·
+    <a href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank">LinkedIn</a> ·
+    <a href="https://github.com/ShaistaShabbir-prog" target="_blank">GitHub</a>
   </p>
   <p style="margin-top:.4rem"><small>© 2026 Shaista Shabbir · Research Associate, TU Dortmund University &amp; Lamarr Institute</small></p>
 </footer>
