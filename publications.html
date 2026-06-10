@@ -152,27 +152,53 @@ a:hover { color:#a855f7; }
 /* Footer */
 footer { border-top: 2px solid transparent; background: linear-gradient(white,white) padding-box, linear-gradient(90deg,#7c3aed,#ec4899) border-box; }
 </style>
+<style>
+/* ── Page dark header ── */
+.page-hero {
+  background: linear-gradient(135deg, #0f0c29 0%, #1a0533 45%, #1e1b4b 100%);
+  padding: 2.75rem 1.25rem 2.25rem;
+  position: relative; overflow: hidden;
+  margin-bottom: 0;
+}
+.page-hero::before {
+  content: ''; position: absolute; top: -40%; right: -8%;
+  width: 400px; height: 400px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(124,58,237,.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+.page-hero-inner {
+  max-width: 900px; margin: 0 auto;
+  position: relative; z-index: 1;
+}
+.page-hero h1 {
+  font-size: 2.125rem; font-weight: 900;
+  background: linear-gradient(135deg, #e0c3fc 0%, #f9a8d4 60%, #fbbf24 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 .45rem; line-height: 1.15;
+}
+.page-hero p {
+  color: rgba(255,255,255,.5); font-size: .9375rem;
+  line-height: 1.7; max-width: 700px; margin: 0;
+}
+</style>
 </head>
 <body>
-<header>
-  <div style="max-width:900px;margin:0 auto;padding:0 1.25rem;display:flex;align-items:center;gap:.5rem;height:52px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;border-bottom:1px solid rgba(124,58,237,.12);">
-    <a href="index.html" style="font-weight:900;font-size:.9375rem;text-decoration:none!important;background:linear-gradient(135deg,#7c3aed,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;border-right:2px solid #7c3aed;padding-right:.75rem;margin-right:.25rem;flex-shrink:0;">Shaista Shabbir</a>
-    <a href="index.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;">Home</a>
-    <a href="projects.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;">Research</a>
-    <a href="publications.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:700;padding:.35rem .65rem;border-radius:8px;background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff!important;box-shadow:0 2px 8px rgba(124,58,237,.3);white-space:nowrap;">Publications</a>
-    <a href="experience.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;">Experience</a>
-    <a href="supervision.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;">Supervision</a>
-    <a href="workshops.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;">Workshops</a>
-    <a href="awards.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;">Awards</a>
-    <a href="cv/" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;">CV</a>
+<header style="border-bottom:1px solid rgba(124,58,237,.12);position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(12px)">
+  <div style="max-width:900px;margin:0 auto;padding:0 1.25rem;display:flex;align-items:center;gap:.4rem;height:52px;overflow-x:auto;white-space:nowrap;scrollbar-width:none">
+    <a href="index.html" style="font-weight:900;font-size:.9375rem;text-decoration:none!important;background:linear-gradient(135deg,#7c3aed,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;border-right:2px solid #7c3aed;padding-right:.75rem;margin-right:.25rem;flex-shrink:0">Shaista Shabbir</a>
+    <a href="index.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;flex-shrink:0">Home</a><a href="projects.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;flex-shrink:0">Research</a><a href="publications.html" style="background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff!important;text-decoration:none;font-size:.8125rem;font-weight:700;padding:.35rem .65rem;border-radius:8px;box-shadow:0 2px 8px rgba(124,58,237,.3);white-space:nowrap">Publications</a><a href="experience.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;flex-shrink:0">Experience</a><a href="supervision.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;flex-shrink:0">Supervision</a><a href="workshops.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;flex-shrink:0">Workshops</a><a href="awards.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;flex-shrink:0">Awards</a><a href="cv/" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;flex-shrink:0">CV</a>
   </div>
 </header>
 
-<main class="wrap">
-  <div class="ph">
+<div class="page-hero">
+  <div class="page-hero-inner">
     <h1>Publications &amp; Research Output</h1>
     <p>Research manuscripts and academic writing across Industrial AI, software engineering, and requirements engineering. Work-in-progress papers are clearly labelled.</p>
   </div>
+</div>
+
+<main class="wrap">
 
   <!-- ── Current manuscripts ── -->
   <div class="pub-group">Current Research Manuscripts · TU Dortmund / Lamarr Institute · 2026</div>
