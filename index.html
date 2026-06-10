@@ -3,418 +3,627 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shaista Shabbir — Industrial AI Researcher, TU Dortmund</title>
-<meta name="description" content="Research Associate at TU Dortmund University and Lamarr Institute. Industrial AI · Machining Stability · Chatter Detection · Acoustic Monitoring · Explainable ML.">
+<title>Shaista Shabbir — Industrial AI Researcher | TU Dortmund · Lamarr Institute</title>
+<meta name="description" content="Research Associate at TU Dortmund University and Lamarr Institute for Machine Learning and AI. Industrial AI · Machining Stability · Chatter Detection · Acoustic Monitoring · AudioIno · Explainable ML.">
+<meta property="og:title" content="Shaista Shabbir — Industrial AI Researcher">
+<meta property="og:description" content="Research Associate at TU Dortmund University and Lamarr Institute. Industrial AI for Manufacturing.">
+<meta property="og:image" content="https://shaistashabbir-prog.github.io/assets/products/combined_hero.png">
+<meta name="keywords" content="Industrial AI, Machining Stability, Chatter Detection, Acoustic Monitoring, AudioIno, Tool Wear Prediction, Explainable AI, TU Dortmund, Lamarr Institute, Manufacturing AI">
 <link rel="icon" href="assets/img/avatar.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Shaista Shabbir","jobTitle":"Research Associate","affiliation":[{"@type":"Organization","name":"TU Dortmund University"},{"@type":"Organization","name":"Lamarr Institute for Machine Learning and Artificial Intelligence"}],"url":"https://shaistashabbir-prog.github.io","sameAs":["https://www.researchgate.net/profile/Shaista-Shabbir","https://github.com/ShaistaShabbir-prog","https://www.linkedin.com/in/shaista-shabbir-a32a6b210"],"knowsAbout":["Industrial AI","Machining Stability","Chatter Detection","Acoustic Monitoring","Tool Wear Prediction","Signal Processing","Explainable AI","AudioIno"]}</script>
+
 <style>
-/* ── Page-specific overrides ── */
-.hero-dark {
-  background: linear-gradient(135deg, #0f0c29 0%, #1a0533 40%, #24243e 100%);
-  padding: 3rem 0 2.5rem;
-  margin: 0 -1.25rem 0;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  position: relative;
-  overflow: hidden;
-}
-.hero-dark::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(124,58,237,.3) 0%, transparent 70%);
-  pointer-events: none;
-}
-.hero-dark::after {
-  content: '';
-  position: absolute;
-  bottom: -30%;
-  left: 20%;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(236,72,153,.2) 0%, transparent 70%);
-  pointer-events: none;
-}
-.hero-inner {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 2rem;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-  max-width: var(--max);
-  margin: 0 auto;
-}
-@media(max-width:520px){
-  .hero-inner { grid-template-columns: 1fr; text-align: center; }
-  .hero-inner .btn-row { justify-content: center; }
-  .hero-inner .badge-row { justify-content: center; }
-}
-.hero-avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid rgba(255,255,255,.1);
-  box-shadow:
-    0 0 0 4px rgba(124,58,237,.5),
-    0 0 30px rgba(124,58,237,.4),
-    0 0 60px rgba(124,58,237,.2);
-  animation: glow-pulse 3s ease-in-out infinite;
-}
-@keyframes glow-pulse {
-  0%,100% { box-shadow: 0 0 0 4px rgba(124,58,237,.5), 0 0 30px rgba(124,58,237,.4), 0 0 60px rgba(124,58,237,.2); }
-  50% { box-shadow: 0 0 0 4px rgba(236,72,153,.5), 0 0 30px rgba(236,72,153,.4), 0 0 60px rgba(236,72,153,.2); }
-}
-.hero-name {
-  font-size: 2.25rem;
-  font-weight: 900;
-  letter-spacing: -.03em;
-  background: linear-gradient(135deg, #e0c3fc 0%, #f9a8d4 50%, #fbbf24 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: .25rem;
-  line-height: 1.1;
-}
-.hero-role {
-  font-size: 1rem;
-  color: #a78bfa;
-  font-weight: 700;
-  margin-bottom: .2rem;
-}
-.hero-affil {
-  font-size: .875rem;
-  color: rgba(255,255,255,.5);
-  margin-bottom: 1rem;
-}
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  font-size: .72rem;
-  font-weight: 700;
-  padding: .2rem .65rem;
-  border-radius: 999px;
-  white-space: nowrap;
-  border: 1px solid;
-}
-.hb-purple { background: rgba(124,58,237,.2); color: #c4b5fd; border-color: rgba(124,58,237,.4); }
-.hb-pink   { background: rgba(236,72,153,.2); color: #fbcfe8; border-color: rgba(236,72,153,.4); }
-.hb-amber  { background: rgba(251,191,36,.15); color: #fde68a; border-color: rgba(251,191,36,.4); }
-.hb-green  { background: rgba(52,211,153,.15); color: #6ee7b7; border-color: rgba(52,211,153,.4); }
-.hb-white  { background: rgba(255,255,255,.08); color: rgba(255,255,255,.8); border-color: rgba(255,255,255,.15); }
-.hero-btn-row { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1rem; }
-.hbtn {
-  display: inline-flex; align-items: center; gap: .35rem;
-  padding: .55rem 1.1rem;
-  border-radius: 10px;
-  font-size: .875rem; font-weight: 700;
-  text-decoration: none !important;
-  transition: all .2s; cursor: pointer; border: none; line-height: 1;
-}
-.hbtn-primary {
-  background: linear-gradient(135deg, #7c3aed, #a855f7);
-  color: #fff !important;
-  box-shadow: 0 4px 15px rgba(124,58,237,.4);
-}
-.hbtn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(124,58,237,.5); }
-.hbtn-ghost {
-  background: rgba(255,255,255,.08);
-  color: rgba(255,255,255,.9) !important;
-  border: 1px solid rgba(255,255,255,.15);
-  backdrop-filter: blur(8px);
-}
-.hbtn-ghost:hover { background: rgba(255,255,255,.15); border-color: rgba(255,255,255,.3); }
-
-/* Stat bar */
-.stat-bar {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  margin: 0 -1.25rem;
-}
-.stat-item {
-  padding: 1rem 1.5rem;
-  text-align: center;
-  border-right: 1px solid var(--border);
-}
-.stat-item:last-child { border-right: none; }
-.stat-num { font-size: 1.625rem; font-weight: 900; background: linear-gradient(135deg, #7c3aed, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-.stat-label { font-size: .75rem; color: var(--gray); font-weight: 600; margin-top: .1rem; }
-
-/* Colorful section titles */
-.sec-title-grad {
-  font-size: 1.125rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: .75rem;
-}
-.sec-title-grad span {
-  background: linear-gradient(135deg, #7c3aed, #ec4899);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.sec-title-grad::after {
-  content: '';
-  flex: 1;
-  height: 2px;
-  background: linear-gradient(90deg, #7c3aed33, transparent);
-  border-radius: 2px;
+/* ── Base variables ── */
+:root {
+  --accent: #7c3aed;
+  --accent2: #6d28d9;
+  --pink: #ec4899;
+  --teal: #0d9488;
+  --amber: #d97706;
+  --border: rgba(124,58,237,.12);
+  --surface: rgba(124,58,237,.04);
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --bg-page: #fafafa;
+  --max: 860px;
+  --r: 12px;
 }
 
-/* Colorful cards */
-.card-featured-dark {
-  border: 1.5px solid rgba(124,58,237,.3);
-  border-left: 4px solid;
-  border-image: linear-gradient(180deg, #7c3aed, #ec4899) 1;
-  background: linear-gradient(135deg, rgba(124,58,237,.05) 0%, rgba(236,72,153,.03) 100%);
-  border-radius: 0 var(--r) var(--r) 0;
-  border-left-color: #7c3aed;
-}
-</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Shaista Shabbir","jobTitle":"Research Associate","affiliation":[{"@type":"Organization","name":"TU Dortmund University"},{"@type":"Organization","name":"Lamarr Institute"}],"url":"https://shaistashabbir-prog.github.io","knowsAbout":["Industrial AI","Machining Stability","Chatter Detection","Acoustic Monitoring","Tool Wear Prediction","Signal Processing","Explainable AI","NLP"]}</script>
-<style>
-/* ── Single-row sticky nav ── */
+/* ── Nav ── */
 header {
-  border-bottom: 1px solid rgba(124,58,237,.15);
+  border-bottom: 1px solid rgba(124,58,237,.12);
   position: sticky; top: 0; z-index: 50;
   background: rgba(255,255,255,.97);
   backdrop-filter: blur(12px);
-  padding: 0;
 }
 .nav-main {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  height: 52px;
-  overflow-x: auto;
-  white-space: nowrap;
-  scrollbar-width: none;
+  display: flex; align-items: center; gap: .5rem;
+  height: 52px; max-width: var(--max);
+  margin: 0 auto; padding: 0 1.25rem;
+  overflow-x: auto; white-space: nowrap; scrollbar-width: none;
 }
 .nav-main::-webkit-scrollbar { display: none; }
 .nav-brand {
-  font-weight: 900;
-  font-size: .9375rem;
-  color: #111827 !important;
+  font-weight: 900; font-size: .9375rem;
   text-decoration: none !important;
-  padding-right: .75rem;
-  margin-right: .25rem;
-  border-right: 2px solid #7c3aed;
+  padding-right: .75rem; margin-right: .25rem;
+  border-right: 2px solid var(--accent);
   flex-shrink: 0;
   background: linear-gradient(135deg,#7c3aed,#ec4899);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: .2rem;
-  flex: 1;
-}
+.nav-links { display: flex; align-items: center; gap: .2rem; flex: 1; }
 .nav-links a {
-  text-decoration: none;
-  color: #4b5563;
-  padding: .35rem .65rem;
-  border-radius: 8px;
-  font-size: .8125rem;
-  font-weight: 500;
-  transition: all .15s;
-  white-space: nowrap;
-  flex-shrink: 0;
+  text-decoration: none; color: #4b5563;
+  padding: .35rem .65rem; border-radius: 8px;
+  font-size: .8125rem; font-weight: 500;
+  transition: all .15s; white-space: nowrap; flex-shrink: 0;
 }
-.nav-links a:hover {
-  background: rgba(124,58,237,.08);
-  color: #7c3aed;
-}
+.nav-links a:hover { background: rgba(124,58,237,.08); color: #7c3aed; }
 .nav-links a.active {
   background: linear-gradient(135deg,#7c3aed,#a855f7);
-  color: #fff !important;
-  font-weight: 700;
+  color: #fff !important; font-weight: 700;
   box-shadow: 0 2px 8px rgba(124,58,237,.3);
+}
+
+/* ── Hero ── */
+.hero-dark {
+  background: linear-gradient(135deg, #0f0c29 0%, #1a0533 45%, #1e1b4b 100%);
+  padding: 3.5rem 1.25rem 2.5rem;
+  position: relative; overflow: hidden;
+}
+.hero-dark::before {
+  content: ''; position: absolute; top: -40%; right: -8%;
+  width: 480px; height: 480px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(124,58,237,.25) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-inner {
+  display: grid; grid-template-columns: 110px 1fr;
+  gap: 2rem; align-items: center;
+  position: relative; z-index: 1;
+  max-width: var(--max); margin: 0 auto;
+}
+@media(max-width:520px){
+  .hero-inner { grid-template-columns: 1fr; text-align: center; }
+  .hero-inner .btn-row, .hero-inner .badge-row { justify-content: center; }
+}
+.hero-avatar {
+  width: 110px; height: 110px; border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,.08);
+  box-shadow: 0 0 0 3px rgba(124,58,237,.4), 0 0 28px rgba(124,58,237,.3);
+  animation: glow-pulse 4s ease-in-out infinite;
+}
+@keyframes glow-pulse {
+  0%,100% { box-shadow: 0 0 0 3px rgba(124,58,237,.4), 0 0 28px rgba(124,58,237,.3); }
+  50%      { box-shadow: 0 0 0 3px rgba(236,72,153,.3), 0 0 28px rgba(236,72,153,.25); }
+}
+.hero-name {
+  font-size: 2.25rem; font-weight: 900; letter-spacing: -.03em;
+  background: linear-gradient(135deg, #e0c3fc 0%, #f9a8d4 50%, #fbbf24 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; margin-bottom: .2rem; line-height: 1.1;
+}
+.hero-role {
+  font-size: .9375rem; color: #a78bfa; font-weight: 700; margin-bottom: .15rem;
+}
+.hero-affil {
+  font-size: .8125rem; color: rgba(255,255,255,.45); margin-bottom: .875rem;
+}
+.hero-tagline {
+  font-size: .875rem; color: rgba(255,255,255,.6);
+  font-style: italic; margin-bottom: 1rem; line-height: 1.6;
+  max-width: 520px;
+}
+.hero-badge {
+  display: inline-flex; align-items: center;
+  font-size: .7rem; font-weight: 700;
+  padding: .2rem .6rem; border-radius: 999px;
+  white-space: nowrap; border: 1px solid;
+}
+.hb-purple { background: rgba(124,58,237,.2); color: #c4b5fd; border-color: rgba(124,58,237,.4); }
+.hb-pink   { background: rgba(236,72,153,.2); color: #fbcfe8; border-color: rgba(236,72,153,.4); }
+.hb-teal   { background: rgba(13,148,136,.2); color: #99f6e4; border-color: rgba(13,148,136,.4); }
+.hb-amber  { background: rgba(217,119,6,.15); color: #fde68a; border-color: rgba(217,119,6,.4); }
+.hb-white  { background: rgba(255,255,255,.07); color: rgba(255,255,255,.7); border-color: rgba(255,255,255,.12); }
+.badge-row { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .875rem; }
+.hbtn {
+  display: inline-flex; align-items: center; gap: .35rem;
+  padding: .5rem 1.1rem; border-radius: 10px;
+  font-size: .875rem; font-weight: 700; text-decoration: none !important;
+  transition: all .15s;
+}
+.hbtn-primary {
+  background: linear-gradient(135deg,#7c3aed,#a855f7);
+  color: #fff; box-shadow: 0 2px 8px rgba(124,58,237,.3);
+}
+.hbtn-primary:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(124,58,237,.4); }
+.hbtn-ghost { background: rgba(255,255,255,.08); color: rgba(255,255,255,.8); border: 1px solid rgba(255,255,255,.12); }
+.hbtn-ghost:hover { background: rgba(255,255,255,.12); }
+.btn-row { display: flex; gap: .6rem; flex-wrap: wrap; }
+
+/* ── Research profiles ── */
+.profiles-bar {
+  background: linear-gradient(135deg, #0f0c29 0%, #1a0533 100%);
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding: 1rem 1.25rem;
+}
+.profiles-inner {
+  max-width: var(--max); margin: 0 auto;
+  display: flex; flex-wrap: wrap; gap: .5rem; align-items: center;
+}
+.profile-link {
+  display: inline-flex; align-items: center; gap: .45rem;
+  padding: .35rem .8rem; border-radius: 8px;
+  font-size: .8rem; font-weight: 600; text-decoration: none !important;
+  border: 1px solid rgba(255,255,255,.1);
+  color: rgba(255,255,255,.75); background: rgba(255,255,255,.05);
+  transition: all .15s;
+}
+.profile-link:hover { background: rgba(124,58,237,.2); color: #c4b5fd; border-color: rgba(124,58,237,.4); }
+.profile-label { color: rgba(255,255,255,.35); font-size: .75rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; margin-right: .25rem; }
+
+/* ── Stat bar ── */
+.stat-bar {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  margin: 0; background: white;
+}
+@media(max-width:540px){ .stat-bar { grid-template-columns: repeat(2,1fr); } }
+.stat-item { padding: 1rem 1.25rem; text-align: center; border-right: 1px solid var(--border); }
+.stat-item:last-child { border-right: none; }
+.stat-num {
+  font-size: 1.5rem; font-weight: 900;
+  background: linear-gradient(135deg,#7c3aed,#ec4899);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.stat-label { font-size: .7rem; color: var(--text-muted); font-weight: 600; margin-top: .1rem; }
+
+/* ── Wrap / Section ── */
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+.sec { padding: 2.5rem 0; border-bottom: 1px solid var(--border); }
+.sec:last-child { border-bottom: none; }
+
+.sec-title {
+  font-size: 1.125rem; font-weight: 800; margin-bottom: 1.25rem;
+  display: flex; align-items: center; gap: .75rem; color: var(--text-primary);
+}
+.sec-title-accent {
+  background: linear-gradient(135deg,#7c3aed,#ec4899);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.sec-title::after {
+  content: ''; flex: 1; height: 1px;
+  background: linear-gradient(90deg, rgba(124,58,237,.2), transparent);
+}
+
+/* ── Research area tags ── */
+.area-grid {
+  display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.25rem;
+}
+.area-tag {
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: .35rem .75rem; border-radius: 8px;
+  font-size: .8125rem; font-weight: 600;
+  background: rgba(124,58,237,.06); color: #7c3aed;
+  border: 1px solid rgba(124,58,237,.15);
+  text-decoration: none;
+}
+
+/* ── Cards ── */
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 1.25rem 1.375rem;
+  margin-bottom: .875rem;
+  transition: box-shadow .2s, transform .2s;
+}
+.card:hover { box-shadow: 0 4px 24px rgba(124,58,237,.1); transform: translateY(-1px); }
+.card-flagship {
+  border: 1.5px solid rgba(124,58,237,.3);
+  border-left: 4px solid #7c3aed;
+  background: linear-gradient(135deg, rgba(124,58,237,.04) 0%, rgba(236,72,153,.02) 100%);
+  border-radius: 0 var(--r) var(--r) 0;
+}
+.card-flagship:hover { box-shadow: 0 4px 24px rgba(124,58,237,.15); }
+.card-title {
+  font-size: 1rem; font-weight: 800; color: var(--text-primary);
+  margin-bottom: .3rem; line-height: 1.35;
+}
+.card-title a { color: inherit; text-decoration: none; }
+.card-title a:hover { color: var(--accent); }
+.card-meta { font-size: .8125rem; color: var(--text-muted); margin-bottom: .6rem; }
+.card-desc { font-size: .875rem; color: var(--text-secondary); line-height: 1.7; }
+.card-tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .75rem; }
+.tag {
+  font-size: .7rem; font-weight: 700; padding: .2rem .55rem;
+  border-radius: 6px; background: rgba(124,58,237,.07);
+  color: #7c3aed; border: 1px solid rgba(124,58,237,.15);
+}
+.tag-teal { background: rgba(13,148,136,.07); color: #0d9488; border-color: rgba(13,148,136,.2); }
+.tag-amber { background: rgba(217,119,6,.07); color: var(--amber); border-color: rgba(217,119,6,.2); }
+.tag-pink { background: rgba(236,72,153,.07); color: #ec4899; border-color: rgba(236,72,153,.2); }
+
+/* ── Timeline ── */
+.timeline { position: relative; padding-left: 2rem; }
+.timeline::before {
+  content: ''; position: absolute; left: .4375rem; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #7c3aed, #ec4899, rgba(124,58,237,.1));
+}
+.timeline-item { position: relative; margin-bottom: 1.5rem; }
+.timeline-item::before {
+  content: ''; position: absolute; left: -1.625rem; top: .375rem;
+  width: 10px; height: 10px; border-radius: 50%;
+  background: linear-gradient(135deg,#7c3aed,#ec4899);
+  box-shadow: 0 0 8px rgba(124,58,237,.5);
+}
+.timeline-date { font-size: .75rem; font-weight: 800; color: #7c3aed; text-transform: uppercase; letter-spacing: .04em; margin-bottom: .15rem; }
+.timeline-title { font-size: .9375rem; font-weight: 800; color: var(--text-primary); margin-bottom: .1rem; }
+.timeline-org { font-size: .8125rem; color: var(--text-muted); margin-bottom: .35rem; }
+.timeline-desc { font-size: .8125rem; color: var(--text-secondary); line-height: 1.6; }
+
+/* ── Products showcase ── */
+.products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media(max-width:600px){ .products-grid { grid-template-columns: 1fr; } }
+.product-card {
+  border-radius: var(--r); overflow: hidden;
+  border: 1px solid var(--border);
+  background: white;
+}
+.product-card img { width: 100%; height: auto; display: block; }
+.product-card-body { padding: 1rem 1.125rem; }
+.product-card-title { font-size: .9375rem; font-weight: 800; color: var(--text-primary); margin-bottom: .25rem; }
+.product-card-desc { font-size: .8125rem; color: var(--text-muted); line-height: 1.6; margin-bottom: .6rem; }
+.product-card-link {
+  display: inline-flex; align-items: center; gap: .3rem;
+  font-size: .8125rem; font-weight: 700; color: var(--accent);
+  text-decoration: none;
+}
+.product-card-link:hover { color: var(--accent2); }
+
+/* ── Supervision ── */
+.sup-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: .75rem; }
+.sup-item {
+  background: rgba(124,58,237,.04); border: 1px solid rgba(124,58,237,.12);
+  border-radius: 10px; padding: .875rem 1rem;
+  font-size: .8125rem; color: var(--text-secondary); line-height: 1.5;
+}
+.sup-item strong { color: var(--text-primary); display: block; margin-bottom: .2rem; }
+
+/* ── Alert / info box ── */
+.info-box {
+  background: linear-gradient(135deg,rgba(124,58,237,.05),rgba(236,72,153,.03));
+  border: 1.5px solid rgba(124,58,237,.18); border-radius: 12px;
+  padding: .875rem 1.125rem; font-size: .875rem;
+  color: var(--text-secondary); line-height: 1.7; margin-top: 1rem;
+}
+
+/* ── Responsive ── */
+@media(max-width:600px) {
+  .hero-name { font-size: 1.75rem; }
+  .sec { padding: 2rem 0; }
 }
 </style>
 </head>
-<body>
+<body style="background:var(--bg-page);color:var(--text-primary);font-family:'Inter',system-ui,sans-serif;margin:0;">
 
 <header>
-  <div class="wrap">
-    <nav class="nav-main">
-      <a class="nav-brand" href="index.html">Shaista Shabbir</a>
-      <div class="nav-links">
-        <a class="active" href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-        <a href="experience.html">Experience</a>
-        <a href="supervision.html">Supervision</a>
-        <a href="workshops.html">Workshops</a>
-        <a href="awards.html">Awards</a>
-        <a href="certificates/">Certificates</a>
-        <a href="cv/">CV</a>
-      </div>
-    </nav>
+  <div class="nav-main">
+    <a class="nav-brand" href="index.html">Shaista Shabbir</a>
+    <div class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="projects.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="experience.html">Experience</a>
+      <a href="supervision.html">Supervision</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="awards.html">Awards</a>
+      <a href="cv/">CV</a>
+    </div>
   </div>
 </header>
 
-<!-- ── DARK HERO ── -->
+<!-- HERO -->
 <div class="hero-dark">
   <div class="hero-inner">
-    <img class="hero-avatar" src="assets/profile.jpeg" alt="Shaista Shabbir" width="120" height="120">
+    <img class="hero-avatar" src="assets/profile.jpeg" alt="Shaista Shabbir — Research Associate, TU Dortmund" width="110" height="110">
     <div>
       <h1 class="hero-name">Shaista Shabbir</h1>
-      <p class="hero-role">Research Associate · TU Dortmund University &amp; Lamarr Institute</p>
-      <p class="hero-affil">Chair of Virtual Machining · Industrial AI · Dortmund, Germany 🇩🇪</p>
+      <p class="hero-role">Research Associate &amp; Industrial AI Researcher</p>
+      <p class="hero-affil">TU Dortmund University · Lamarr Institute for ML &amp; AI · Chair of Virtual Machining · Dortmund, Germany</p>
+      <p class="hero-tagline">Developing trustworthy and interpretable AI systems for intelligent manufacturing — machining stability, chatter detection, acoustic monitoring, and explainable ML.</p>
       <div class="badge-row">
         <span class="hero-badge hb-purple">Industrial AI</span>
+        <span class="hero-badge hb-teal">Machining Stability</span>
         <span class="hero-badge hb-pink">Chatter Detection</span>
         <span class="hero-badge hb-purple">Acoustic Monitoring</span>
-        <span class="hero-badge hb-green">AudioIno</span>
+        <span class="hero-badge hb-teal">AudioIno</span>
         <span class="hero-badge hb-white">Explainable ML</span>
-        <span class="hero-badge hb-white">Signal Processing</span>
-        <span class="hero-badge hb-amber">🥇 Gold Medal BSCS</span>
-        <span class="hero-badge hb-green">DAAD Scholar</span>
+        <span class="hero-badge hb-white">Trustworthy AI</span>
+        <span class="hero-badge hb-amber">DAAD Scholar</span>
       </div>
-      <div class="hero-btn-row">
+      <div class="btn-row">
         <a class="hbtn hbtn-primary" href="projects.html">Research Projects →</a>
         <a class="hbtn hbtn-ghost" href="publications.html">Publications</a>
-        <a class="hbtn hbtn-ghost" href="cv/">CV</a>
+        <a class="hbtn hbtn-ghost" href="cv/">Download CV</a>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ── STAT BAR ── -->
+<!-- RESEARCH PROFILES -->
+<div class="profiles-bar">
+  <div class="profiles-inner">
+    <span class="profile-label">Research profiles</span>
+    <a class="profile-link" href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank" rel="noopener">📊 ResearchGate</a>
+    <a class="profile-link" href="https://scholar.google.com" target="_blank" rel="noopener">🎓 Google Scholar</a>
+    <a class="profile-link" href="https://orcid.org" target="_blank" rel="noopener">🔗 ORCID</a>
+    <a class="profile-link" href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noopener">⚙️ GitHub</a>
+    <a class="profile-link" href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank" rel="noopener">💼 LinkedIn</a>
+  </div>
+</div>
+
+<!-- STATS -->
 <div class="stat-bar">
-  <div class="stat-item"><div class="stat-num">TU</div><div class="stat-label">Dortmund Univ.</div></div>
-  <div class="stat-item"><div class="stat-num">Lamarr</div><div class="stat-label">ML Institute</div></div>
-  <div class="stat-item"><div class="stat-num">6+</div><div class="stat-label">Research areas</div></div>
-  <div class="stat-item"><div class="stat-num">3×</div><div class="stat-label">Badminton Champion</div></div>
+  <div class="stat-item"><div class="stat-num">100+</div><div class="stat-label">Students Mentored</div></div>
+  <div class="stat-item"><div class="stat-num">10+</div><div class="stat-label">Research Projects</div></div>
+  <div class="stat-item"><div class="stat-num">6+</div><div class="stat-label">Research Domains</div></div>
+  <div class="stat-item"><div class="stat-num">2</div><div class="stat-label">Research Institutions</div></div>
 </div>
 
 <main class="wrap">
 
-  <!-- ── ABOUT ── -->
+  <!-- RESEARCH IDENTITY -->
   <section class="sec">
-    <h2 class="sec-title-grad"><span>About me</span></h2>
-    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.8;margin-bottom:.8rem">
-      I am a <strong>Research Associate at TU Dortmund University</strong> and the
-      <strong>Lamarr Institute for Machine Learning and Artificial Intelligence</strong>,
-      affiliated with the Chair of Virtual Machining.
+    <h2 class="sec-title"><span class="sec-title-accent">Research Identity</span></h2>
+    <div class="area-grid">
+      <span class="area-tag">🏭 Industrial AI</span>
+      <span class="area-tag">⚙️ Machining Stability</span>
+      <span class="area-tag">🔊 Chatter Detection</span>
+      <span class="area-tag">🎙️ Acoustic Monitoring</span>
+      <span class="area-tag">🔧 Tool Wear Prediction</span>
+      <span class="area-tag">🧠 Explainable AI</span>
+      <span class="area-tag">🔬 Signal Processing</span>
+      <span class="area-tag">📊 Human-in-the-loop AI</span>
+      <span class="area-tag">🤖 Trustworthy AI</span>
+      <span class="area-tag">🏗️ Smart Manufacturing</span>
+    </div>
+    <p style="font-size:.9375rem;color:var(--text-secondary);line-height:1.8;margin-bottom:.75rem">
+      I am a <strong>Research Associate at TU Dortmund University</strong> (Chair of Virtual Machining) and the
+      <strong>Lamarr Institute for Machine Learning and Artificial Intelligence</strong>.
+      My research develops trustworthy and interpretable AI systems for intelligent manufacturing — with focus on
+      machining process stability, chatter detection, and acoustic monitoring.
     </p>
-    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.8;margin-bottom:.8rem">
-      My research focuses on <strong>Industrial AI for manufacturing</strong> — machining stability analysis,
-      chatter detection, acoustic monitoring, explainable machine learning, and trustworthy AI systems.
+    <p style="font-size:.9375rem;color:var(--text-secondary);line-height:1.8;margin-bottom:.75rem">
+      My current flagship project is <strong>AudioIno</strong> — an expert-guided annotation platform and analysis
+      workflow for machining stability labeling, acoustic process monitoring, and data-driven manufacturing intelligence.
+      The broader research agenda aims to answer: <em>How can AI systems reliably support machining decisions with transparent, physically-grounded reasoning?</em>
     </p>
-    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.8;margin-bottom:.8rem">
-      Currently, I work on <strong>AudioIno</strong> — an expert-guided platform and analysis workflow for
-      machining stability annotation, acoustic process monitoring, and data-driven manufacturing intelligence.
-    </p>
-    <p style="font-size:.9375rem;color:var(--text-s);line-height:1.8;margin-bottom:1rem">
-      My long-term goal is to develop <strong>trustworthy and interpretable AI systems</strong> for intelligent manufacturing.
-    </p>
-    <div style="background:linear-gradient(135deg,rgba(124,58,237,.06),rgba(236,72,153,.04));border:1.5px solid rgba(124,58,237,.2);border-radius:12px;padding:.875rem 1.125rem;font-size:.875rem;color:var(--text-s);line-height:1.7">
-      <strong style="color:var(--accent)">Background:</strong> MSCS — Virtual University of Pakistan · BSCS (🥇 Gold Medal, 2012–2016) — UMSIT Kotli AJK · MA Education — AIOU · Research Assistant &amp; AI/ML Engineer — HITeC e.V. / University of Hamburg (2022–2024) · 6 years academic teaching in Pakistan
+    <div class="info-box">
+      <strong style="color:var(--accent)">Long-term research goal:</strong>
+      Develop trustworthy and interpretable AI systems for intelligent manufacturing — bridging acoustic signal processing,
+      machine learning, and human-expert knowledge in machining stability analysis.
     </div>
   </section>
 
-  <!-- ── RESEARCH FOCUS ── -->
+  <!-- CURRENT RESEARCH FOCUS -->
   <section class="sec">
-    <h2 class="sec-title-grad"><span>Current research focus</span></h2>
-    <div class="focus-grid">
-      <div class="focus-item">AudioIno Labeling Platform</div>
-      <div class="focus-item">Acoustic Monitoring for CNC Milling</div>
-      <div class="focus-item">Chatter Detection</div>
-      <div class="focus-item">Tool Wear Prediction</div>
-      <div class="focus-item">Signal Processing for Machining Dynamics</div>
-      <div class="focus-item">Explainable ML for Manufacturing</div>
-      <div class="focus-item">Sensor Comparison &amp; Benchmarking</div>
-      <div class="focus-item">Human-in-the-loop Annotation</div>
-      <div class="focus-item">FRF &amp; Impact Hammer Analysis</div>
-      <div class="focus-item">Trustworthy AI Systems</div>
+    <h2 class="sec-title"><span class="sec-title-accent">Current Research Focus</span></h2>
+
+    <!-- AudioIno — Flagship -->
+    <div class="card card-flagship">
+      <div class="card-title">🎙️ AudioIno — Expert-Guided Annotation Platform for Machining Stability</div>
+      <div class="card-meta">Flagship project · TU Dortmund · 2025–Present</div>
+      <p class="card-desc">
+        AudioIno is an expert-guided platform for annotation, analysis, and interpretation of machining acoustic signals.
+        It addresses the lack of high-quality labeled datasets for chatter detection and machining stability by combining
+        domain expert knowledge with structured data workflows.
+      </p>
+      <p class="card-desc" style="margin-top:.5rem">
+        <strong>Research questions:</strong> How can we reliably label machining stability states from acoustic signals?
+        How can domain expert knowledge be structured and preserved? What annotation quality metrics ensure reproducibility?
+      </p>
+      <div class="card-tags">
+        <span class="tag">Annotation Platform</span>
+        <span class="tag tag-teal">Acoustic Monitoring</span>
+        <span class="tag tag-pink">Chatter Detection</span>
+        <span class="tag">Human-in-the-loop</span>
+        <span class="tag tag-amber">Dataset Release (planned)</span>
+      </div>
     </div>
+
+    <!-- Low-Cost Acoustic Monitoring -->
+    <div class="card card-flagship" style="border-left-color:#0d9488">
+      <div class="card-title">🔊 Low-Cost Acoustic Monitoring for CNC Milling</div>
+      <div class="card-meta">Active research · TU Dortmund · 2025–Present</div>
+      <p class="card-desc">
+        Physics-informed evaluation of low-cost microphone systems (PCB, B5, HI10, TASCAM) for CNC milling stability monitoring.
+        Compares spectrogram similarity, dominant frequency tracking, resonance interpretation, and impact hammer FRF analysis
+        across sensor types to establish cost-effective monitoring baselines.
+      </p>
+      <p class="card-desc" style="margin-top:.5rem">
+        <strong>Potential publication:</strong> <em>Physics-Informed Acoustic Monitoring: A Comparative Study of Low-Cost Sensor Systems for Machining Stability</em>
+      </p>
+      <div class="card-tags">
+        <span class="tag tag-teal">PCB · B5 · HI10 · TASCAM</span>
+        <span class="tag">Spectrogram Analysis</span>
+        <span class="tag tag-teal">FRF / Impact Hammer</span>
+        <span class="tag">Sensor Comparison</span>
+      </div>
+    </div>
+
+    <!-- Tool Wear Prediction -->
+    <div class="card" style="border-left: 3px solid #d97706">
+      <div class="card-title">🔧 Tool Wear Prediction — ML Workflow for Condition Monitoring</div>
+      <div class="card-meta">Research project · 2024–Present</div>
+      <p class="card-desc">
+        Machine learning workflows for tool-condition monitoring — combining CNN architectures, Random Forest,
+        regression models, and feature engineering pipelines. Research emphasis on explainability: which signal
+        features actually predict wear, and can the model decisions be trusted by engineers?
+      </p>
+      <div class="card-tags">
+        <span class="tag tag-amber">CNN</span>
+        <span class="tag tag-amber">Random Forest</span>
+        <span class="tag">Feature Engineering</span>
+        <span class="tag tag-pink">Explainability</span>
+      </div>
+    </div>
+
+    <!-- Structural Dynamics -->
+    <div class="card">
+      <div class="card-title">📐 Structural Dynamics &amp; Resonance Analysis (FRF / Impact Hammer)</div>
+      <div class="card-meta">Supporting research · TU Dortmund · 2025–Present</div>
+      <p class="card-desc">
+        Frequency Response Function analysis using H1/H2 estimators for resonance identification and coherence analysis.
+        Supports physical interpretation of chatter mechanisms through structural dynamics characterization of the
+        tool-spindle-workpiece system.
+      </p>
+      <div class="card-tags">
+        <span class="tag">FRF Analysis</span>
+        <span class="tag">H1/H2 Estimators</span>
+        <span class="tag tag-teal">Resonance Extraction</span>
+        <span class="tag">Coherence Analysis</span>
+      </div>
+    </div>
+
+    <a href="projects.html" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.875rem;font-weight:700;color:var(--accent);text-decoration:none;margin-top:.5rem">All research projects →</a>
   </section>
 
-  <!-- ── FEATURED ── -->
+  <!-- RESEARCH TIMELINE -->
   <section class="sec">
-    <h2 class="sec-title-grad"><span>Featured research</span></h2>
-    <div class="cards">
-      <article class="card featured">
-        <h3>AudioIno — Expert Labeling &amp; Analysis Platform for Machining Stability</h3>
-        <div class="cmeta">
-          <span class="badge b-green">Active · TU Dortmund</span>
-          <span class="muted">2025–Present</span>
+    <h2 class="sec-title"><span class="sec-title-accent">Research Timeline</span></h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">Nov 2025 – Present</div>
+        <div class="timeline-title">Research Associate</div>
+        <div class="timeline-org">TU Dortmund University · Chair of Virtual Machining · Lamarr Institute for ML &amp; AI</div>
+        <div class="timeline-desc">Industrial AI research: AudioIno, machining stability, chatter detection, acoustic monitoring, tool wear prediction.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2023 – 2025</div>
+        <div class="timeline-title">Research Assistant / AI Engineer</div>
+        <div class="timeline-org">University of Hamburg · HITeC e.V.</div>
+        <div class="timeline-desc">NLP, large language models, applied AI systems, software engineering for research projects.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2025 – Present</div>
+        <div class="timeline-title">DAAD Scholar</div>
+        <div class="timeline-org">Deutscher Akademischer Austauschdienst (DAAD)</div>
+        <div class="timeline-desc">Scholarship for research excellence and international academic mobility.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2017 – 2023</div>
+        <div class="timeline-title">Lecturer &amp; Academic Mentor</div>
+        <div class="timeline-org">Computer Science Education · Pakistan</div>
+        <div class="timeline-desc">100+ students supervised and mentored across ML, AI, NLP, software engineering, and data science.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2012 – 2016</div>
+        <div class="timeline-title">BSCS — Gold Medal Graduate</div>
+        <div class="timeline-org">UMSIT Kotli AJK · Top of cohort</div>
+        <div class="timeline-desc">Bachelor of Computer Science — awarded Gold Medal for academic excellence.</div>
+      </div>
+    </div>
+    <a href="experience.html" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.875rem;font-weight:700;color:var(--accent);text-decoration:none;margin-top:.5rem">Full experience →</a>
+  </section>
+
+  <!-- RESEARCH SOFTWARE -->
+  <section class="sec">
+    <h2 class="sec-title"><span class="sec-title-accent">Research Software</span></h2>
+    <p style="font-size:.875rem;color:var(--text-muted);margin-bottom:1.25rem">
+      Open research infrastructure built alongside the academic work — tools for annotation, analysis, and reproducibility.
+    </p>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="assets/products/researchos_hero.png" alt="ResearchOS — Research Quality Platform" loading="lazy">
+        <div class="product-card-body">
+          <div class="product-card-title">ResearchOS</div>
+          <div class="product-card-desc">Research Quality Platform — structured 6-dimension critique, reviewer simulation, reproducibility scoring, and research memory. Built for MSc, PhD, and research groups.</div>
+          <a class="product-card-link" href="https://research-os-phi.vercel.app" target="_blank" rel="noopener">Visit ResearchOS →</a>
         </div>
-        <p>Expert annotation and analysis workflow for machining stability datasets — covering stable, metastable, and chatter regions in acoustic and force-assisted experiments.</p>
-        <p style="margin-top:.5rem"><a href="projects.html#audioino-labeling">See full project details →</a></p>
-      </article>
-      <article class="card featured">
-        <h3>Low-Cost Acoustic Monitoring for CNC Milling</h3>
-        <div class="cmeta">
-          <span class="badge b-green">Active · TU Dortmund</span>
-          <span class="muted">2025–Present</span>
+      </div>
+      <div class="product-card">
+        <img src="assets/products/machiningos_hero.png" alt="MachiningOS — AI Copilot for Machining Stability" loading="lazy">
+        <div class="product-card-body">
+          <div class="product-card-title">MachiningOS</div>
+          <div class="product-card-desc">AI Copilot for Machining Stability — upload CSV/WAV/TXT signals, get chatter detection, spectrogram analysis, stability classification, and engineering reports.</div>
+          <a class="product-card-link" href="https://github.com/ShaistaShabbir-prog/machining-os" target="_blank" rel="noopener">View on GitHub →</a>
         </div>
-        <p>Evaluating whether low-cost microphones (B5, HI10, TASCAM) can capture chatter-relevant acoustic information compared with a PCB reference microphone.</p>
-        <p style="margin-top:.5rem"><a href="projects.html#acoustic-monitoring">See full project details →</a></p>
-      </article>
-
+      </div>
     </div>
-    <p style="margin-top:1rem;font-size:.875rem"><a href="projects.html">See all research &amp; development projects →</a></p>
+    <div class="card" style="margin-top:.875rem">
+      <div class="card-title">📊 Signal Analysis &amp; Processing Toolkit</div>
+      <p class="card-desc">Python-based signal processing pipelines for acoustic monitoring — FFT, STFT, dominant frequency extraction, stability classification, and dataset reproducibility auditing for machining research.</p>
+      <div class="card-tags">
+        <span class="tag">Python</span><span class="tag">NumPy / SciPy</span><span class="tag tag-teal">Signal Processing</span><span class="tag">Reproducibility</span>
+      </div>
+    </div>
   </section>
 
-  <!-- ── PROFILE LINKS ── -->
+  <!-- SUPERVISION PREVIEW -->
   <section class="sec">
-    <h2 class="sec-title-grad"><span>Affiliation &amp; profiles</span></h2>
-    <div class="profile-grid">
-      <a class="plink" href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank" rel="noopener">
-        <span class="picon">🔬</span>
-        <div><div>ResearchGate</div><div style="font-size:.72rem;font-weight:400;color:var(--gray)">Research profile</div></div>
-      </a>
-      <a class="plink" href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank" rel="noopener">
-        <span class="picon">💼</span>
-        <div><div>LinkedIn</div><div style="font-size:.72rem;font-weight:400;color:var(--gray)">Professional network</div></div>
-      </a>
-      <a class="plink" href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noopener">
-        <span class="picon">💻</span>
-        <div><div>GitHub</div><div style="font-size:.72rem;font-weight:400;color:var(--gray)">Code repositories</div></div>
-      </a>
-      <a class="plink" href="https://conf.informatik.uni-hamburg.de/shaista.shabbir" target="_blank" rel="noopener">
-        <span class="picon">🦊</span>
-        <div><div>GitLab (Hamburg)</div><div style="font-size:.72rem;font-weight:400;color:var(--gray)">HITeC contributions</div></div>
-      </a>
-      <a class="plink" href="https://www.tu-dortmund.de" target="_blank" rel="noopener">
-        <span class="picon">🏛️</span>
-        <div><div>TU Dortmund</div><div style="font-size:.72rem;font-weight:400;color:var(--gray)">Current institution</div></div>
-      </a>
-      <a class="plink" href="mailto:shaista.s.shabbir@gmail.com">
-        <span class="picon">✉️</span>
-        <div><div>Email</div><div style="font-size:.72rem;font-weight:400;color:var(--gray)">shaista.s.shabbir@gmail.com</div></div>
-      </a>
+    <h2 class="sec-title"><span class="sec-title-accent">Student Supervision &amp; Mentoring</span></h2>
+    <div class="info-box" style="margin-bottom:1.25rem">
+      <strong>100+ students mentored</strong> across BSc, MSc, and professional development programs —
+      in Machine Learning, AI, NLP, Software Engineering, Databases, Data Science, and Industrial AI.
+    </div>
+    <div class="sup-grid">
+      <div class="sup-item"><strong>Machine Learning</strong>CNNs, Random Forests, regression, classification</div>
+      <div class="sup-item"><strong>NLP &amp; LLMs</strong>Text classification, transformers, applications</div>
+      <div class="sup-item"><strong>Industrial AI</strong>Process monitoring, signal analysis, quality control</div>
+      <div class="sup-item"><strong>Software Engineering</strong>System design, architecture, testing</div>
+      <div class="sup-item"><strong>Data Science</strong>Feature engineering, analysis pipelines</div>
+      <div class="sup-item"><strong>Databases</strong>Relational design, SQL, data management</div>
+    </div>
+    <a href="supervision.html" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.875rem;font-weight:700;color:var(--accent);text-decoration:none;margin-top:1rem">View supervision details →</a>
+  </section>
+
+  <!-- PUBLICATIONS PREVIEW -->
+  <section class="sec">
+    <h2 class="sec-title"><span class="sec-title-accent">Publications &amp; Work in Progress</span></h2>
+    <div class="card" style="border-left: 3px solid #7c3aed">
+      <div class="card-title">📝 Work in Progress</div>
+      <p class="card-desc" style="margin-bottom:.75rem">Active research with publication potential:</p>
+      <ul style="font-size:.875rem;color:var(--text-secondary);line-height:1.9;padding-left:1.25rem;margin:0">
+        <li>Physics-Informed Acoustic Monitoring — comparative evaluation of low-cost microphones for CNC milling stability</li>
+        <li>AudioIno: Expert-Guided Annotation for Machining Stability — platform paper</li>
+        <li>Chatter Detection Benchmark — reproducible evaluation framework using AudioIno datasets</li>
+        <li>Explainable AI for Machining: Interpreting ML decisions in stability classification</li>
+      </ul>
+    </div>
+    <a href="publications.html" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.875rem;font-weight:700;color:var(--accent);text-decoration:none;margin-top:.5rem">All publications →</a>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="sec" style="border-bottom:none">
+    <h2 class="sec-title"><span class="sec-title-accent">Contact &amp; Collaboration</span></h2>
+    <p style="font-size:.9375rem;color:var(--text-secondary);line-height:1.8;margin-bottom:1rem">
+      Open to research collaborations in industrial AI, machining stability, and acoustic monitoring.
+      Available for PhD supervision discussions, dataset collaborations, and joint research projects.
+    </p>
+    <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center">
+      <a href="mailto:shaista.s.shabbir@gmail.com" class="hbtn hbtn-primary" style="font-size:.875rem">✉️ shaista.s.shabbir@gmail.com</a>
+      <a href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank" rel="noopener" class="hbtn hbtn-ghost" style="font-size:.875rem">ResearchGate</a>
+      <a href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noopener" class="hbtn hbtn-ghost" style="font-size:.875rem">GitHub</a>
     </div>
   </section>
 
 </main>
 
-<footer class="wrap">
-  <p id="contact">
-    <strong>Contact:</strong>
-    <a href="mailto:shaista.s.shabbir@gmail.com">shaista.s.shabbir@gmail.com</a> ·
-    <a href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank">ResearchGate</a> ·
-    <a href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank">LinkedIn</a> ·
-    <a href="https://github.com/ShaistaShabbir-prog" target="_blank">GitHub</a>
-  </p>
-  <p style="margin-top:.4rem"><small>© 2026 Shaista Shabbir · Research Associate, TU Dortmund University &amp; Lamarr Institute</small></p>
+<footer style="background:linear-gradient(135deg,#0f0c29,#1a0533);color:rgba(255,255,255,.4);text-align:center;padding:1.5rem 1.25rem;font-size:.8125rem;margin-top:0">
+  <p>Shaista Shabbir · Research Associate · TU Dortmund University · Lamarr Institute</p>
+  <p style="margin-top:.3rem">© 2026 · All Rights Reserved · <a href="LICENSE" style="color:rgba(255,255,255,.3)">License</a></p>
 </footer>
+
 </body>
 </html>
