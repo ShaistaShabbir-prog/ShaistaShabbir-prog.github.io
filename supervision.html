@@ -4,109 +4,302 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Student Supervision & Mentoring — Shaista Shabbir</title>
-<meta name="description" content="100+ students mentored by Shaista Shabbir in ML, AI, NLP, Software Engineering, and Industrial AI.">
+<meta name="description" content="100+ students supervised across BSCS, BSIT, BSSE, BSAI, BSDS, MCS, BS Education, MA Education — FYPs, research projects, course work.">
 <link rel="icon" href="assets/img/avatar.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-.sec-title { font-size:1.125rem;font-weight:800;margin-bottom:1.25rem;display:flex;align-items:center;gap:.75rem; }
-.sec-title-accent { background:linear-gradient(135deg,#7c3aed,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
-.sec-title::after { content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(124,58,237,.2),transparent); }
-.stat-big { font-size:3rem;font-weight:900;background:linear-gradient(135deg,#7c3aed,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
-.topic-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.75rem; }
-.topic-card { background:white;border:1px solid rgba(124,58,237,.12);border-radius:12px;padding:1rem 1.125rem; }
-.topic-title { font-size:.9375rem;font-weight:800;color:#111827;margin-bottom:.3rem; }
-.topic-desc { font-size:.8125rem;color:#4b5563;line-height:1.7; }
-.tag { font-size:.7rem;font-weight:700;padding:.2rem .55rem;border-radius:6px;background:rgba(124,58,237,.07);color:#7c3aed;border:1px solid rgba(124,58,237,.15); }
+.sec-title {
+  font-size:1.125rem;font-weight:800;margin-bottom:1.25rem;
+  display:flex;align-items:center;gap:.75rem;color:#111827;
+}
+.sec-title-accent {
+  background:linear-gradient(135deg,#7c3aed,#ec4899);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.sec-title::after {
+  content:'';flex:1;height:1px;
+  background:linear-gradient(90deg,rgba(124,58,237,.2),transparent);
+}
+.stat-big {
+  font-size:3.5rem;font-weight:900;line-height:1;
+  background:linear-gradient(135deg,#7c3aed,#ec4899);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.degree-grid {
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;
+}
+.degree-card {
+  background:white;border:1px solid rgba(124,58,237,.12);
+  border-left:3px solid #7c3aed;
+  border-radius:0 10px 10px 0;padding:.875rem 1rem;
+}
+.degree-title {font-size:.9375rem;font-weight:800;color:#111827;margin-bottom:.2rem;}
+.degree-full {font-size:.8rem;color:#6b7280;margin-bottom:.35rem;}
+.degree-tags {display:flex;flex-wrap:wrap;gap:.3rem;}
+.tag {
+  font-size:.7rem;font-weight:700;padding:.2rem .5rem;
+  border-radius:6px;background:rgba(124,58,237,.07);
+  color:#7c3aed;border:1px solid rgba(124,58,237,.15);
+}
+.tag-teal {background:rgba(13,148,136,.07);color:#0d9488;border-color:rgba(13,148,136,.2);}
+.tag-pink {background:rgba(236,72,153,.07);color:#ec4899;border-color:rgba(236,72,153,.2);}
+.tag-amber {background:rgba(217,119,6,.07);color:#b45309;border-color:rgba(217,119,6,.2);}
+.inst-grid {
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.75rem;
+}
+.inst-card {
+  background:white;border:1px solid rgba(124,58,237,.1);border-radius:10px;padding:.875rem 1rem;
+}
+.inst-name {font-size:.875rem;font-weight:800;color:#111827;margin-bottom:.2rem;}
+.inst-roles {font-size:.8rem;color:#4b5563;line-height:1.6;}
+.topic-grid {
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;
+}
+.topic-card {
+  background:white;border:1px solid rgba(124,58,237,.1);border-radius:10px;padding:.875rem 1rem;
+}
+.topic-title {font-size:.9375rem;font-weight:800;color:#111827;margin-bottom:.3rem;}
+.topic-desc {font-size:.8125rem;color:#4b5563;line-height:1.7;}
+.info-box {
+  background:linear-gradient(135deg,rgba(124,58,237,.05),rgba(236,72,153,.03));
+  border:1.5px solid rgba(124,58,237,.18);border-radius:12px;
+  padding:.875rem 1.125rem;font-size:.875rem;color:#4b5563;line-height:1.7;
+}
 </style>
 </head>
 <body style="background:#fafafa;color:#111827;font-family:'Inter',sans-serif;margin:0">
+
 <header style="border-bottom:1px solid rgba(124,58,237,.12);position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(12px)">
-  <div style="max-width:860px;margin:0 auto;padding:0 1.25rem;display:flex;align-items:center;gap:.5rem;height:52px;overflow-x:auto;white-space:nowrap;scrollbar-width:none">
-    <a href="index.html" style="font-weight:900;font-size:.9375rem;text-decoration:none;background:linear-gradient(135deg,#7c3aed,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;border-right:2px solid #7c3aed;padding-right:.75rem;margin-right:.25rem">Shaista Shabbir</a>
-    <a href="index.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;padding:.35rem .65rem;border-radius:8px">Home</a>
-    <a href="projects.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;padding:.35rem .65rem;border-radius:8px">Research</a>
-    <a href="supervision.html" style="background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;text-decoration:none;font-size:.8125rem;padding:.35rem .65rem;border-radius:8px;font-weight:700">Supervision</a>
-    <a href="publications.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;padding:.35rem .65rem;border-radius:8px">Publications</a>
-    <a href="experience.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;padding:.35rem .65rem;border-radius:8px">Experience</a>
+  <div style="max-width:900px;margin:0 auto;padding:0 1.25rem;display:flex;align-items:center;gap:.5rem;height:52px;overflow-x:auto;white-space:nowrap;scrollbar-width:none">
+    <a href="index.html" style="font-weight:900;font-size:.9375rem;text-decoration:none!important;background:linear-gradient(135deg,#7c3aed,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;border-right:2px solid #7c3aed;padding-right:.75rem;margin-right:.25rem;flex-shrink:0">Shaista Shabbir</a>
+    <a href="index.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px">Home</a>
+    <a href="projects.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px">Research</a>
+    <a href="publications.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px">Publications</a>
+    <a href="experience.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px">Experience</a>
+    <a href="supervision.html" style="background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff!important;text-decoration:none;font-size:.8125rem;font-weight:700;padding:.35rem .65rem;border-radius:8px;box-shadow:0 2px 8px rgba(124,58,237,.3)">Supervision</a>
+    <a href="workshops.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px">Workshops</a>
+    <a href="awards.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px">Awards</a>
+    <a href="cv/" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px">CV</a>
   </div>
 </header>
 
-<div style="background:linear-gradient(135deg,#0f0c29,#1a0533);padding:2.5rem 1.25rem 2rem;color:white">
-  <div style="max-width:860px;margin:0 auto">
-    <h1 style="font-size:2rem;font-weight:900;background:linear-gradient(135deg,#e0c3fc,#f9a8d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.4rem">Student Supervision &amp; Academic Mentoring</h1>
-    <p style="color:rgba(255,255,255,.55);font-size:.9375rem">TU Dortmund University · University of Hamburg · Academic Teaching (2017–Present)</p>
+<div style="background:linear-gradient(135deg,#0f0c29,#1a0533);padding:2.5rem 1.25rem 2rem">
+  <div style="max-width:900px;margin:0 auto">
+    <h1 style="font-size:2rem;font-weight:900;background:linear-gradient(135deg,#e0c3fc,#f9a8d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.4rem">
+      Student Supervision &amp; Academic Mentoring
+    </h1>
+    <p style="color:rgba(255,255,255,.5);font-size:.9375rem">
+      COMSENS Institute · UOKAJK · UAJK · Punjab Group of Colleges (MUST) · University of Hamburg · TU Dortmund · 2017–Present
+    </p>
   </div>
 </div>
 
-<main style="max-width:860px;margin:0 auto;padding:0 1.25rem">
+<main style="max-width:900px;margin:0 auto;padding:0 1.25rem">
 
+  <!-- ── Stats ── -->
   <section style="padding:2.5rem 0;border-bottom:1px solid rgba(124,58,237,.1)">
-    <div style="text-align:center;padding:1.5rem;background:linear-gradient(135deg,rgba(124,58,237,.06),rgba(236,72,153,.04));border:1.5px solid rgba(124,58,237,.2);border-radius:16px;margin-bottom:2rem">
-      <div class="stat-big">100+</div>
-      <p style="font-size:1rem;font-weight:700;color:#4b5563;margin-top:.25rem">Students mentored and supervised</p>
-      <p style="font-size:.875rem;color:#6b7280;margin-top:.25rem">BSc, MSc, and professional development · 2017–Present</p>
-    </div>
-
-    <h2 class="sec-title"><span class="sec-title-accent">Supervision Areas</span></h2>
-    <div class="topic-grid">
-      <div class="topic-card">
-        <div class="topic-title">🤖 Machine Learning</div>
-        <div class="topic-desc">CNNs, Random Forests, regression, classification, feature engineering, model evaluation</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-bottom:1.5rem">
+      <div style="text-align:center;padding:1.25rem;background:linear-gradient(135deg,rgba(124,58,237,.06),rgba(236,72,153,.04));border:1.5px solid rgba(124,58,237,.2);border-radius:14px">
+        <div class="stat-big">100+</div>
+        <p style="font-size:.875rem;font-weight:700;color:#4b5563;margin-top:.3rem">Students Supervised</p>
+        <p style="font-size:.75rem;color:#9ca3af;margin-top:.1rem">BSc · MSc · FYP · Course projects</p>
       </div>
-      <div class="topic-card">
-        <div class="topic-title">🧠 Artificial Intelligence</div>
-        <div class="topic-desc">AI systems design, knowledge representation, search, reasoning, applied AI</div>
+      <div style="text-align:center;padding:1.25rem;background:linear-gradient(135deg,rgba(13,148,136,.05),rgba(13,148,136,.02));border:1.5px solid rgba(13,148,136,.2);border-radius:14px">
+        <div style="font-size:3.5rem;font-weight:900;line-height:1;background:linear-gradient(135deg,#0d9488,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">8</div>
+        <p style="font-size:.875rem;font-weight:700;color:#4b5563;margin-top:.3rem">Degree Programs</p>
+        <p style="font-size:.75rem;color:#9ca3af;margin-top:.1rem">BSCS · BSIT · BSSE · BSAI · BSDS · MCS · BSEd · MAEd</p>
       </div>
-      <div class="topic-card">
-        <div class="topic-title">💬 NLP &amp; LLMs</div>
-        <div class="topic-desc">Text classification, transformers, BERT, GPT applications, language model fine-tuning</div>
+      <div style="text-align:center;padding:1.25rem;background:linear-gradient(135deg,rgba(217,119,6,.05),rgba(217,119,6,.02));border:1.5px solid rgba(217,119,6,.2);border-radius:14px">
+        <div style="font-size:3.5rem;font-weight:900;line-height:1;background:linear-gradient(135deg,#b45309,#d97706);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">5+</div>
+        <p style="font-size:.875rem;font-weight:700;color:#4b5563;margin-top:.3rem">Institutions</p>
+        <p style="font-size:.75rem;color:#9ca3af;margin-top:.1rem">Pakistan &amp; Germany</p>
       </div>
-      <div class="topic-card">
-        <div class="topic-title">🏭 Industrial AI</div>
-        <div class="topic-desc">Machining stability, acoustic monitoring, process monitoring, quality control AI</div>
-      </div>
-      <div class="topic-card">
-        <div class="topic-title">💻 Software Engineering</div>
-        <div class="topic-desc">System architecture, object-oriented design, testing, agile development</div>
-      </div>
-      <div class="topic-card">
-        <div class="topic-title">📊 Data Science</div>
-        <div class="topic-desc">Data pipelines, exploratory analysis, statistical methods, visualization</div>
-      </div>
-      <div class="topic-card">
-        <div class="topic-title">🗄️ Databases</div>
-        <div class="topic-desc">Relational design, SQL, normalization, query optimization, data management</div>
-      </div>
-      <div class="topic-card">
-        <div class="topic-title">🔬 Research Methods</div>
-        <div class="topic-desc">Thesis writing, literature review, research design, academic writing, publication preparation</div>
+      <div style="text-align:center;padding:1.25rem;background:linear-gradient(135deg,rgba(236,72,153,.05),rgba(236,72,153,.02));border:1.5px solid rgba(236,72,153,.2);border-radius:14px">
+        <div style="font-size:3.5rem;font-weight:900;line-height:1;background:linear-gradient(135deg,#be185d,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">6+</div>
+        <p style="font-size:.875rem;font-weight:700;color:#4b5563;margin-top:.3rem">Years Teaching</p>
+        <p style="font-size:.75rem;color:#9ca3af;margin-top:.1rem">2017 – Present</p>
       </div>
     </div>
   </section>
 
+  <!-- ── Degree Programs Taught ── -->
+  <section style="padding:2.5rem 0;border-bottom:1px solid rgba(124,58,237,.1)">
+    <h2 class="sec-title"><span class="sec-title-accent">Degree Programs — Teaching &amp; Supervision</span></h2>
+    <p style="font-size:.875rem;color:#6b7280;margin-bottom:1.25rem">Taught courses and supervised students across 8 degree programs at multiple institutions.</p>
+    <div class="degree-grid">
+      <div class="degree-card">
+        <div class="degree-title">BSCS</div>
+        <div class="degree-full">Bachelor of Science in Computer Science</div>
+        <div class="degree-tags">
+          <span class="tag">Courses</span><span class="tag tag-teal">FYP</span><span class="tag tag-pink">Projects</span>
+        </div>
+      </div>
+      <div class="degree-card">
+        <div class="degree-title">BSIT</div>
+        <div class="degree-full">Bachelor of Science in Information Technology</div>
+        <div class="degree-tags">
+          <span class="tag">Courses</span><span class="tag tag-teal">FYP</span>
+        </div>
+      </div>
+      <div class="degree-card">
+        <div class="degree-title">BSSE</div>
+        <div class="degree-full">Bachelor of Science in Software Engineering</div>
+        <div class="degree-tags">
+          <span class="tag">Courses</span><span class="tag tag-teal">FYP</span><span class="tag tag-pink">Projects</span>
+        </div>
+      </div>
+      <div class="degree-card" style="border-left-color:#0d9488">
+        <div class="degree-title">BSAI</div>
+        <div class="degree-full">Bachelor of Science in Artificial Intelligence</div>
+        <div class="degree-tags">
+          <span class="tag tag-teal">Courses</span><span class="tag tag-teal">FYP</span>
+        </div>
+      </div>
+      <div class="degree-card" style="border-left-color:#0d9488">
+        <div class="degree-title">BSDS</div>
+        <div class="degree-full">Bachelor of Science in Data Science</div>
+        <div class="degree-tags">
+          <span class="tag tag-teal">Courses</span><span class="tag tag-teal">Projects</span>
+        </div>
+      </div>
+      <div class="degree-card" style="border-left-color:#ec4899">
+        <div class="degree-title">MCS</div>
+        <div class="degree-full">Master of Computer Science</div>
+        <div class="degree-tags">
+          <span class="tag tag-pink">Courses</span><span class="tag tag-pink">Research</span>
+        </div>
+      </div>
+      <div class="degree-card" style="border-left-color:#b45309">
+        <div class="degree-title">BS Education</div>
+        <div class="degree-full">Bachelor of Science in Education</div>
+        <div class="degree-tags">
+          <span class="tag tag-amber">Courses</span><span class="tag tag-amber">Projects</span>
+        </div>
+      </div>
+      <div class="degree-card" style="border-left-color:#b45309">
+        <div class="degree-title">MA Education</div>
+        <div class="degree-full">Master of Arts in Education</div>
+        <div class="degree-tags">
+          <span class="tag tag-amber">Courses</span><span class="tag tag-amber">Dissertations</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Institutions ── -->
+  <section style="padding:2.5rem 0;border-bottom:1px solid rgba(124,58,237,.1)">
+    <h2 class="sec-title"><span class="sec-title-accent">Institutions — Teaching &amp; Research</span></h2>
+    <div class="inst-grid">
+      <div class="inst-card">
+        <div class="inst-name">🏛️ COMSENS Institute (COMSATS)</div>
+        <div class="inst-roles">Lecturer · Computer Science · Multiple courses supervised</div>
+      </div>
+      <div class="inst-card">
+        <div class="inst-name">🏛️ University of AJK — UOKAJK</div>
+        <div class="inst-roles">Lecturer · CS &amp; IT department · FYP supervision</div>
+      </div>
+      <div class="inst-card">
+        <div class="inst-name">🏛️ University of AJK — UAJK</div>
+        <div class="inst-roles">Lecturer &amp; Academic mentor · BSc/MSc programs</div>
+      </div>
+      <div class="inst-card">
+        <div class="inst-name">🏛️ Punjab Group of Colleges</div>
+        <div class="inst-roles">Under MUST University Mirpur · Lecturer · Computer Science</div>
+      </div>
+      <div class="inst-card">
+        <div class="inst-name">🇩🇪 University of Hamburg / HITeC</div>
+        <div class="inst-roles">Research Assistant · NLP &amp; Applied AI · 2023–2025</div>
+      </div>
+      <div class="inst-card">
+        <div class="inst-name">🇩🇪 TU Dortmund University</div>
+        <div class="inst-roles">Research Associate · Industrial AI · Nov 2025–Present</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FYP Topics ── -->
+  <section style="padding:2.5rem 0;border-bottom:1px solid rgba(124,58,237,.1)">
+    <h2 class="sec-title"><span class="sec-title-accent">Final Year Projects (FYP) — Supervision Areas</span></h2>
+    <p style="font-size:.875rem;color:#6b7280;margin-bottom:1.25rem">Supervised BSc/MSc final year projects across these technical domains:</p>
+    <div class="topic-grid">
+      <div class="topic-card">
+        <div class="topic-title">🤖 Machine Learning</div>
+        <div class="topic-desc">CNNs, Random Forests, regression, classification, feature engineering, model evaluation &amp; tuning</div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-title">💬 NLP &amp; LLMs</div>
+        <div class="topic-desc">Text classification, BERT/transformer fine-tuning, sentiment analysis, chatbot development</div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-title">🏭 Industrial AI</div>
+        <div class="topic-desc">Machining stability, acoustic monitoring, process control, predictive maintenance</div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-title">💻 Software Engineering</div>
+        <div class="topic-desc">System design, OOP, testing frameworks, web/mobile development, architecture</div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-title">📊 Data Science</div>
+        <div class="topic-desc">Feature engineering, statistical analysis, data pipelines, Jupyter workflows, visualisation</div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-title">🗄️ Databases</div>
+        <div class="topic-desc">Relational design, SQL, normalization, query optimization, database-driven applications</div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-title">🌐 Web &amp; Mobile Dev</div>
+        <div class="topic-desc">Full-stack projects, REST APIs, React/Flutter applications, deployment</div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-title">🔬 Research Methodology</div>
+        <div class="topic-desc">Thesis writing, literature review, research design, academic writing, publication prep</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Courses ── -->
+  <section style="padding:2.5rem 0;border-bottom:1px solid rgba(124,58,237,.1)">
+    <h2 class="sec-title"><span class="sec-title-accent">Courses Taught</span></h2>
+    <div style="display:flex;flex-wrap:wrap;gap:.5rem">
+      <span class="tag">Introduction to Programming</span>
+      <span class="tag">Object-Oriented Programming</span>
+      <span class="tag">Data Structures &amp; Algorithms</span>
+      <span class="tag">Database Management Systems</span>
+      <span class="tag">Software Engineering</span>
+      <span class="tag tag-teal">Machine Learning</span>
+      <span class="tag tag-teal">Artificial Intelligence</span>
+      <span class="tag tag-teal">Deep Learning</span>
+      <span class="tag tag-teal">Data Science</span>
+      <span class="tag tag-teal">NLP</span>
+      <span class="tag tag-pink">Computer Networks</span>
+      <span class="tag tag-pink">Operating Systems</span>
+      <span class="tag tag-pink">Web Technologies</span>
+      <span class="tag tag-amber">Research Methods</span>
+      <span class="tag tag-amber">Academic Writing</span>
+      <span class="tag tag-amber">Thesis Supervision</span>
+      <span class="tag">Discrete Mathematics</span>
+      <span class="tag">Statistics for CS</span>
+    </div>
+  </section>
+
+  <!-- ── Philosophy ── -->
   <section style="padding:2.5rem 0">
     <h2 class="sec-title"><span class="sec-title-accent">Supervision Philosophy</span></h2>
-    <div style="background:white;border:1px solid rgba(124,58,237,.12);border-radius:12px;padding:1.25rem 1.375rem">
-      <p style="font-size:.9375rem;color:#4b5563;line-height:1.8">
-        I believe in guiding students to develop independent research thinking rather than providing ready answers.
-        Each student brings unique strengths — my role is to help them identify their research questions clearly,
-        build rigorous methodology, and communicate their work with precision.
-      </p>
-      <p style="font-size:.9375rem;color:#4b5563;line-height:1.8;margin-top:.75rem">
-        For students interested in <strong>Industrial AI, machining stability, acoustic monitoring, or explainable ML</strong>,
-        I am particularly well-positioned to offer deep technical guidance aligned with active research projects at
-        TU Dortmund and the Lamarr Institute.
-      </p>
+    <div class="info-box">
+      <p style="margin-bottom:.75rem">I guide students toward independent research thinking rather than providing ready answers. Each student has unique strengths — my role is to help them identify their research question clearly, build a rigorous methodology, and communicate findings with precision.</p>
+      <p>For students interested in <strong style="color:#7c3aed">Industrial AI, machining stability, acoustic monitoring, explainable ML, or applied NLP</strong>, I am well-positioned to offer deep technical guidance aligned with active research at TU Dortmund and the Lamarr Institute.</p>
     </div>
-    <div style="margin-top:1rem">
-      <a href="mailto:shaista.s.shabbir@gmail.com" style="display:inline-flex;align-items:center;gap:.4rem;background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;text-decoration:none;padding:.625rem 1.25rem;border-radius:10px;font-size:.875rem;font-weight:700">✉️ Contact for supervision enquiries</a>
+    <div style="margin-top:1.25rem">
+      <a href="mailto:shaista.s.shabbir@gmail.com" style="display:inline-flex;align-items:center;gap:.4rem;background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;text-decoration:none;padding:.625rem 1.25rem;border-radius:10px;font-size:.875rem;font-weight:700">✉️ Contact for supervision enquiries →</a>
     </div>
   </section>
 
 </main>
+
 <footer style="background:linear-gradient(135deg,#0f0c29,#1a0533);color:rgba(255,255,255,.4);text-align:center;padding:1.5rem;font-size:.8125rem">
   <p>Shaista Shabbir · Research Associate · TU Dortmund University · Lamarr Institute · © 2026</p>
 </footer>
-</body></html>
+</body>
+</html>
