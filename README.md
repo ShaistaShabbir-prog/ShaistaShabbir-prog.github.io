@@ -8,7 +8,7 @@ Academic Portfolio · TU Dortmund University · Lamarr Institute for ML & AI</p>
 [![Live](https://img.shields.io/badge/🌐_Live-shaistashabbir--prog.github.io-7C3AED?style=for-the-badge)](https://shaistashabbir-prog.github.io)
 [![Pages](https://img.shields.io/badge/GitHub_Pages-Built-16A34A?style=for-the-badge&logo=github)](https://shaistashabbir-prog.github.io)
 [![HTML](https://img.shields.io/badge/HTML5_+_CSS3-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://shaistashabbir-prog.github.io)
-[![License](https://img.shields.io/badge/License-Personal_Property-red?style=for-the-badge)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](./LICENSE)
 
 </div>
 
@@ -104,4 +104,4 @@ Frequency Response Function analysis using H1/H2 estimators for resonance identi
 
 ## 📄 License
 
-Personal property — All rights reserved © 2026 Shaista Shabbir.
+MIT License - see [LICENSE](./LICENSE).
