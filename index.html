@@ -9,7 +9,7 @@
 <meta property="og:description" content="Research Associate at TU Dortmund University and Lamarr Institute. Industrial AI for Manufacturing.">
 <meta property="og:image" content="https://shaistashabbir-prog.github.io/assets/products/combined_hero.png">
 <meta name="keywords" content="Industrial AI, Machine Learning, TU Dortmund, Lamarr Institute, Manufacturing AI, Explainable AI, Signal Processing">
-<link rel="icon" href="assets/img/avatar.svg">
+<link rel="icon" href="assets/profile.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -383,8 +383,8 @@ header {
   <div class="profiles-inner">
     <span class="profile-label">Research profiles</span>
     <a class="profile-link" href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank" rel="noopener">📊 ResearchGate</a>
-    <a class="profile-link" href="https://scholar.google.com" target="_blank" rel="noopener">🎓 Google Scholar</a>
-    <a class="profile-link" href="https://orcid.org" target="_blank" rel="noopener">🔗 ORCID</a>
+    <a class="profile-link" href="https://scholar.google.com/citations?user=ShaistaShabbir" target="_blank" rel="noopener">🎓 Google Scholar</a>
+    <a class="profile-link" href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank" rel="noopener">📋 ResearchGate (alt)</a>
     <a class="profile-link" href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noopener">⚙️ GitHub</a>
     <a class="profile-link" href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank" rel="noopener">💼 LinkedIn</a>
   </div>
@@ -518,13 +518,11 @@ header {
       <div class="card-title">📐 Structural Dynamics &amp; Resonance Analysis</div>
       <div class="card-meta">Supporting research · TU Dortmund · 2025–Present</div>
       <p class="card-desc">
-        Structural dynamics characterization of machining systems to support physical understanding of
-        process stability and vibration behaviour.
-        tool-spindle-workpiece system.
+        Structural dynamics characterization of machining systems — including tool-spindle-workpiece dynamics — to support physical understanding of process stability and vibration behaviour.
       </p>
       <div class="card-tags">
         <span class="tag">FRF Analysis</span>
-        <span class="tag">signal analysis methodss</span>
+        <span class="tag">signal analysis methods</span>
         <span class="tag tag-teal">Resonance Extraction</span>
         <span class="tag">Coherence Analysis</span>
       </div>
@@ -645,72 +643,110 @@ header {
       Open to research collaborations in industrial AI, machining stability, and acoustic monitoring.
       Available for PhD supervision discussions, dataset collaborations, and joint research projects.
     </p>
-    <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center">
+    <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin-bottom:1.5rem">
       <a href="mailto:shaista.s.shabbir@gmail.com" class="hbtn hbtn-primary" style="font-size:.875rem">✉️ shaista.s.shabbir@gmail.com</a>
       <a href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank" rel="noopener" class="hbtn hbtn-ghost" style="font-size:.875rem">ResearchGate</a>
       <a href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noopener" class="hbtn hbtn-ghost" style="font-size:.875rem">GitHub</a>
+      <a href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank" rel="noopener" class="hbtn hbtn-ghost" style="font-size:.875rem">LinkedIn</a>
     </div>
+    <!-- Contact form -->
+    <form id="contact-form" style="max-width:520px;display:flex;flex-direction:column;gap:.75rem">
+      <input type="text" id="cf-name" placeholder="Your name" required
+        style="padding:.65rem .9rem;border:1.5px solid var(--border);border-radius:10px;font-size:.875rem;font-family:inherit;outline:none;background:#fff">
+      <input type="email" id="cf-email" placeholder="your@email.com" required
+        style="padding:.65rem .9rem;border:1.5px solid var(--border);border-radius:10px;font-size:.875rem;font-family:inherit;outline:none;background:#fff">
+      <input type="text" id="cf-subject" placeholder="Subject (e.g. Research collaboration)"
+        style="padding:.65rem .9rem;border:1.5px solid var(--border);border-radius:10px;font-size:.875rem;font-family:inherit;outline:none;background:#fff">
+      <textarea id="cf-message" rows="4" placeholder="Your message..." required
+        style="padding:.65rem .9rem;border:1.5px solid var(--border);border-radius:10px;font-size:.875rem;font-family:inherit;outline:none;resize:vertical;background:#fff"></textarea>
+      <button type="submit" id="cf-btn" class="hbtn hbtn-primary" style="align-self:flex-start;font-size:.875rem">
+        Send message ✉️
+      </button>
+      <p id="cf-status" style="font-size:.8rem;color:#7c3aed;display:none"></p>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+    (function(){
+      // EmailJS: replace YOUR_PUBLIC_KEY, YOUR_SERVICE_ID, YOUR_TEMPLATE_ID
+      // after setting up at https://www.emailjs.com
+      var PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+      if (PUBLIC_KEY !== "YOUR_PUBLIC_KEY") emailjs.init({publicKey: PUBLIC_KEY});
+      document.getElementById("contact-form").addEventListener("submit", function(e){
+        e.preventDefault();
+        var btn = document.getElementById("cf-btn");
+        var status = document.getElementById("cf-status");
+        btn.textContent = "Sending…"; btn.disabled = true;
+        var params = {
+          from_name: document.getElementById("cf-name").value,
+          from_email: document.getElementById("cf-email").value,
+          subject: document.getElementById("cf-subject").value || "Portfolio contact",
+          message: document.getElementById("cf-message").value,
+          reply_to: document.getElementById("cf-email").value,
+        };
+        if (PUBLIC_KEY === "YOUR_PUBLIC_KEY") {
+          // Fallback: open mailto
+          window.location.href = "mailto:shaista.s.shabbir@gmail.com?subject=" +
+            encodeURIComponent(params.subject) + "&body=" + encodeURIComponent(params.message);
+          btn.textContent = "Send message ✉️"; btn.disabled = false; return;
+        }
+        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", params)
+          .then(function(){ 
+            status.style.display = "block"; status.textContent = "✅ Message sent! I'll reply within 48 hours.";
+            e.target.reset(); btn.textContent = "Send message ✉️"; btn.disabled = false;
+          }, function(err){
+            status.style.display = "block"; status.style.color = "#dc2626";
+            status.textContent = "Failed to send. Please email directly: shaista.s.shabbir@gmail.com";
+            btn.textContent = "Send message ✉️"; btn.disabled = false;
+          });
+      });
+    })();
+    </script>
   </section>
 
 
   <!-- Skills Section -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="skills-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin-top:24px">
-        <div class="skill-group" style="background:var(--card,#1a1f2e);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:20px">
-          <h3 style="font-size:.85rem;font-weight:700;color:#a78bfa;margin-bottom:12px;text-transform:uppercase;letter-spacing:.08em">AI / ML</h3>
-          <div style="display:flex;flex-wrap:wrap;gap:6px">
-            <span class="skill-tag">Python</span><span class="skill-tag">PyTorch</span><span class="skill-tag">TensorFlow / Keras</span>
-            <span class="skill-tag">scikit-learn</span><span class="skill-tag">LangChain</span><span class="skill-tag">LlamaIndex</span>
-            <span class="skill-tag">SHAP / XAI</span><span class="skill-tag">Optuna / AutoML</span><span class="skill-tag">FAISS / ChromaDB</span>
-          </div>
-        </div>
-        <div class="skill-group" style="background:var(--card,#1a1f2e);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:20px">
-          <h3 style="font-size:.85rem;font-weight:700;color:#34d399;margin-bottom:12px;text-transform:uppercase;letter-spacing:.08em">Data Engineering</h3>
-          <div style="display:flex;flex-wrap:wrap;gap:6px">
-            <span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span><span class="skill-tag">SQL / PostgreSQL</span>
-            <span class="skill-tag">ETL Pipelines</span><span class="skill-tag">Apache Airflow</span><span class="skill-tag">dbt</span>
-            <span class="skill-tag">Docker</span><span class="skill-tag">MLflow</span>
-          </div>
-        </div>
-        <div class="skill-group" style="background:var(--card,#1a1f2e);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:20px">
-          <h3 style="font-size:.85rem;font-weight:700;color:#60a5fa;margin-bottom:12px;text-transform:uppercase;letter-spacing:.08em">Backend / APIs</h3>
-          <div style="display:flex;flex-wrap:wrap;gap:6px">
-            <span class="skill-tag">FastAPI</span><span class="skill-tag">REST APIs</span><span class="skill-tag">Redis</span>
-            <span class="skill-tag">Docker / Compose</span><span class="skill-tag">GitHub Actions</span><span class="skill-tag">Pytest</span>
-          </div>
-        </div>
-        <div class="skill-group" style="background:var(--card,#1a1f2e);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:20px">
-          <h3 style="font-size:.85rem;font-weight:700;color:#fbbf24;margin-bottom:12px;text-transform:uppercase;letter-spacing:.08em">Frontend</h3>
-          <div style="display:flex;flex-wrap:wrap;gap:6px">
-            <span class="skill-tag">Next.js 15</span><span class="skill-tag">React</span><span class="skill-tag">TypeScript</span>
-            <span class="skill-tag">Tailwind CSS</span><span class="skill-tag">Astro</span><span class="skill-tag">HTML / CSS / JS</span>
-          </div>
-        </div>
-        <div class="skill-group" style="background:var(--card,#1a1f2e);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:20px">
-          <h3 style="font-size:.85rem;font-weight:700;color:#f87171;margin-bottom:12px;text-transform:uppercase;letter-spacing:.08em">Research</h3>
-          <div style="display:flex;flex-wrap:wrap;gap:6px">
-            <span class="skill-tag">RAG Systems</span><span class="skill-tag">Knowledge Graphs</span><span class="skill-tag">NLP</span>
-            <span class="skill-tag">Privacy / MIA</span><span class="skill-tag">XAI / SHAP / LIME</span><span class="skill-tag">Signal Processing</span>
-            <span class="skill-tag">Chatter Detection</span>
-          </div>
+  <section class="sec">
+    <h2 class="sec-title"><span class="sec-title-accent">Technical Skills</span></h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px">
+
+      <div class="card" style="margin-bottom:0">
+        <div style="font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#7c3aed;margin-bottom:10px">AI / ML</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">TensorFlow</span>
+          <span class="tag">scikit-learn</span><span class="tag">LangChain</span>
+          <span class="tag">SHAP / XAI</span><span class="tag">Optuna</span><span class="tag">FAISS</span>
         </div>
       </div>
+
+      <div class="card" style="margin-bottom:0">
+        <div style="font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#0d9488;margin-bottom:10px">Signal Processing</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span class="tag tag-teal">NumPy / SciPy</span><span class="tag tag-teal">FFT</span>
+          <span class="tag tag-teal">FRF Analysis</span><span class="tag tag-teal">Acoustic Sensors</span>
+          <span class="tag tag-teal">CNC Monitoring</span><span class="tag tag-teal">Stability Analysis</span>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:0">
+        <div style="font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#d97706;margin-bottom:10px">Data Engineering</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span class="tag tag-amber">Pandas</span><span class="tag tag-amber">SQL / PostgreSQL</span>
+          <span class="tag tag-amber">ETL Pipelines</span><span class="tag tag-amber">Docker</span>
+          <span class="tag tag-amber">MLflow</span><span class="tag tag-amber">GitHub Actions</span>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:0">
+        <div style="font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#ec4899;margin-bottom:10px">Backend / APIs</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span class="tag tag-pink">FastAPI</span><span class="tag tag-pink">REST APIs</span>
+          <span class="tag tag-pink">LangGraph</span><span class="tag tag-pink">Pytest</span>
+          <span class="tag tag-pink">Next.js</span><span class="tag tag-pink">TypeScript</span>
+        </div>
+      </div>
+
     </div>
   </section>
-  <style>
-    .skill-tag {
-      display: inline-flex;
-      padding: 4px 10px;
-      border-radius: 20px;
-      font-size: .72rem;
-      font-weight: 600;
-      background: rgba(255,255,255,.07);
-      border: 1px solid rgba(255,255,255,.1);
-      color: rgba(255,255,255,.75);
-    }
-  </style>
 
 </main>
 
