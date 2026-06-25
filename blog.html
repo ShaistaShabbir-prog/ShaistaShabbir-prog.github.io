@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blog | Shaista Shabbir</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="nav-main">
+  <a class="nav-brand" href="index.html">Shaista Shabbir</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a><a href="projects.html">Research</a>
+    <a href="publications.html">Publications</a><a href="blog.html" class="active">Blog</a>
+  </div>
+</div></header>
+
+<div class="hero" style="padding:60px 1.5rem 40px">
+  <div class="wrap">
+    <span class="eyebrow">Writing</span>
+    <h1 class="hero-title" style="max-width:600px">Technical notes on AI, ML and research</h1>
+    <p class="hero-sub">Short articles on RAG systems, XAI, privacy in NLP, and industrial AI.</p>
+  </div>
+</div>
+
+<main class="wrap" style="padding-top:3rem;padding-bottom:5rem">
+  <div style="display:flex;flex-direction:column;gap:16px">
+
+    <a href="#" class="card" style="text-decoration:none;display:block;transition:border-color .15s"
+       onmouseover="this.style.borderColor='#7c3aed'" onmouseout="this.style.borderColor=''">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span class="tag">RAG</span>
+        <span style="font-size:.75rem;color:var(--text-muted)">Coming soon</span>
+      </div>
+      <h2 style="font-size:1.1rem;font-weight:700;color:var(--text-dark);margin:0 0 6px">Building a RAG system with LangChain and FAISS</h2>
+      <p style="font-size:.85rem;color:var(--text-muted);margin:0;line-height:1.65">
+        Step-by-step walkthrough of document ingestion, chunking strategy, embedding selection, and retrieval quality evaluation with RAGAS.
+      </p>
+    </a>
+
+    <a href="#" class="card" style="text-decoration:none;display:block;transition:border-color .15s"
+       onmouseover="this.style.borderColor='#7c3aed'" onmouseout="this.style.borderColor=''">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span class="tag">Privacy · NLP</span>
+        <span style="font-size:.75rem;color:var(--text-muted)">Coming soon</span>
+      </div>
+      <h2 style="font-size:1.1rem;font-weight:700;color:var(--text-dark);margin:0 0 6px">Membership Inference Attacks on NLP models</h2>
+      <p style="font-size:.85rem;color:var(--text-muted);margin:0;line-height:1.65">
+        How MIA exploits overfitting to determine if a text was in the training set. Defences: differential privacy, regularization, early stopping.
+      </p>
+    </a>
+
+    <a href="#" class="card" style="text-decoration:none;display:block;transition:border-color .15s"
+       onmouseover="this.style.borderColor='#7c3aed'" onmouseout="this.style.borderColor=''">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span class="tag">AutoML</span>
+        <span style="font-size:.75rem;color:var(--text-muted)">Coming soon</span>
+      </div>
+      <h2 style="font-size:1.1rem;font-weight:700;color:var(--text-dark);margin:0 0 6px">AutoML with Optuna — when hyperparameter tuning becomes automatic</h2>
+      <p style="font-size:.85rem;color:var(--text-muted);margin:0;line-height:1.65">
+        Tree-structured Parzen Estimators vs grid search. Pruning mediocre trials early. MLflow integration for experiment tracking.
+      </p>
+    </a>
+
+  </div>
+</main>
+<footer><div class="wrap"><p>Shaista Shabbir · Research Associate · TU Dortmund University</p></div></footer>
+</body>
+</html>
