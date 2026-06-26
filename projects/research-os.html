@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ResearchOS Case Study | Shaista Shabbir</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header><div class="nav-main">
+  <a class="nav-brand" href="../index.html">Shaista Shabbir</a>
+  <div class="nav-links"><a href="../projects.html">Research</a><a href="../publications.html">Publications</a></div>
+</div></header>
+
+<div class="hero" style="padding:60px 1.5rem 40px">
+  <div class="wrap">
+    <a href="../projects.html" style="color:#a78bfa;font-size:.85rem;text-decoration:none">← All projects</a>
+    <span class="eyebrow" style="margin-top:12px">Case Study</span>
+    <h1 class="hero-title">ResearchOS — AI Peer Review Platform</h1>
+    <p class="hero-sub">How I built a Claude-powered research paper analysis system from scratch</p>
+  </div>
+</div>
+
+<main class="wrap" style="padding:3rem 0 5rem;max-width:760px">
+  <div class="card">
+    <h2 class="sec-title"><span class="sec-title-accent">Problem</span></h2>
+    <p>Peer review quality varies widely. Reviewers miss reproducibility issues, statistical errors, and unsupported claims. Area chairs have no tools to quickly synthesise conflicting reviews. The process is manual, slow, and inconsistent.</p>
+  </div>
+  <div class="card">
+    <h2 class="sec-title"><span class="sec-title-accent">Solution</span></h2>
+    <p>An AI-powered platform that analyses papers across 6 dimensions: claims validation, reproducibility scoring, citation checking, reviewer fatigue detection, semantic similarity, and structured badge generation. Claude API provides the AI layer; heuristic fallbacks ensure the system works without an API key.</p>
+  </div>
+  <div class="card">
+    <h2 class="sec-title"><span class="sec-title-accent">Architecture</span></h2>
+    <ul style="font-size:.875rem;color:var(--text);line-height:2.2;padding-left:16px">
+      <li><strong>Frontend:</strong> Next.js 14, TypeScript, Tailwind CSS → Vercel</li>
+      <li><strong>Backend:</strong> FastAPI (Python), SQLite, 29 REST endpoints → Render.com</li>
+      <li><strong>AI:</strong> Anthropic Claude API (claude-haiku for fast tasks, claude-sonnet for deep review)</li>
+      <li><strong>Auth:</strong> JWT (HMAC-SHA256), PBKDF2 passwords, API key system</li>
+      <li><strong>Tests:</strong> 247+ tests, GitHub Actions CI</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2 class="sec-title"><span class="sec-title-accent">Key results</span></h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px">
+      <div style="text-align:center;padding:16px;background:rgba(124,58,237,.06);border-radius:12px">
+        <div style="font-size:2rem;font-weight:900;color:#7c3aed">247+</div>
+        <div style="font-size:.75rem;color:var(--text-muted)">Tests passing</div>
+      </div>
+      <div style="text-align:center;padding:16px;background:rgba(13,148,136,.06);border-radius:12px">
+        <div style="font-size:2rem;font-weight:900;color:#0d9488">29</div>
+        <div style="font-size:.75rem;color:var(--text-muted)">API endpoints</div>
+      </div>
+      <div style="text-align:center;padding:16px;background:rgba(236,72,153,.06);border-radius:12px">
+        <div style="font-size:2rem;font-weight:900;color:#ec4899">8</div>
+        <div style="font-size:.75rem;color:var(--text-muted)">AI tools</div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <h2 class="sec-title"><span class="sec-title-accent">Lessons learned</span></h2>
+    <ul style="font-size:.875rem;color:var(--text);line-height:2.2;padding-left:16px">
+      <li>Heuristic fallbacks are essential — AI APIs have rate limits and costs</li>
+      <li>JWT without external libraries reduces dependencies and attack surface</li>
+      <li>Streaming responses dramatically improve perceived performance for long analyses</li>
+      <li>Type-safe API client (TypeScript) catches bugs before runtime</li>
+    </ul>
+  </div>
+  <div style="display:flex;gap:10px;margin-top:16px">
+    <a href="https://research-os-phi.vercel.app" target="_blank" rel="noopener" class="hbtn hbtn-primary">▶ Live Demo</a>
+    <a href="https://github.com/ShaistaShabbir-prog/research-os" target="_blank" rel="noopener" class="hbtn hbtn-ghost">GitHub →</a>
+  </div>
+</main>
+<footer><div class="wrap"><p>Shaista Shabbir · Research Associate · TU Dortmund University</p></div></footer>
+</body>
+</html>

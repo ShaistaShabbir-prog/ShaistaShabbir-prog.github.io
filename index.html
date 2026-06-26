@@ -777,6 +777,22 @@ header {
     </div>
   </section>
 
+
+  <!-- GitHub Stats Section -->
+  <section class="sec" id="github-stats">
+    <h2 class="sec-title"><span class="sec-title-accent">Open Source Activity</span></h2>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:16px">
+      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center">
+        <img src="https://github-readme-stats.vercel.app/api?username=ShaistaShabbir-prog&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=f8fafc&title_color=7c3aed&text_color=374151&icon_color=7c3aed" 
+             alt="GitHub Stats" height="165" loading="lazy" style="border-radius:12px;max-width:100%">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ShaistaShabbir-prog&layout=compact&theme=tokyonight&hide_border=true&bg_color=f8fafc&title_color=7c3aed&text_color=374151" 
+             alt="Top Languages" height="165" loading="lazy" style="border-radius:12px;max-width:100%">
+      </div>
+      <img src="https://streak-stats.demolab.com/?user=ShaistaShabbir-prog&theme=tokyonight&hide_border=true&background=f8fafc&ring=7c3aed&fire=ec4899&currStreakLabel=374151&sideLabels=374151&dates=374151" 
+           alt="GitHub Streak" loading="lazy" style="border-radius:12px;max-width:100%">
+    </div>
+  </section>
+
 </main>
 
 <footer style="background:linear-gradient(135deg,#0f0c29,#1a0533);color:rgba(255,255,255,.4);text-align:center;padding:1.5rem 1.25rem;font-size:.8125rem;margin-top:0">
@@ -800,5 +816,52 @@ header {
   };
 })();
 </script>
+
+<!-- Scroll animations (Issue #30) -->
+<script>
+(function(){
+  // Intersection Observer for fade-in on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.sec, .card, .pub-card').forEach(el => {
+    if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity .5s ease, transform .5s ease';
+    }
+    observer.observe(el);
+  });
+
+  // Typing effect on hero subtitle
+  const heroSub = document.querySelector('.hero-sub');
+  if (heroSub && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+    const roles = ['Industrial AI Researcher', 'Full Stack Developer', 'Open Source Contributor'];
+    let roleIdx = 0, charIdx = 0, deleting = false;
+    const originalText = heroSub.textContent;
+    
+    function type() {
+      const role = roles[roleIdx];
+      if (!deleting) {
+        heroSub.textContent = role.substring(0, charIdx++);
+        if (charIdx > role.length) { deleting = true; setTimeout(type, 1800); return; }
+      } else {
+        heroSub.textContent = role.substring(0, charIdx--);
+        if (charIdx < 0) { deleting = false; roleIdx = (roleIdx + 1) % roles.length; charIdx = 0; }
+      }
+      setTimeout(type, deleting ? 40 : 80);
+    }
+    // Start after 2 seconds
+    setTimeout(type, 2000);
+  }
+})();
+</script>
+
 </body>
 </html>
