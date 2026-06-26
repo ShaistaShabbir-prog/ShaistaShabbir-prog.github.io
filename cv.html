@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CV | Shaista Shabbir</title>
+<title>CV — Shaista Shabbir</title>
 <link rel="stylesheet" href="style.css">
 <style>
-  @media print {
-    nav, .no-print, #theme-toggle { display: none !important; }
-    body { background: #fff; color: #000; }
-    .card { border: 1px solid #ddd; break-inside: avoid; }
-    a { color: #000; }
-  }
-  .cv-section { margin-bottom: 2rem; }
-  .cv-entry { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 12px; }
-  .cv-date { font-size: .8rem; color: var(--text-muted); white-space: nowrap; flex-shrink: 0; }
-  .cv-role { font-weight: 700; color: var(--text-dark); }
-  .cv-org { color: var(--text-muted); font-size: .875rem; }
+@media print {
+  nav, footer, .no-print { display: none !important; }
+  body { background: #fff !important; color: #000 !important; }
+  .card { border: 1px solid #ccc !important; box-shadow: none !important; }
+  a[href]:after { content: " (" attr(href) ")"; font-size: .7rem; color: #666; }
+}
+.cv-section { margin-bottom: 2rem; }
+.cv-entry { display: grid; grid-template-columns: 1fr auto; gap: 4px; margin-bottom: 1rem; }
+.cv-role { font-weight: 700; color: var(--text-dark); }
+.cv-org  { color: var(--text-muted); font-size: .875rem; }
+.cv-date { font-size: .8rem; color: var(--text-muted); white-space: nowrap; }
+.cv-desc { font-size: .875rem; color: var(--text); line-height: 1.7; margin-top: 4px; grid-column: 1/-1; }
 </style>
 </head>
 <body>
@@ -23,94 +24,120 @@
   <a class="nav-brand" href="index.html">Shaista Shabbir</a>
   <div class="nav-links">
     <a href="index.html">Home</a>
-    <a href="projects.html">Research</a>
     <a href="publications.html">Publications</a>
+    <a href="projects.html">Projects</a>
     <a href="cv.html" class="active">CV</a>
   </div>
 </div></header>
 
-<div class="hero" style="padding:60px 1.5rem 40px">
-  <div class="wrap">
-    <span class="eyebrow">Curriculum Vitae</span>
-    <h1 class="hero-title">Shaista Shabbir</h1>
-    <p class="hero-sub">Industrial AI Researcher · TU Dortmund University · Lamarr Institute</p>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
-      <button onclick="window.print()" class="hbtn hbtn-primary">⬇️ Download PDF</button>
-      <a href="mailto:shaista.s.shabbir@gmail.com" class="hbtn hbtn-ghost">✉️ Contact</a>
+<div class="hero" style="padding:48px 1.5rem 32px">
+  <div class="wrap" style="max-width:760px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px">
+      <div>
+        <h1 class="hero-title" style="font-size:clamp(1.8rem,4vw,2.4rem)">Shaista Shabbir</h1>
+        <p style="color:rgba(255,255,255,.65);font-size:1rem;margin-top:4px">
+          Industrial AI Researcher · TU Dortmund University · Lamarr Institute
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px">
+          <a href="mailto:shaista.s.shabbir@gmail.com" class="hbtn hbtn-ghost" style="font-size:.8rem">✉️ Email</a>
+          <a href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noopener" class="hbtn hbtn-ghost" style="font-size:.8rem">GitHub</a>
+          <a href="https://linkedin.com/in/shaistashabbir" target="_blank" rel="noopener" class="hbtn hbtn-ghost" style="font-size:.8rem">LinkedIn</a>
+        </div>
+      </div>
+      <button onclick="window.print()" class="hbtn hbtn-primary no-print" style="font-size:.85rem">⬇️ Download PDF</button>
     </div>
   </div>
 </div>
 
-<main class="wrap" style="padding:3rem 0 5rem">
-  <div style="max-width:760px">
+<main class="wrap" style="max-width:760px;padding-top:2.5rem;padding-bottom:5rem">
 
-    <div class="cv-section card">
-      <h2 class="sec-title" style="margin-bottom:16px"><span class="sec-title-accent">Education</span></h2>
-      <div class="cv-entry">
-        <div>
-          <div class="cv-role">M.Sc. Data Science</div>
-          <div class="cv-org">TU Dortmund University, Germany</div>
-          <div style="font-size:.82rem;color:var(--text);margin-top:4px">Focus: XAI, NLP, Privacy-preserving ML, Industrial AI</div>
-        </div>
-        <div class="cv-date">2022 – 2024</div>
+  <div class="cv-section card">
+    <h2 class="sec-title" style="margin-bottom:1rem">Education</h2>
+    <div class="cv-entry">
+      <div>
+        <div class="cv-role">M.Sc. Computer Science — AI & Data Science</div>
+        <div class="cv-org">TU Dortmund University, Germany</div>
+        <div class="cv-desc">Focus: Explainable AI, Privacy in NLP, Industrial Machine Learning. Thesis: XAI and Fairness in Machining Process Monitoring.</div>
       </div>
-      <div class="cv-entry">
-        <div>
-          <div class="cv-role">B.Sc. Computer Science</div>
-          <div class="cv-org">University of Engineering &amp; Technology, Pakistan</div>
-        </div>
-        <div class="cv-date">2018 – 2022</div>
-      </div>
+      <div class="cv-date">2022–2024</div>
     </div>
-
-    <div class="cv-section card">
-      <h2 class="sec-title" style="margin-bottom:16px"><span class="sec-title-accent">Experience</span></h2>
-      <div class="cv-entry">
-        <div>
-          <div class="cv-role">Research Associate</div>
-          <div class="cv-org">Lamarr Institute for Machine Learning and Artificial Intelligence, TU Dortmund</div>
-          <ul style="font-size:.82rem;color:var(--text);margin-top:6px;padding-left:16px;line-height:2">
-            <li>XAI methods (SHAP, LIME, Anchors) for industrial CNC machining processes</li>
-            <li>Membership inference attacks on NLP models trained on industrial sensor data</li>
-            <li>RAG pipeline development with LangChain, FAISS, Claude API</li>
-            <li>Knowledge graph construction for multi-hazard disaster intelligence</li>
-          </ul>
-        </div>
-        <div class="cv-date">2024 – present</div>
+    <div class="cv-entry">
+      <div>
+        <div class="cv-role">B.Sc. Computer Science</div>
+        <div class="cv-org">Pakistan</div>
+        <div class="cv-desc">Data Structures, Algorithms, Database Systems, Software Engineering.</div>
       </div>
+      <div class="cv-date">2017–2021</div>
     </div>
-
-    <div class="cv-section card">
-      <h2 class="sec-title" style="margin-bottom:16px"><span class="sec-title-accent">Technical Skills</span></h2>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-        <div>
-          <div style="font-size:.72rem;font-weight:700;color:#7c3aed;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">AI / ML</div>
-          <div style="display:flex;flex-wrap:wrap;gap:5px">
-            <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">TensorFlow</span>
-            <span class="tag">scikit-learn</span><span class="tag">LangChain</span><span class="tag">SHAP</span>
-            <span class="tag">Optuna</span><span class="tag">MLflow</span><span class="tag">FAISS</span>
-          </div>
-        </div>
-        <div>
-          <div style="font-size:.72rem;font-weight:700;color:#0d9488;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Backend / Data</div>
-          <div style="display:flex;flex-wrap:wrap;gap:5px">
-            <span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span>
-            <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">GitHub Actions</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="cv-section card">
-      <h2 class="sec-title" style="margin-bottom:16px"><span class="sec-title-accent">Languages</span></h2>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px">
-        <div class="tag" style="padding:8px 12px">🇵🇰 Urdu — Native</div>
-        <div class="tag" style="padding:8px 12px">🇬🇧 English — C1</div>
-        <div class="tag" style="padding:8px 12px">🇩🇪 German — B1</div>
-      </div>
-    </div>
-
   </div>
+
+  <div class="cv-section card">
+    <h2 class="sec-title" style="margin-bottom:1rem">Research Experience</h2>
+    <div class="cv-entry">
+      <div>
+        <div class="cv-role">Research Associate — Industrial AI</div>
+        <div class="cv-org">TU Dortmund University · Lamarr Institute for Machine Learning</div>
+        <div class="cv-desc">
+          Applied XAI (SHAP, LIME, Anchors) to chatter detection in CNC machining.
+          Developed membership inference attack framework for NLP models trained on industrial sensor data.
+          Built RAG and knowledge graph systems for real-time disaster intelligence.
+          Open-source contributions: ResearchOS (AI peer review platform), Navigate Germany (multilingual immigrant guide).
+        </div>
+      </div>
+      <div class="cv-date">2024–present</div>
+    </div>
+  </div>
+
+  <div class="cv-section card">
+    <h2 class="sec-title" style="margin-bottom:1rem">Technical Skills</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div>
+        <div style="font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#7c3aed;margin-bottom:6px">AI / ML</div>
+        <div style="font-size:.85rem;color:var(--text-muted);line-height:1.8">PyTorch · TensorFlow · scikit-learn · LangChain · SHAP · Optuna · FAISS · ChromaDB</div>
+      </div>
+      <div>
+        <div style="font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#0d9488;margin-bottom:6px">Signal Processing</div>
+        <div style="font-size:.85rem;color:var(--text-muted);line-height:1.8">NumPy · SciPy · FFT · FRF Analysis · Acoustic Sensors · CNC Monitoring</div>
+      </div>
+      <div>
+        <div style="font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#d97706;margin-bottom:6px">Backend / Data</div>
+        <div style="font-size:.85rem;color:var(--text-muted);line-height:1.8">FastAPI · PostgreSQL · ETL · Docker · MLflow · GitHub Actions</div>
+      </div>
+      <div>
+        <div style="font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#ec4899;margin-bottom:6px">Frontend</div>
+        <div style="font-size:.85rem;color:var(--text-muted);line-height:1.8">Next.js 14 · React · TypeScript · Tailwind CSS · HTML/CSS/JS</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cv-section card">
+    <h2 class="sec-title" style="margin-bottom:1rem">Selected Projects</h2>
+    <div class="cv-entry">
+      <div><div class="cv-role">ResearchOS</div><div class="cv-org">AI peer review quality platform · FastAPI · Next.js · Claude API</div>
+      <div class="cv-desc">Multi-turn chat, reproducibility badge system, claim verification, reviewer fatigue analysis. Live: research-os-phi.vercel.app</div></div>
+      <div class="cv-date">2025</div>
+    </div>
+    <div class="cv-entry">
+      <div><div class="cv-role">Navigate Germany</div><div class="cv-org">Multilingual immigrant guide · 10 languages · GitHub Pages</div>
+      <div class="cv-desc">14 module pages, PWA, salary calculator, 6 journey roadmaps, community tips, Claude-powered chat. Used by international students and workers.</div></div>
+      <div class="cv-date">2025</div>
+    </div>
+    <div class="cv-entry">
+      <div><div class="cv-role">Disaster Event Intelligence Platform</div><div class="cv-org">USGS · GDACS · ReliefWeb · LangGraph · Knowledge Graph</div>
+      <div class="cv-desc">Real-time multi-source disaster ingestion, GraphRAG-style KG reasoning, 93% severity classification accuracy, 0% hallucination rate.</div></div>
+      <div class="cv-date">2026</div>
+    </div>
+  </div>
+
+  <div class="cv-section card">
+    <h2 class="sec-title" style="margin-bottom:1rem">Languages</h2>
+    <div style="display:flex;gap:16px;flex-wrap:wrap">
+      <span class="tag">🇵🇰 Urdu (native)</span>
+      <span class="tag">🌍 English (C1)</span>
+      <span class="tag">🇩🇪 German (B2)</span>
+    </div>
+  </div>
+
 </main>
 <footer><div class="wrap"><p>Shaista Shabbir · Research Associate · TU Dortmund University</p></div></footer>
 </body>
