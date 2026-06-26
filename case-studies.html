@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Case Studies — Shaista Shabbir</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="nav-main">
+  <a class="nav-brand" href="index.html">Shaista Shabbir</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a><a href="projects.html">Research</a>
+    <a href="publications.html">Publications</a><a href="blog.html">Blog</a>
+  </div>
+</div></header>
+<div class="hero" style="padding:48px 1.5rem 32px">
+  <div class="wrap">
+    <span class="eyebrow">Deep Dives</span>
+    <h1 class="hero-title" style="max-width:640px">Project Case Studies</h1>
+    <p class="hero-sub">Architecture decisions, technical challenges, and outcomes from three major projects.</p>
+  </div>
+</div>
+<main class="wrap" style="padding-top:3rem;padding-bottom:5rem">
+
+  <article class="card" style="margin-bottom:24px">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+      <span style="font-size:1.5rem">🔬</span>
+      <div>
+        <h2 style="font-size:1.2rem;font-weight:800;color:var(--text-dark)">ResearchOS — AI Peer Review Platform</h2>
+        <div style="font-size:.8rem;color:var(--text-muted)">FastAPI · Next.js 15 · Claude API · SQLite</div>
+      </div>
+      <a href="https://research-os-phi.vercel.app" target="_blank" rel="noopener" class="hbtn hbtn-ghost" style="margin-left:auto;font-size:.75rem">Live ↗</a>
+    </div>
+    <p style="font-size:.875rem;color:var(--text);line-height:1.75;margin-bottom:12px"><strong>Problem:</strong> Peer review quality is inconsistent — overworked reviewers miss key issues, ACs lack structured tools. No open-source platform integrates LLM assistance with structured review workflows.</p>
+    <p style="font-size:.875rem;color:var(--text);line-height:1.75;margin-bottom:12px"><strong>Architecture:</strong> FastAPI backend with 24 endpoints (JWT auth, badge SVG generation, PDF extraction). Next.js 15 frontend with 8 tool pages. Claude API with heuristic fallback so the platform works without an API key. SQLite WAL for simplicity.</p>
+    <p style="font-size:.875rem;color:var(--text);line-height:1.75;margin-bottom:12px"><strong>Key challenge:</strong> Claude responses needed to be grounded in the actual paper text, not training data. Solution: PDF extraction → chunking → context injection into Claude system prompt.</p>
+    <p style="font-size:.875rem;color:var(--text);line-height:1.75"><strong>Outcome:</strong> 247+ passing tests, 24 API endpoints, reproducibility badge SVG generator, conference integration (OpenReview JSON import).</p>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:12px">
+      <span class="tag">FastAPI</span><span class="tag">Next.js 15</span><span class="tag">Claude API</span><span class="tag">LangGraph</span>
+    </div>
+  </article>
+
+  <article class="card" style="margin-bottom:24px">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+      <span style="font-size:1.5rem">🇩🇪</span>
+      <div>
+        <h2 style="font-size:1.2rem;font-weight:800;color:var(--text-dark)">Navigate Germany — Multilingual Immigrant Guide</h2>
+        <div style="font-size:.8rem;color:var(--text-muted)">Vanilla JS · GitHub Pages · PWA · 10 languages</div>
+      </div>
+      <a href="https://shaistashabbir-prog.github.io/navigate-germany/" target="_blank" rel="noopener" class="hbtn hbtn-ghost" style="margin-left:auto;font-size:.75rem">Live ↗</a>
+    </div>
+    <p style="font-size:.875rem;color:var(--text);line-height:1.75;margin-bottom:12px"><strong>Problem:</strong> Immigrants in Germany face a fragmented information landscape. Official sources are in German only. No single platform covers housing, healthcare, jobs, legal help, and language learning in Urdu, Arabic, or Hindi.</p>
+    <p style="font-size:.875rem;color:var(--text);line-height:1.75;margin-bottom:12px"><strong>Architecture:</strong> Zero framework — pure HTML/CSS/JS for maximum performance and zero build complexity. 14 module pages + 6 journey roadmaps + PWA service worker. TRANSLATIONS const with 134 keys × 10 languages. GitHub Pages with no server costs.</p>
+    <p style="font-size:.875rem;color:var(--text);line-height:1.75;margin-bottom:12px"><strong>Key challenge:</strong> Language switching was brittle — multiple rounds of translation additions caused TRANSLATIONS object fragmentation (PAGE_TEXT / UI_TEXT split) which broke setLanguage() with a ReferenceError.</p>
+    <p style="font-size:.875rem;color:var(--text);line-height:1.75"><strong>Outcome:</strong> Fully functional in 10 languages, PWA installable, salary calculator, community tips, salary calculator, sitemap with 26 URLs.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:12px">
+      <span class="tag">Vanilla JS</span><span class="tag">PWA</span><span class="tag">i18n</span><span class="tag">GitHub Pages</span>
+    </div>
+  </article>
+
+  <article class="card">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+      <span style="font-size:1.5rem">🌪️</span>
+      <div>
+        <h2 style="font-size:1.2rem;font-weight:800;color:var(--text-dark)">Disaster Event Intelligence Platform</h2>
+        <div style="font-size:.8rem;color:var(--text-muted)">FastAPI · LangGraph · Knowledge Graph · Claude · Streamlit</div>
+      </div>
+      <a href="https://github.com/ShaistaShabbir-prog/disaster-event-chatbot" target="_blank" rel="noopener" class="hbtn hbtn-ghost" style="margin-left:auto;font-size:.75rem">Code ↗</a>
+    </div>
+    <p style="font-size:.875rem;color:var(--text);line-height:1.75;margin-bottom:12px"><strong>Problem:</strong> Disaster responders need grounded, real-time intelligence — not LLM hallucinations about past events. Existing tools either provide raw data (no synthesis) or LLM chat (no live grounding).</p>
+    <p style="font-size:.875rem;color:var(--text);line-height:1.75;margin-bottom:12px"><strong>Architecture:</strong> Three ingest pipelines (USGS, GDACS, ReliefWeb) → SHA-256 deduplication → severity classification (GDACS/USGS/Sendai/keywords) → DisasterKG (spatial Haversine + temporal cascade edges) → LangGraph agent → Claude with GraphRAG context.</p>
+    <p style="font-size:.875rem;color:var(--text);line-height:1.75;margin-bottom:12px"><strong>Key challenge:</strong> Grounding Claude answers in live data only — no training-data hallucination. Solution: serialize the KG into a structured text block ("GraphRAG context") injected into Claude system prompt on every call.</p>
+    <p style="font-size:.875rem;color:var(--text);line-height:1.75"><strong>Outcome:</strong> 93% severity classification accuracy, 0% hallucination rate, 30 passing tests, research paper draft.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:12px">
+      <span class="tag">Knowledge Graph</span><span class="tag">LangGraph</span><span class="tag">Claude</span><span class="tag">Streamlit</span>
+    </div>
+  </article>
+</main>
+<footer><div class="wrap"><p>Shaista Shabbir · Research Associate · TU Dortmund University</p></div></footer>
+<script src="js/animations.js"></script>
+</body>
+</html>
