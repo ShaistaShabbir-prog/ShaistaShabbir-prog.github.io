@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CV | Shaista Shabbir</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  @media print {
+    nav, .no-print, #theme-toggle { display: none !important; }
+    body { background: #fff; color: #000; }
+    .card { border: 1px solid #ddd; break-inside: avoid; }
+    a { color: #000; }
+  }
+  .cv-section { margin-bottom: 2rem; }
+  .cv-entry { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 12px; }
+  .cv-date { font-size: .8rem; color: var(--text-muted); white-space: nowrap; flex-shrink: 0; }
+  .cv-role { font-weight: 700; color: var(--text-dark); }
+  .cv-org { color: var(--text-muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<header><div class="nav-main">
+  <a class="nav-brand" href="index.html">Shaista Shabbir</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="cv.html" class="active">CV</a>
+  </div>
+</div></header>
+
+<div class="hero" style="padding:60px 1.5rem 40px">
+  <div class="wrap">
+    <span class="eyebrow">Curriculum Vitae</span>
+    <h1 class="hero-title">Shaista Shabbir</h1>
+    <p class="hero-sub">Industrial AI Researcher · TU Dortmund University · Lamarr Institute</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+      <button onclick="window.print()" class="hbtn hbtn-primary">⬇️ Download PDF</button>
+      <a href="mailto:shaista.s.shabbir@gmail.com" class="hbtn hbtn-ghost">✉️ Contact</a>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" style="padding:3rem 0 5rem">
+  <div style="max-width:760px">
+
+    <div class="cv-section card">
+      <h2 class="sec-title" style="margin-bottom:16px"><span class="sec-title-accent">Education</span></h2>
+      <div class="cv-entry">
+        <div>
+          <div class="cv-role">M.Sc. Data Science</div>
+          <div class="cv-org">TU Dortmund University, Germany</div>
+          <div style="font-size:.82rem;color:var(--text);margin-top:4px">Focus: XAI, NLP, Privacy-preserving ML, Industrial AI</div>
+        </div>
+        <div class="cv-date">2022 – 2024</div>
+      </div>
+      <div class="cv-entry">
+        <div>
+          <div class="cv-role">B.Sc. Computer Science</div>
+          <div class="cv-org">University of Engineering &amp; Technology, Pakistan</div>
+        </div>
+        <div class="cv-date">2018 – 2022</div>
+      </div>
+    </div>
+
+    <div class="cv-section card">
+      <h2 class="sec-title" style="margin-bottom:16px"><span class="sec-title-accent">Experience</span></h2>
+      <div class="cv-entry">
+        <div>
+          <div class="cv-role">Research Associate</div>
+          <div class="cv-org">Lamarr Institute for Machine Learning and Artificial Intelligence, TU Dortmund</div>
+          <ul style="font-size:.82rem;color:var(--text);margin-top:6px;padding-left:16px;line-height:2">
+            <li>XAI methods (SHAP, LIME, Anchors) for industrial CNC machining processes</li>
+            <li>Membership inference attacks on NLP models trained on industrial sensor data</li>
+            <li>RAG pipeline development with LangChain, FAISS, Claude API</li>
+            <li>Knowledge graph construction for multi-hazard disaster intelligence</li>
+          </ul>
+        </div>
+        <div class="cv-date">2024 – present</div>
+      </div>
+    </div>
+
+    <div class="cv-section card">
+      <h2 class="sec-title" style="margin-bottom:16px"><span class="sec-title-accent">Technical Skills</span></h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <div>
+          <div style="font-size:.72rem;font-weight:700;color:#7c3aed;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">AI / ML</div>
+          <div style="display:flex;flex-wrap:wrap;gap:5px">
+            <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">TensorFlow</span>
+            <span class="tag">scikit-learn</span><span class="tag">LangChain</span><span class="tag">SHAP</span>
+            <span class="tag">Optuna</span><span class="tag">MLflow</span><span class="tag">FAISS</span>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:.72rem;font-weight:700;color:#0d9488;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Backend / Data</div>
+          <div style="display:flex;flex-wrap:wrap;gap:5px">
+            <span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span>
+            <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">GitHub Actions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-section card">
+      <h2 class="sec-title" style="margin-bottom:16px"><span class="sec-title-accent">Languages</span></h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px">
+        <div class="tag" style="padding:8px 12px">🇵🇰 Urdu — Native</div>
+        <div class="tag" style="padding:8px 12px">🇬🇧 English — C1</div>
+        <div class="tag" style="padding:8px 12px">🇩🇪 German — B1</div>
+      </div>
+    </div>
+
+  </div>
+</main>
+<footer><div class="wrap"><p>Shaista Shabbir · Research Associate · TU Dortmund University</p></div></footer>
+</body>
+</html>
