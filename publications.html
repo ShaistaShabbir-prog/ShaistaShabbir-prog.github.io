@@ -1,334 +1,204 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Publications — Shaista Shabbir</title>
-<meta name="description" content="Research publications and manuscripts by Shaista Shabbir — Industrial AI, machining stability, acoustic monitoring, software quality assurance, requirements engineering.">
-<link rel="icon" href="assets/img/avatar.svg">
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-/* ═══ VIBRANT OVERRIDES ═══ */
-/* Nav active = gradient pill */
-.nav a.active {
-  background: linear-gradient(135deg,#7c3aed,#a855f7) !important;
-  color: #fff !important;
-  box-shadow: 0 2px 10px rgba(124,58,237,.35);
-}
-.nav-brand { border-right: 2px solid #7c3aed !important; }
-
-/* Page headers */
-.ph {
-  padding: 2rem 0 1.5rem;
-  border-bottom: 2px solid transparent;
-  background: linear-gradient(white,white) padding-box,
-              linear-gradient(90deg,#7c3aed,#ec4899,transparent) border-box;
-  margin-bottom: 1.5rem;
-}
-.ph h1 {
-  font-size: 2rem; font-weight: 900;
-  background: linear-gradient(135deg,#7c3aed,#ec4899);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-}
-.ph p { font-size:.9375rem; color:#4b5563; margin-top:.35rem; }
-
-/* Section titles */
-.sec-title {
-  font-size: 1.125rem; font-weight: 800; margin-bottom: 1rem;
-  display: flex; align-items: center; gap: .75rem;
-  background: linear-gradient(135deg,#7c3aed,#ec4899);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-}
-.sec-title::after {
-  content:''; flex:1; height:2px;
-  background: linear-gradient(90deg,rgba(124,58,237,.4),rgba(236,72,153,.2),transparent);
-  border-radius:2px;
-}
-
-/* Group labels */
-.group-label {
-  font-size:.72rem; font-weight:800; text-transform:uppercase; letter-spacing:.1em;
-  background: linear-gradient(135deg,#7c3aed,#a855f7);
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
-  margin:1.75rem 0 .75rem; display:flex; align-items:center; gap:.5rem;
-}
-.group-label::after { content:''; flex:1; height:2px; background:linear-gradient(90deg,rgba(124,58,237,.3),transparent); }
-.pub-group {
-  font-size:.72rem; font-weight:800; text-transform:uppercase; letter-spacing:.1em;
-  background: linear-gradient(135deg,#7c3aed,#a855f7);
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
-  margin:1.75rem 0 .75rem; display:flex; align-items:center; gap:.5rem;
-}
-.pub-group::after { content:''; flex:1; height:2px; background:linear-gradient(90deg,rgba(124,58,237,.3),transparent); }
-
-/* Featured cards - STRONG vibrant */
-.card.featured {
-  border: 2px solid transparent !important;
-  background:
-    linear-gradient(white,white) padding-box,
-    linear-gradient(135deg,#7c3aed,#ec4899) border-box !important;
-  border-left: 4px solid #7c3aed !important;
-  position: relative;
-}
-.card.featured::before {
-  content:'';
-  position:absolute; top:0; left:0; right:0; height:3px;
-  background: linear-gradient(90deg,#7c3aed,#ec4899,#f97316);
-  border-radius: 14px 14px 0 0;
-}
-.card.featured h3 {
-  background: linear-gradient(135deg,#7c3aed,#ec4899);
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
-}
-
-/* Regular cards - subtle hover */
-.card {
-  border: 1.5px solid #e5e7eb;
-  border-radius: 14px;
-  transition: all .25s;
-}
-.card:hover {
-  border-color: #c4b5fd;
-  box-shadow: 0 4px 20px rgba(124,58,237,.12);
-  transform: translateY(-2px);
-}
-.card h3 { font-weight: 800; }
-
-/* Role cards */
-.role-card.current {
-  border-left: 4px solid #7c3aed !important;
-  background: linear-gradient(90deg,rgba(124,58,237,.06),transparent) !important;
-  border-radius: 0 14px 14px 0;
-}
-.role-org { color: #7c3aed !important; font-weight: 800 !important; }
-.role-title { font-weight: 900 !important; }
-.role-when {
-  background: linear-gradient(135deg,rgba(124,58,237,.1),rgba(236,72,153,.1)) !important;
-  border: 1px solid rgba(124,58,237,.25) !important;
-  color: #7c3aed !important; font-weight:700 !important;
-}
-
-/* Profile links */
-.plink:hover {
-  border-color: #a855f7 !important;
-  background: linear-gradient(135deg,rgba(124,58,237,.06),rgba(236,72,153,.04)) !important;
-  color: #7c3aed !important;
-}
-.plink .picon { background: linear-gradient(135deg,rgba(124,58,237,.1),rgba(236,72,153,.1)) !important; }
-
-/* Focus items */
-.focus-item:hover {
-  border-color: #a855f7 !important;
-  background: linear-gradient(135deg,rgba(124,58,237,.08),rgba(236,72,153,.04)) !important;
-  color: #7c3aed !important;
-}
-.focus-item::before {
-  background: linear-gradient(135deg,#7c3aed,#ec4899) !important;
-  width:8px !important; height:8px !important;
-}
-
-/* Badges */
-.b-blue { background:rgba(124,58,237,.1) !important; color:#7c3aed !important; border-color:rgba(124,58,237,.3) !important; }
-.b-green { background:rgba(5,150,105,.1) !important; color:#059669 !important; border-color:rgba(5,150,105,.3) !important; }
-.b-sky { background:rgba(14,165,233,.1) !important; color:#0ea5e9 !important; border-color:rgba(14,165,233,.3) !important; }
-.b-pink { background:rgba(236,72,153,.1) !important; color:#ec4899 !important; border-color:rgba(236,72,153,.3) !important; }
-
-/* Section border */
-.sec { border-bottom: 1px solid rgba(124,58,237,.1) !important; }
-
-/* Links */
-a { color:#7c3aed; }
-a:hover { color:#a855f7; }
-
-/* Pub titles */
-.pub-title { font-weight:800; }
-.pub:hover { padding-left:.75rem; transition:all .2s; border-left:3px solid #7c3aed; }
-
-/* Timeline dots */
-.timeline .role-card { position:relative; }
-
-/* Footer */
-footer { border-top: 2px solid transparent; background: linear-gradient(white,white) padding-box, linear-gradient(90deg,#7c3aed,#ec4899) border-box; }
-</style>
-<style>
-/* ── Page dark header ── */
-.page-hero {
-  background: linear-gradient(135deg, #0f0c29 0%, #1a0533 45%, #1e1b4b 100%);
-  padding: 2.75rem 1.25rem 2.25rem;
-  position: relative; overflow: hidden;
-  margin-bottom: 0;
-}
-.page-hero::before {
-  content: ''; position: absolute; top: -40%; right: -8%;
-  width: 400px; height: 400px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(124,58,237,.2) 0%, transparent 70%);
-  pointer-events: none;
-}
-.page-hero-inner {
-  max-width: 900px; margin: 0 auto;
-  position: relative; z-index: 1;
-}
-.page-hero h1 {
-  font-size: 2.125rem; font-weight: 900;
-  background: linear-gradient(135deg, #e0c3fc 0%, #f9a8d4 60%, #fbbf24 100%);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin: 0 0 .45rem; line-height: 1.15;
-}
-.page-hero p {
-  color: rgba(255,255,255,.5); font-size: .9375rem;
-  line-height: 1.7; max-width: 700px; margin: 0;
-}
-</style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Publications — Shaista Shabbir</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <style>
+    :root {
+      --primary: #7c3aed;
+      --accent: #a78bfa;
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
+    nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 1rem 2rem; display: flex; gap: 2rem; align-items: center; }
+    nav a { color: var(--muted); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: var(--accent); }
+    nav .logo { color: var(--text); font-weight: 700; font-size: 1.1rem; margin-right: auto; }
+    .hero { background: linear-gradient(135deg, #0d1117 0%, #1a0a2e 100%); padding: 4rem 2rem; text-align: center; border-bottom: 1px solid var(--border); }
+    .hero h1 { font-size: 2.5rem; background: linear-gradient(135deg, var(--accent), #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
+    .hero p { color: var(--muted); font-size: 1.1rem; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+    .filters { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .filter-btn { padding: 0.4rem 1rem; border-radius: 20px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; font-size: 0.85rem; transition: all 0.2s; }
+    .filter-btn.active, .filter-btn:hover { background: var(--primary); color: white; border-color: var(--primary); }
+    .section-title { font-size: 1.1rem; color: var(--accent); font-weight: 600; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+    .pub-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; transition: border-color 0.2s, transform 0.2s; }
+    .pub-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+    .pub-title { font-size: 1.05rem; font-weight: 600; color: var(--text); margin-bottom: 0.4rem; }
+    .pub-authors { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.4rem; }
+    .pub-authors strong { color: var(--accent); }
+    .pub-venue { font-size: 0.85rem; color: var(--muted); font-style: italic; margin-bottom: 0.75rem; }
+    .pub-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.75rem; }
+    .tag { padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.75rem; font-weight: 500; }
+    .tag-nlp { background: #1a3a5c; color: #60a5fa; }
+    .tag-ai { background: #1a2e1a; color: #4ade80; }
+    .tag-privacy { background: #3a1a1a; color: #f87171; }
+    .tag-industrial { background: #2a2a1a; color: #fbbf24; }
+    .tag-se { background: #2a1a3a; color: #c084fc; }
+    .pub-links { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .pub-link { padding: 0.3rem 0.8rem; border-radius: 6px; font-size: 0.8rem; text-decoration: none; border: 1px solid var(--border); color: var(--muted); transition: all 0.2s; display: flex; align-items: center; gap: 0.3rem; }
+    .pub-link:hover { border-color: var(--accent); color: var(--accent); }
+    .pub-link.primary { background: var(--primary); color: white; border-color: var(--primary); }
+    .status-badge { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 20px; font-size: 0.72rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .status-progress { background: #1a2a3a; color: #60a5fa; border: 1px solid #1e40af; }
+    .status-submitted { background: #2a2a1a; color: #fbbf24; border: 1px solid #92400e; }
+    .status-published { background: #1a3a1a; color: #4ade80; border: 1px solid #166534; }
+    .bibtex-block { display: none; background: #0a0a0a; border: 1px solid var(--border); border-radius: 8px; padding: 1rem; margin-top: 0.75rem; font-family: monospace; font-size: 0.78rem; color: #94a3b8; white-space: pre-wrap; }
+    .bibtex-block.open { display: block; }
+    .copy-btn { cursor: pointer; font-size: 0.78rem; color: var(--accent); background: none; border: none; padding: 0; }
+    .copy-btn:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
+  </style>
 </head>
 <body>
-<header style="border-bottom:1px solid rgba(124,58,237,.12);position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(12px)">
-  <div style="max-width:900px;margin:0 auto;padding:0 1.25rem;display:flex;align-items:center;gap:.4rem;height:52px;overflow-x:auto;white-space:nowrap;scrollbar-width:none">
-    <a href="index.html" style="font-weight:900;font-size:.9375rem;text-decoration:none!important;background:linear-gradient(135deg,#7c3aed,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;border-right:2px solid #7c3aed;padding-right:.75rem;margin-right:.25rem;flex-shrink:0">Shaista Shabbir</a>
-    <a href="index.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;flex-shrink:0">Home</a><a href="projects.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;flex-shrink:0">Research</a><a href="publications.html" style="background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff!important;text-decoration:none;font-size:.8125rem;font-weight:700;padding:.35rem .65rem;border-radius:8px;box-shadow:0 2px 8px rgba(124,58,237,.3);white-space:nowrap">Publications</a><a href="experience.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;flex-shrink:0">Experience</a><a href="supervision.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;flex-shrink:0">Supervision</a><a href="workshops.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;flex-shrink:0">Workshops</a><a href="awards.html" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;flex-shrink:0">Awards</a><a href="cv/" style="color:#4b5563;text-decoration:none;font-size:.8125rem;font-weight:500;padding:.35rem .65rem;border-radius:8px;white-space:nowrap;flex-shrink:0">CV</a>
-  </div>
-</header>
 
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <h1>Publications &amp; Research Output</h1>
-    <p>Research manuscripts and academic writing across Industrial AI, software engineering, and requirements engineering. Work-in-progress papers are clearly labelled.</p>
-  </div>
+<nav>
+  <span class="logo">Shaista Shabbir</span>
+  <a href="index.html">Home</a>
+  <a href="publications.html" class="active">Publications</a>
+  <a href="cv.html">CV</a>
+  <a href="blog.html">Blog</a>
+  <a href="awards.html">Awards</a>
+</nav>
+
+<div class="hero">
+  <h1>📄 Publications</h1>
+  <p>Research in Industrial AI · NLP · Privacy · Software Engineering</p>
 </div>
 
-<main class="wrap">
+<div class="container">
 
-  <!-- ── Current manuscripts ── -->
-  <div class="pub-group">Current Research Manuscripts · TU Dortmund / Lamarr Institute · 2026</div>
+  <div class="filters">
+    <button class="filter-btn active" onclick="filter('all')">All</button>
+    <button class="filter-btn" onclick="filter('nlp')">NLP</button>
+    <button class="filter-btn" onclick="filter('industrial')">Industrial AI</button>
+    <button class="filter-btn" onclick="filter('privacy')">Privacy & XAI</button>
+    <button class="filter-btn" onclick="filter('se')">Software Engineering</button>
+  </div>
 
-  <div class="pub">
-    <p class="pub-title">Machining Stability Platform — Expert-Guided Annotation and Analysis</p>
-    <div class="pub-meta">
-      <span class="badge b-amber">Work in progress</span>
-      <span>Shaista Shabbir · TU Dortmund University / Lamarr Institute · 2026</span>
+  <!-- IN PROGRESS -->
+  <div class="section-title">🔬 In Progress</div>
+
+  <div class="pub-card" data-topic="industrial">
+    <span class="status-badge status-progress">In Progress</span>
+    <div class="pub-title">AudioIno: An AI-Powered Platform for Machining Stability Analysis and Chatter Detection</div>
+    <div class="pub-authors"><strong>Shabbir, S.</strong>, Usbeck, R.</div>
+    <div class="pub-venue">Target: International Journal of Machine Tools and Manufacture · 2026</div>
+    <div class="pub-tags">
+      <span class="tag tag-industrial">Industrial AI</span>
+      <span class="tag tag-ai">Signal Processing</span>
+      <span class="tag tag-ai">Chatter Detection</span>
     </div>
-    <div style="margin-top:.5rem">
-      <span class="badge b-gray">Machining Stability</span> <span class="badge b-gray">Industrial AI</span> <span class="badge b-gray">Machine Learning</span>
+    <div class="pub-links">
+      <a href="https://github.com/ShaistaShabbir-prog/machining-os" class="pub-link">💻 Code</a>
     </div>
   </div>
 
-  <div class="pub">
-    <p class="pub-title">Acoustic Monitoring for Machining Stability: Sensor Evaluation and Signal Analysis</p>
-    <div class="pub-meta">
-      <span class="badge b-amber">Work in progress</span>
-      <span>Shaista Shabbir · TU Dortmund University / Lamarr Institute · 2026</span>
-    </div>
-    <div style="margin-top:.5rem">
-      <span class="badge b-gray">Acoustic Monitoring</span> <span class="badge b-gray">Signal Processing</span> <span class="badge b-gray">Manufacturing AI</span>
-    </div>
-  </div>
-
-  <div class="pub">
-    <p class="pub-title">Tool Wear Prediction from Multimodal Machining Signals</p>
-    <div class="pub-meta">
-      <span class="badge b-amber">Work in progress</span>
-      <span>Student thesis collaboration · TU Dortmund University · 2026</span>
-    </div>
-    <p style="font-size:.875rem;color:var(--text-s);line-height:1.65;margin-top:.5rem">
-      Investigates tool condition monitoring using force, temperature, and acoustic signals. Addresses shortcut learning, generalization across cutting conditions, and ablation analysis of feature contributions.
-    </p>
-    <div style="margin-top:.5rem">
-      <span class="badge b-gray">Tool Wear</span> <span class="badge b-gray">CNN</span> <span class="badge b-gray">Explainable ML</span>
+  <div class="pub-card" data-topic="industrial">
+    <span class="status-badge status-progress">In Progress</span>
+    <div class="pub-title">Acoustic Emission-Based Chatter Detection in CNC Milling Using Deep Learning</div>
+    <div class="pub-authors"><strong>Shabbir, S.</strong></div>
+    <div class="pub-venue">Target: CIRP Annals — Manufacturing Technology · 2026</div>
+    <div class="pub-tags">
+      <span class="tag tag-industrial">CNC Machining</span>
+      <span class="tag tag-ai">Deep Learning</span>
+      <span class="tag tag-industrial">FFT</span>
     </div>
   </div>
 
-  <!-- ── MSCS manuscripts ── -->
-  <div class="pub-group">MSCS Research Papers · Virtual University of Pakistan · 2017–2019</div>
-
-  <div class="pub">
-    <p class="pub-title">Quality Assurance Issues in Software Development (Issues with their Possible Solutions)</p>
-    <div class="pub-meta">
-      <span class="badge b-gray">Unpublished manuscript</span>
-      <span>Shaista Shabbir · Virtual University of Pakistan · 2018</span>
+  <div class="pub-card" data-topic="nlp">
+    <span class="status-badge status-progress">In Progress</span>
+    <div class="pub-title">A.L.E.R.T: Automated Letzte Generation Event Recognition and Tracking — A Comparative Study of BERT and RoBERTa for Civil Event Detection</div>
+    <div class="pub-authors"><strong>Shabbir, S.</strong>, Usbeck, R.</div>
+    <div class="pub-venue">Target: EMNLP 2026 Workshop on NLP for Crisis Management</div>
+    <div class="pub-tags">
+      <span class="tag tag-nlp">NLP</span>
+      <span class="tag tag-nlp">BERT</span>
+      <span class="tag tag-nlp">Event Detection</span>
+      <span class="tag tag-nlp">Civil Protest</span>
     </div>
-    <p style="font-size:.875rem;color:var(--text-s);line-height:1.65;margin-top:.5rem">
-      Examines critical issues in software quality assurance (SQA) faced by organizations and developers — including lack of standardised approaches (CMMI, ISO 9000), absence of dedicated SQA teams, developer-SQA communication gaps, testing/SQA conflation, low customer involvement, and organizational politics. Proposes practical solutions for each identified issue based on literature survey. References NIST data on $59 billion annual US SQA cost.
-    </p>
-    <div style="margin-top:.5rem">
-      <span class="badge b-gray">Software Quality Assurance</span> <span class="badge b-gray">CMMI</span> <span class="badge b-gray">IEEE 730</span> <span class="badge b-gray">Software Engineering</span>
-    </div>
-  </div>
-
-  <div class="pub">
-    <p class="pub-title">Communication Problems in Requirements Engineering Process</p>
-    <div class="pub-meta">
-      <span class="badge b-gray">Unpublished manuscript</span>
-      <span>Shaista Shabbir · Virtual University of Pakistan · 2018</span>
-    </div>
-    <p style="font-size:.875rem;color:var(--text-s);line-height:1.65;margin-top:.5rem">
-      Analyses major communication barriers in requirements engineering (RE) — ineffective communication channels, notation expressiveness limitations, and organizational/cultural factors. Investigates how communication failures cause project overruns and proposes solutions including enriched notations, face-to-face stakeholder contact, and reduction of organizational politics in requirements gathering.
-    </p>
-    <div style="margin-top:.5rem">
-      <span class="badge b-gray">Requirements Engineering</span> <span class="badge b-gray">Software Quality</span> <span class="badge b-gray">Communication</span> <span class="badge b-gray">Stakeholders</span>
+    <div class="pub-links">
+      <a href="https://github.com/ShaistaShabbir-prog/EventDetectionAndEventExtraction" class="pub-link">💻 Code</a>
     </div>
   </div>
 
-  <!-- ── Earlier research ── -->
-  <div class="pub-group">Earlier Research · HITeC / University of Hamburg · 2023–2025</div>
+  <!-- MANUSCRIPT READY -->
+  <div class="section-title">📝 Manuscript</div>
 
-  <div class="pub">
-    <p class="pub-title">Event Extraction for Situational Awareness</p>
-    <div class="pub-meta">
-      <span class="badge b-gray">Preprint / Project manuscript</span>
-      <span>HITeC e.V. / University of Hamburg · 2025</span>
+  <div class="pub-card" data-topic="se">
+    <span class="status-badge status-submitted">Manuscript Ready</span>
+    <div class="pub-title">Quality Assurance Issues in Software Development: A Systematic Review of IEEE 730 Compliance</div>
+    <div class="pub-authors"><strong>Shabbir, S.</strong></div>
+    <div class="pub-venue">Target: IEEE Software · 2026</div>
+    <div class="pub-tags">
+      <span class="tag tag-se">Software Engineering</span>
+      <span class="tag tag-se">SQA</span>
+      <span class="tag tag-se">IEEE 730</span>
     </div>
-    <p style="font-size:.875rem;color:var(--text-s);line-height:1.65;margin-top:.5rem">
-      Transformer-based event detection and extraction from unstructured text, with geospatial visualization for situational awareness and decision support. Part of the CoyPu project.
-    </p>
-    <div style="margin-top:.5rem"><span class="badge b-gray">NLP</span> <span class="badge b-gray">Event Extraction</span> <span class="badge b-gray">Transformers</span></div>
   </div>
 
-  <div class="pub">
-    <p class="pub-title">Forecasting Energy Consumption with GRU Networks</p>
-    <div class="pub-meta">
-      <span class="badge b-gray">Workshop / Project manuscript</span>
-      <span>HITeC e.V. / University of Hamburg · 2024</span>
+  <div class="pub-card" data-topic="se">
+    <span class="status-badge status-submitted">Manuscript Ready</span>
+    <div class="pub-title">Communication Breakdowns in Requirements Engineering: Causes, Consequences, and Mitigation Strategies</div>
+    <div class="pub-authors"><strong>Shabbir, S.</strong></div>
+    <div class="pub-venue">Target: Requirements Engineering Journal · 2026</div>
+    <div class="pub-tags">
+      <span class="tag tag-se">Requirements Engineering</span>
+      <span class="tag tag-se">Communication</span>
+      <span class="tag tag-se">Software Process</span>
     </div>
-    <p style="font-size:.875rem;color:var(--text-s);line-height:1.65;margin-top:.5rem">
-      Industrial energy consumption forecasting at machine level using GRU recurrent networks and feature engineering. Part of the PEM (Process Energy Monitoring) project.
-    </p>
-    <div style="margin-top:.5rem"><span class="badge b-gray">Time Series</span> <span class="badge b-gray">GRU</span> <span class="badge b-gray">Energy Forecasting</span></div>
   </div>
 
-  <!-- ── Research profiles ── -->
-  <div class="pub-group">Research Profiles</div>
-  <div class="profile-grid">
-        <a href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank" rel="noopener">
-      <span class="picon">🔬</span>
-      <div><div>ResearchGate</div><div style="font-size:.75rem;font-weight:400;color:var(--gray)">researchgate.net</div></div>
-    </a>
-        <a href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank" rel="noopener">
-      <span class="picon">💼</span>
-      <div><div>LinkedIn</div><div style="font-size:.75rem;font-weight:400;color:var(--gray)">linkedin.com</div></div>
-    </a>
-        <a href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noopener">
-      <span class="picon">💻</span>
-      <div><div>GitHub</div><div style="font-size:.75rem;font-weight:400;color:var(--gray)">github.com</div></div>
-    </a>
+  <!-- THESIS -->
+  <div class="section-title">🎓 Thesis</div>
+
+  <div class="pub-card" data-topic="nlp">
+    <span class="status-badge status-published">Published</span>
+    <div class="pub-title">Arms Licensing System Kotli — A Web-Based Digital Transformation of License Management in AJK</div>
+    <div class="pub-authors"><strong>Shabbir, S.</strong></div>
+    <div class="pub-venue">BS Computer Science Final Year Project · University of AJK · 2016 · 🥇 Gold Medal</div>
+    <div class="pub-tags">
+      <span class="tag tag-se">Web Development</span>
+      <span class="tag tag-se">PHP</span>
+      <span class="tag tag-se">Database</span>
+    </div>
+    <div class="pub-links">
+      <a href="https://github.com/ShaistaShabbir-prog/UAJK" class="pub-link">💻 Code</a>
+    </div>
   </div>
 
-  <div style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--bg-s);border:1px solid var(--border);border-radius:var(--r);font-size:.875rem;color:var(--text-s);line-height:1.65">
-    <strong>Note:</strong> Papers marked "Work in progress" are active research manuscripts not yet submitted for peer review. MSCS papers were written as part of coursework at Virtual University of Pakistan and remain unpublished manuscripts. This page will be updated as manuscripts reach submission and publication stages.
-  </div>
+</div>
 
-</main>
-
-<footer class="wrap">
-  <p id="contact">
-    <strong>Contact:</strong>
-        <a href="mailto:shaista.s.shabbir@gmail.com">shaista.s.shabbir@gmail.com</a> ·
-        <a href="https://www.researchgate.net/profile/Shaista-Shabbir" target="_blank" rel="noopener">ResearchGate</a> ·
-        <a href="https://www.linkedin.com/in/shaista-shabbir-a32a6b210" target="_blank" rel="noopener">LinkedIn</a> ·
-        <a href="https://github.com/ShaistaShabbir-prog" target="_blank" rel="noopener">GitHub</a>
-  </p>
-  <p style="margin-top:.4rem"><small>© 2026 Shaista Shabbir · Research Associate, TU Dortmund University &amp; Lamarr Institute</small></p>
+<footer>
+  Shaista Shabbir · Research Associate · TU Dortmund University · Lamarr Institute for ML & AI<br/>
+  <a href="mailto:shaista.s.shabbir@gmail.com" style="color: var(--accent);">shaista.s.shabbir@gmail.com</a>
 </footer>
+
+<script>
+function filter(topic) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  document.querySelectorAll('.pub-card').forEach(card => {
+    card.style.display = (topic === 'all' || card.dataset.topic === topic) ? 'block' : 'none';
+  });
+}
+function toggleBibtex(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
+}
+function copyBibtex(id) {
+  const text = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text);
+  event.target.textContent = '✓ Copied!';
+  setTimeout(() => event.target.textContent = '📋 Copy BibTeX', 1500);
+}
+</script>
 </body>
 </html>
