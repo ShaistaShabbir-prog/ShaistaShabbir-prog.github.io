@@ -1,0 +1,76 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="675" fill="#0a0d14"/>
+<circle cx="140" cy="140" r="220" fill="#7c3aed" opacity="0.07"/>
+<circle cx="1060" cy="535" r="250" fill="#ec4899" opacity="0.07"/>
+<circle cx="600" cy="337" r="360" fill="#3b82f6" opacity="0.04"/>
+<rect x="0"    y="0"    width="1200" height="7"    fill="#7c3aed"/>
+<rect x="0"    y="668"  width="1200" height="7"    fill="#ec4899"/>
+<rect x="0"    y="0"    width="7"    height="675"  fill="#7c3aed"/>
+<rect x="1193" y="0"    width="7"    height="675"  fill="#ec4899"/>
+<text x="600" y="62"  text-anchor="middle" font-family="Arial, sans-serif" font-size="16"  fill="#a78bfa" letter-spacing="8">PROFESSIONAL DIGITAL SERVICES</text>
+<text x="600" y="118" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="54" fill="#ffffff" font-weight="900" letter-spacing="2">Need It Done Right?</text>
+<text x="600" y="152" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#8b949e" letter-spacing="3">Fast · Affordable · Professional Quality</text>
+<line x1="60" y1="172" x2="1140" y2="172" stroke="#21262d" stroke-width="1.5"/>
+
+<rect x="25"  y="185" width="272" height="300" rx="18" fill="#0d1117" stroke="#1e293b" stroke-width="1.5"/>
+<rect x="25"  y="185" width="272" height="7"   rx="4"  fill="#3b82f6"/>
+<text x="161" y="234" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" fill="#3b82f6">&#9741;</text>
+<text x="161" y="268" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="21" fill="#e6edf3">Website Design</text>
+<text x="161" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#6b7280">Portfolio · Business · Academy</text>
+<line x1="50"  y1="307" x2="272" y2="307" stroke="#1e293b" stroke-width="1"/>
+<text x="55"  y="328" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  Mobile responsive</text>
+<text x="55"  y="352" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  Contact + WhatsApp button</text>
+<text x="55"  y="376" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  Fast loading + SEO</text>
+<text x="55"  y="400" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  1 revision included</text>
+<rect x="60"  y="420" width="182" height="42" rx="21" fill="#1e3a5f"/>
+<text x="151" y="447" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="20" fill="#60a5fa">from  €80</text>
+
+<rect x="320" y="185" width="272" height="300" rx="18" fill="#0d1117" stroke="#1e293b" stroke-width="1.5"/>
+<rect x="320" y="185" width="272" height="7"   rx="4"  fill="#7c3aed"/>
+<text x="456" y="234" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" fill="#a78bfa">&#9998;</text>
+<text x="456" y="268" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="21" fill="#e6edf3">CV / Resume</text>
+<text x="456" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#6b7280">Academic · Professional · ATS</text>
+<line x1="345" y1="307" x2="567" y2="307" stroke="#1e293b" stroke-width="1"/>
+<text x="350" y="328" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  Modern professional layout</text>
+<text x="350" y="352" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  PDF + Word format</text>
+<text x="350" y="376" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  LinkedIn text included</text>
+<text x="350" y="400" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  1–2 day delivery</text>
+<rect x="355" y="420" width="182" height="42" rx="21" fill="#2d1b69"/>
+<text x="446" y="447" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="20" fill="#c4b5fd">from  €25</text>
+
+<rect x="615" y="185" width="272" height="300" rx="18" fill="#0d1117" stroke="#1e293b" stroke-width="1.5"/>
+<rect x="615" y="185" width="272" height="7"   rx="4"  fill="#0891b2"/>
+<text x="751" y="234" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" fill="#22d3ee">&#9997;</text>
+<text x="751" y="268" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="21" fill="#e6edf3">Cover Letter</text>
+<text x="751" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#6b7280">Writing · Editing · Review</text>
+<line x1="640" y1="307" x2="862" y2="307" stroke="#1e293b" stroke-width="1"/>
+<text x="645" y="328" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  Custom written for your job</text>
+<text x="645" y="352" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  Review &amp; proofreading</text>
+<text x="645" y="376" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  Job-specific tailoring</text>
+<text x="645" y="400" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  Same-day option available</text>
+<rect x="650" y="420" width="182" height="42" rx="21" fill="#0c3044"/>
+<text x="741" y="447" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="20" fill="#67e8f9">from  €15</text>
+
+<rect x="910" y="185" width="272" height="300" rx="18" fill="#0d1117" stroke="#1e293b" stroke-width="1.5"/>
+<rect x="910" y="185" width="272" height="7"   rx="4"  fill="#ec4899"/>
+<text x="1046" y="234" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" fill="#ec4899">&#9670;</text>
+<text x="1046" y="268" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="21" fill="#e6edf3">Graphics Design</text>
+<text x="1046" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#6b7280">Banners · Logos · Flyers</text>
+<line x1="935" y1="307" x2="1157" y2="307" stroke="#1e293b" stroke-width="1"/>
+<text x="940" y="328" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  Social media banners</text>
+<text x="940" y="352" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  Logo design</text>
+<text x="940" y="376" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  WhatsApp + Facebook ready</text>
+<text x="940" y="400" font-family="Arial, sans-serif" font-size="15" fill="#94a3b8">✓  24–48 hour delivery</text>
+<rect x="945" y="420" width="182" height="42" rx="21" fill="#4d1a3a"/>
+<text x="1036" y="447" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="20" fill="#f9a8d4">from  €15</text>
+
+<line x1="60" y1="500" x2="1140" y2="500" stroke="#21262d" stroke-width="1.5"/>
+
+<rect x="25" y="516" width="1150" height="140" rx="20" fill="#0d1117" stroke="#1e293b" stroke-width="1.5"/>
+<text x="600" y="556" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="24" fill="#ffffff" font-weight="900">DM or WhatsApp to place your order!</text>
+<text x="600" y="582" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#6b7280">Payment via bank transfer · PayPal · Wise · Fast turnaround guaranteed</text>
+<rect x="80"  y="598" width="460" height="48" rx="24" fill="#25D366"/>
+<text x="310" y="630" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="19" fill="#fff">📱  WhatsApp: +49 159 0617 1828</text>
+<rect x="660" y="598" width="460" height="48" rx="24" fill="#7c3aed"/>
+<text x="890" y="630" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="19" fill="#fff">✉️  vistavisa7@gmail.com</text>
+</svg>
